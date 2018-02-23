@@ -6,19 +6,19 @@ const csInterface = new CSInterface();
 /*
   UI Elements
 */
-const greetingButton = document.querySelector("#greeting-button");
+const applyWeatherButton = document.querySelector("#apply-weather-button");
 const weatherSummary = document.querySelector("#weather-summary");
 
 /*
   Event listeners
 */
-greetingButton.addEventListener("click", alertGreeting);
+applyWeatherButton.addEventListener("click", applyWeather);
 
 /*
   Helper methods
 */
-function alertGreeting() {
-  csInterface.evalScript("sayHello()");
+function applyWeather(e) {
+  csInterface.evalScript(`adjustArtLayer('${e.target.dataset.currentWeather}')`);
 }
 
 const darkSkyExcludes = "minutely,hourly,daily,alerts,flags";
@@ -36,8 +36,6 @@ const weatherTypes = {
   "partly-cloudy-night": "partly cloudy night"
 }
 
-let currentWeather;
-
 fetch(`https://api.darksky.net/forecast/${darkSkyKey}/37.8267,-122.4233?exclude=${darkSkyExcludes}`)
   .then(function(res) {
     if (res.ok) return res.json();
@@ -45,6 +43,7 @@ fetch(`https://api.darksky.net/forecast/${darkSkyKey}/37.8267,-122.4233?exclude=
     // handle res failure
   })
   .then(function(json) {
-    currentWeather = weatherTypes[json.currently.icon];
-    weatherSummary.textContent = `It looks like it's ${currentWeather}.`;
+    let currentWeather = json.currently.icon;
+    applyWeatherButton.dataset.currentWeather = currentWeather;
+    weatherSummary.textContent = `It looks like it's ${weatherTypes[currentWeather]}.`;
   });
