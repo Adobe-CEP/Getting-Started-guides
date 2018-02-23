@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ExtensionList>
+  <Extension Id="com.cep.network.panel">
+    <HostList>
+      <Host Name="PHXS" Port="8088" />
+      <Host Name="IDSN" Port="8087" />
+      <Host Name="AICY" Port="8086" />
+      <Host Name="ILST" Port="8085" />
+      <Host Name="PPRO" Port="8084" />
+      <Host Name="AEFT" Port="8083" />
+      <Host Name="PRLD" Port="8082" />
+      <Host Name="FLPR" Port="8081" />
+      <Host Name="DRWV" Port="8080" />
+    </HostList>
+  </Extension>
+</ExtensionList>
