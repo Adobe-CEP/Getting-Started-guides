@@ -2,6 +2,7 @@
   CSInterface
 */
 const csInterface = new CSInterface();
+const DEBUG_FLAG = false;
 
 const darkSkyExcludes = "minutely,hourly,daily,alerts,flags";
 
