@@ -7,15 +7,15 @@ for (weatherType in weatherTypes) {
 }
 
 // make the select
-let select = `<select name="weather-types">${options.join("")}</select>`;
+let select = `<hr><select name="weather-type-selector">${options.join("")}</select>`;
 
 // add select to debug div
 debugDiv.innerHTML = select;
 
 // handle weather changes
-const weatherTypeSelector = document.querySelector("select[name='weather-types']");
+const weatherTypeSelector = document.querySelector("select[name='weather-type-selector']");
 weatherTypeSelector.addEventListener("change", handleChange);
 
 function handleChange(e) {
-  setCurrentWeather(e.target.value);
+  setWeather(e.target.value);
 }
