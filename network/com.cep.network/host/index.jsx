@@ -1,5 +1,3 @@
-
-
 function adjustArtLayer(currentWeather) {
   var artLayer = app.documents[0].artLayers[0];
 
@@ -23,36 +21,32 @@ function adjustArtLayer(currentWeather) {
       //artLayer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
       break;
     case "fog":
-      //artLayer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
+      hueSatLight(0, -50, 50);
       break;
     case "cloudy":
-      //artLayer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
+      hueSatLight(0, -69, -21);
       break;
     case "partly-cloudy-day":
-      //artLayer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
+      hueSatLight(0, 0, -25);
       break;
     case "partly-cloudy-night":
-      //artLayer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
+      hueSatLight(33, -75, -50);
       break;
 
     default:
       alert("default");
   }
-
-  // alert(currentWeather);
-  // var artLayer = app.documents[0].artLayers[0];
-  // artLayer.adjustColorBalance([0, 100, 100]);
 }
 
-/*
-  clear-day: [0,0,0], [-10,0,0], [-50,0,0]
-  clear-night: [0,0,33], [-39,-14,100], [-10,0,17]
-  rain: [0,0,-35], [-45,24,41], [-6,8,38]
-  snow: [-100,0,2], [-100,0,60], [-58,0,15]
-  sleet: ""
-  wind:
-  fog: hue/saturation: saturation -50, lightness +50
-  cloudy: hue/saturation: saturation -69, lightness -21
-  partly cloudy day: lightness -25
-  partly cloudy night: hue 33, sat -75, lightness -50
-*/
+function hueSatLight(Hue,Sat,Light) {
+    var desc9 = new ActionDescriptor();
+    desc9.putBoolean( charIDToTypeID('Clrz'), false );
+        var list2 = new ActionList();
+            var desc10 = new ActionDescriptor();
+            desc10.putInteger( charIDToTypeID('H   '), Hue );
+            desc10.putInteger( charIDToTypeID('Strt'), Sat );
+            desc10.putInteger( charIDToTypeID('Lght'), Light );
+        list2.putObject( charIDToTypeID('Hst2'), desc10 );
+    desc9.putList( charIDToTypeID('Adjs'), list2 );
+    executeAction( charIDToTypeID('HStr'), desc9, DialogModes.NO );
+};
