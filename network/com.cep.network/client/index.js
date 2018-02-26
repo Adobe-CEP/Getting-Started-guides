@@ -33,17 +33,21 @@ const weatherTypes = {
   "fog": "foggy",
   "cloudy": "cloudy",
   "partly-cloudy-day": "a partly cloudy day",
-  "partly-cloudy-night": "partly cloudy night"
+  "partly-cloudy-night": "a partly cloudy night"
 }
 
 fetch(`https://api.darksky.net/forecast/${darkSkyKey}/37.8267,-122.4233?exclude=${darkSkyExcludes}`)
   .then(function(res) {
     if (res.ok) return res.json();
-
-    // handle res failure
   })
   .then(function(json) {
-    let currentWeather = json.currently.icon;
-    applyWeatherButton.dataset.currentWeather = currentWeather;
-    weatherSummary.textContent = `It looks like it's ${weatherTypes[currentWeather]}.`;
+    setCurrentWeather(json.currently.icon);
+  })
+  .catch(function(err) {
+    weatherSummary.textContent = `We had trouble getting the weather. Please try again.`;
   });
+
+function setCurrentWeather(currentWeather) {
+  applyWeatherButton.dataset.currentWeather = currentWeather;
+  weatherSummary.textContent = `It looks like it's ${weatherTypes[currentWeather]}.`;
+}
