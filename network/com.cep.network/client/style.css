@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(83, 83, 83);
+  color: rgb(214, 214, 214);
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+button {
+  background-color: rgb(107, 107, 107);
+  color: rgb(214, 214, 214);
+  font-family: sans-serif;
+  font-size: 12px;
+  border: none;
+}
+
+select {
+  appearance: none;
+}
