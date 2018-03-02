@@ -23,10 +23,6 @@
         <Resources>
           <MainPath>./client/index.html</MainPath>
           <ScriptPath>./host/index.jsx</ScriptPath>
-          <CEFCommandLine>
-          	<Parameter>--enable-nodejs</Parameter>
-          	<Parameter>--mixed-context</Parameter>
-      	  </CEFCommandLine>
         </Resources>
         <Lifecycle>
           <AutoVisible>true</AutoVisible>

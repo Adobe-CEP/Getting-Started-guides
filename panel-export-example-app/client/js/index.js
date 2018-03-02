@@ -24,7 +24,6 @@ csInterface.addEventListener("documentAfterSave", exportDoc);
 var extDir = csInterface.getSystemPath("extension");
 
 function exportDoc() {
-	console.log("saved")
 	csInterface.resizeContent(100,400)
     buttonGroup.style.display = "block" 
 }
@@ -32,7 +31,6 @@ function exportDoc() {
 function exportWithType(type){
 	buttonGroup.style.display = "none" 	
 	csInterface.evalScript(`exportFile("${type}")`, function(path){
-		var splitted = path.split("/")
 		alert("file saved at " + path)
 	})
 }
