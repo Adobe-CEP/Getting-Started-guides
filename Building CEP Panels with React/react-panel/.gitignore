@@ -1,0 +1,9 @@
+CSInterface.js
+.DS_Store
+node_modules
+dist/CSXS/**/*
+!dist/CSXD/.gitkeep
+dist/client/**/*
+!dist/client/.gitkeep
+dist/host/**/*
+!dist/host/.gitkeep

@@ -1,0 +1,46 @@
+:local(.wrapper) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+:local(.field) {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: baseline;
+}
+:local(.label) {
+  width: 48px;
+  margin: 8px 8px 4px;
+  font-size: 10pt;
+}
+:local(.input) {
+  flex: 1 1 auto;
+  margin: 4px 8px;
+  padding: 8px;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  font-size: 10pt;
+}
+:local(.input):focus {
+  outline: none;
+  border-color: #215AF6;
+}
+:local(.button) {
+  font-size: 12pt;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  margin: 4px 8px 8px;
+  padding: 8px;
+  color: white;
+  max-width: 150px;
+  background-color: #215AF6;
+  flex: 1 1 auto;
+}
+:local(.buttons) {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
