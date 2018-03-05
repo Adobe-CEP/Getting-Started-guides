@@ -26,4 +26,5 @@ body select {
   font-size: 12px;
   line-height: 16px;
   -webkit-appearance: none;
+  outline: none;
 }

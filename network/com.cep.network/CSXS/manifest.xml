@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<ExtensionManifest ExtensionBundleId="com.cep.network" ExtensionBundleVersion="1.0.0" Version="7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ExtensionManifest ExtensionBundleId="com.cep.weather" ExtensionBundleVersion="1.0.0" Version="7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ExtensionList>
-    <Extension Id="com.cep.network.panel" Version="1.0.0" />
+    <Extension Id="com.cep.weather.panel" Version="1.0.0" />
   </ExtensionList>
   <ExecutionEnvironment>
     <HostList>
@@ -16,7 +16,7 @@
     </RequiredRuntimeList>
   </ExecutionEnvironment>
   <DispatchInfoList>
-    <Extension Id="com.cep.network.panel">
+    <Extension Id="com.cep.weather.panel">
       <DispatchInfo>
         <Resources>
           <MainPath>./client/index.html</MainPath>
@@ -28,7 +28,7 @@
         </Lifecycle>
         <UI>
           <Type>Panel</Type>
-          <Menu>Network</Menu>
+          <Menu>Weather</Menu>
           <Geometry>
             <Size>
               <Height>500</Height>
