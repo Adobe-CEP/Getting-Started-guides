@@ -60,10 +60,9 @@ Articles about common issues are [here](!LINK).
 You can submit tickets for bugs and feature requests [here](!LINK).
 
 
-## Class Reference
-In this guide, we used the classes in the list below. Explore the documentation for more class methods and details.
+## Reference
 
-- [<!CLASS>](<!LINK HERE>)
+- [Photoshop CC JavaScript Reference](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/photoshop/pdfs/photoshop-cc-javascript-ref-2015.pdf)
 - [<!CLASS>](<!LINK HERE>)
 - [<!CLASS>](<!LINK HERE>)
 - [<!CLASS>](<!LINK HERE>)
