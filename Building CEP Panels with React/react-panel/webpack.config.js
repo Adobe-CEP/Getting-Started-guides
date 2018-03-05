@@ -14,7 +14,6 @@ module.exports = env => {
             new CopyWebpackPlugin([{ from: 'src/client/CSInterface.js', to: 'CSInterface.js' }]),
             new HtmlWebpackPlugin({
                 title: 'CEP Panel',
-                alwaysWriteToDisk: true,
             }),
             new HtmlWebpackIncludeAssetsPlugin({
                 assets: './CSInterface.js',
