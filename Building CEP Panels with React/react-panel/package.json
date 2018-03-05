@@ -11,7 +11,7 @@
     "build:client:prod": "webpack -p",
     "copy:CSXS": "shx cp -r src/CSXS/**/* dist/CSXS",
     "copy:debug": "shx cp src/.debug dist/.debug",
-    "build": "npm-run-all build:client build:host copy:*"
+    "build": "npm-run-all build:client:prod build:host copy:*"
   },
   "keywords": [
     "React",

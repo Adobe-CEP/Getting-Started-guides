@@ -10,13 +10,8 @@ module.exports = env => {
         entry: {
             app: './src/client/index.js',
         },
-        //resolve: {
-        //    extensions: ['.js', '.jsx', '.json'],
-        //},
         plugins: [
-            new CopyWebpackPlugin([
-                { from: 'src/client/CSInterface.js', to: 'CSInterface.js' },
-            ]),
+            new CopyWebpackPlugin([{ from: 'src/client/CSInterface.js', to: 'CSInterface.js' }]),
             new HtmlWebpackPlugin({
                 title: 'CEP Panel',
                 alwaysWriteToDisk: true,
@@ -35,7 +30,6 @@ module.exports = env => {
                         loader: 'babel-loader',
                         options: {
                             presets: ['env', 'stage-2', 'react'],
-                            //plugins: ['transform-runtime'],
                         },
                     },
                 },
@@ -75,7 +69,7 @@ module.exports = env => {
             },
         },
         devServer: {
-            contentBase: path.join("dist", "client")
-        }
+            contentBase: path.join('dist', 'client'),
+        },
     };
 };
