@@ -13,6 +13,23 @@ button {
   border: none;
 }
 
-select {
-  appearance: none;
+body select {
+  display: inline-block;
+  padding: 2px 40px 2px 7px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgb(94, 94, 94);
+  border-radius: 0;
+  /* background: url("https://image.ibb.co/iMeAJv/selectbox_arrow.png") right center no-repeat; */
+  background: url("./chevron.png") 97% center no-repeat;
+  background-color: rgb(69, 69, 69);
+  color: rgb(214, 214, 214);
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-appearance: none;
+}
+
+/* body select.select_box option */
+body select option {
+  padding: 0 4px;
 }
