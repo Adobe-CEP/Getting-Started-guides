@@ -1,0 +1,12 @@
+:local(.field) {
+    display: flex;
+    align-items: baseline;
+    flex: 0 0 auto;
+}
+
+:local(.label) {
+    width: 48px;
+    margin: 8px 8px 4px;
+    font-size: 10pt;
+    color: #606060;
+}

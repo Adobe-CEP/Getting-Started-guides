@@ -6,8 +6,8 @@ import App from './App';
 
 let root = document.getElementById('root');
 if (!root) {
-    root = document.createElement("div");
-    root.setAttribute("id", "root");
+    root = document.createElement('div');
+    root.setAttribute('id', 'root');
     document.body.appendChild(root);
 }
 ReactDOM.render(<App />, root);

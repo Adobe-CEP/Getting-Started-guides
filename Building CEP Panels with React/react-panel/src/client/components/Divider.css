@@ -1,0 +1,8 @@
+:local(.divider) {
+    background-color: #B3B3B3;
+    border-radius: 4px;
+    height: 4px;
+    display: block;
+    margin: 4px 8px;
+    flex: 0 0 auto;
+}
