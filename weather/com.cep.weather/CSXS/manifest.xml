@@ -7,6 +7,7 @@
     <HostList>
       <Host Name="PHSP" Version="19" />
       <Host Name="PHXS" Version="19" />
+      <Host Name="IDSN" Version="13" />
     </HostList>
     <LocaleList>
       <Locale Code="All" />

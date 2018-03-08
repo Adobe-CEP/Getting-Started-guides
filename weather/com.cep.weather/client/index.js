@@ -39,7 +39,7 @@ const weatherSummary = document.querySelector("#weather-summary");
   Event listeners
 */
 document.addEventListener("DOMContentLoaded", populateCitySelector);
-applyWeatherButton.addEventListener("click", applyWeatherToImage);
+applyWeatherButton.addEventListener("click", applyWeatherToAsset);
 
 /*
   Helper methods
@@ -88,6 +88,6 @@ function setWeather(currentWeather, cityName) {
   weatherSummary.textContent = `It looks like it's ${weatherTypes[currentWeather]} in ${cityName}.`;
 }
 
-function applyWeatherToImage(e) {
-  csInterface.evalScript(`adjustArtLayer('${e.target.dataset.currentWeather}')`);
+function applyWeatherToAsset(e) {
+  csInterface.evalScript(`adjustArtLayer('${e.target.dataset.currentWeather}'`);
 }

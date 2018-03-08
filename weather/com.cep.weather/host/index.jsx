@@ -1,24 +1,40 @@
 function adjustArtLayer(currentWeather) {
-  var artLayer = app.documents[0].artLayers[0];
+  var layer;
+  var frame;
+
+  if (app.name === "Adobe Photoshop") {
+    layer = app.documents[0].artLayers[0];
+  }
+  else if (app.name === "Adobe InDesign") {
+    alert(currentWeather);
+    frame = app.documents.item(0).pages.item(0).textFrames.add({geometricBounds:[72, 72, 110, 300]});
+  }
 
   switch (currentWeather) {
     case "clear-day":
-      artLayer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
+      // if else
+      if (app.name === "Adobe Photoshop") {
+        layer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
+      }
+      else if (app.name === "Adobe InDesign") {
+        frame.contents = "It looks like it's a clear day.";
+      }
       break;
     case "clear-night":
-      artLayer.adjustColorBalance([0,0,33], [-39,-14,100], [-10,0,17]);
+      // if else
+      layer.adjustColorBalance([0,0,33], [-39,-14,100], [-10,0,17]);
       break;
     case "rain":
-      artLayer.adjustColorBalance([0,0,-35], [-45,24,41], [-6,8,38]);
+      layer.adjustColorBalance([0,0,-35], [-45,24,41], [-6,8,38]);
       break;
     case "snow":
-      artLayer.adjustColorBalance([-100,0,2], [-100,0,60], [-58,0,15]);
+      layer.adjustColorBalance([-100,0,2], [-100,0,60], [-58,0,15]);
       break;
     case "sleet":
-      artLayer.adjustColorBalance([-100,0,2], [-100,0,60], [-58,0,15]);
+      layer.adjustColorBalance([-100,0,2], [-100,0,60], [-58,0,15]);
       break;
     case "wind":
-      //artLayer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
+      //layer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
       break;
     case "fog":
       hueSatLight(0, -50, 50);
