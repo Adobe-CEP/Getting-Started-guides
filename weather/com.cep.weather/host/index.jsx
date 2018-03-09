@@ -1,4 +1,4 @@
-function applyWeatherToAsset(currentWeather) {
+function applyWeatherToAsset(currentWeather, currentWeatherString) {
   var layer;
   var frame;
 
@@ -15,7 +15,7 @@ function applyWeatherToAsset(currentWeather) {
         layer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
       }
       else if (app.name === "Adobe InDesign") {
-        frame.contents = "It looks like it's a clear day.";
+        frame.contents = currentWeatherString;
       }
       break;
 
@@ -24,7 +24,7 @@ function applyWeatherToAsset(currentWeather) {
         layer.adjustColorBalance([0,0,33], [-39,-14,100], [-10,0,17]);
       }
       else if (app.name === "Adobe InDesign") {
-        frame.contents = "It looks like it's a clear night.";
+        frame.contents = currentWeatherString;
       }
       break;
 
@@ -33,7 +33,7 @@ function applyWeatherToAsset(currentWeather) {
         layer.adjustColorBalance([0,0,-35], [-45,24,41], [-6,8,38]);
       }
       else if (app.name === "Adobe InDesign") {
-        frame.contents = "It looks like it's raining.";
+        frame.contents = currentWeatherString;
       }
       break;
 
@@ -42,7 +42,7 @@ function applyWeatherToAsset(currentWeather) {
         layer.adjustColorBalance([-100,0,2], [-100,0,60], [-58,0,15]);
       }
       else if (app.name === "Adobe InDesign") {
-        frame.contents = "It looks like it's snowing.";
+        frame.contents = currentWeatherString;
       }
       break;
 
@@ -51,7 +51,7 @@ function applyWeatherToAsset(currentWeather) {
         layer.adjustColorBalance([-100,0,2], [-100,0,60], [-58,0,15]);
       }
       else if (app.name === "Adobe InDesign") {
-        frame.contents = "It looks like it's a clear day.";
+        frame.contents = currentWeatherString;
       }
       break;
 
@@ -60,7 +60,7 @@ function applyWeatherToAsset(currentWeather) {
         layer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
       }
       else if (app.name === "Adobe InDesign") {
-        frame.contents = "It looks like it's windy.";
+        frame.contents = currentWeatherString;
       }
       break;
 
@@ -69,7 +69,7 @@ function applyWeatherToAsset(currentWeather) {
         psHueSatLight(0, -50, 50);
       }
       else if (app.name === "Adobe InDesign") {
-        frame.contents = "It looks like it's foggy.";
+        frame.contents = currentWeatherString;
       }
       break;
 
@@ -78,7 +78,7 @@ function applyWeatherToAsset(currentWeather) {
         psHueSatLight(0, -69, -21);
       }
       else if (app.name === "Adobe InDesign") {
-        frame.contents = "It looks like it's cloudy.";
+        frame.contents = currentWeatherString;
       }
       break;
 
@@ -87,7 +87,7 @@ function applyWeatherToAsset(currentWeather) {
         psHueSatLight(0, 0, -25);
       }
       else if (app.name === "Adobe InDesign") {
-        frame.contents = "It looks like it's a partly cloudy day.";
+        frame.contents = currentWeatherString;
       }
       break;
 
@@ -96,7 +96,7 @@ function applyWeatherToAsset(currentWeather) {
         psHueSatLight(33, -75, -50);
       }
       else if (app.name === "Adobe InDesign") {
-        frame.contents = "It looks like it's a partly cloudy night.";
+        frame.contents = currentWeatherString;
       }
       break;
 

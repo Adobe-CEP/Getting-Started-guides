@@ -84,10 +84,21 @@ function getWeather(selectedCity) {
 }
 
 function setWeather(currentWeather, cityName) {
+  const currentWeatherString = `It looks like it\'s ${weatherTypes[currentWeather]} in ${cityName}.`;
+  weatherSummary.textContent = currentWeatherString;
+
   applyWeatherButton.dataset.currentWeather = currentWeather;
-  weatherSummary.textContent = `It looks like it's ${weatherTypes[currentWeather]} in ${cityName}.`;
+  applyWeatherButton.dataset.currentWeatherString = currentWeatherString;
 }
 
 function applyWeatherToAsset(e) {
-  csInterface.evalScript(`applyWeatherToAsset('${e.target.dataset.currentWeather}')`);
+  const dataset = e.target.dataset;
+  console.log(dataset);
+  const call = `applyWeatherToAsset('${dataset.currentWeather}', '${dataset.currentWeatherString}')`;
+  console.log(call);
+
+  //csInterface.evalScript(`applyWeatherToAsset('${dataset.currentWeather}')`);
+  //csInterface.evalScript(`applyWeatherToAsset('${dataset.currentWeather}', "It\'s ok.")`);
+  csInterface.evalScript(`applyWeatherToAsset("${dataset.currentWeather}", "${dataset.currentWeatherString}")`);
+  //csInterface.evalScript("applyWeatherToAsset('" + dataset.currentWeather + "', '" + dataset.currentWeatherString + "')");
 }
