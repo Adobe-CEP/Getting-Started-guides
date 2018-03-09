@@ -1,4 +1,4 @@
-function adjustArtLayer(currentWeather) {
+function applyWeatherToAsset(currentWeather) {
   var layer;
   var frame;
 
@@ -6,13 +6,11 @@ function adjustArtLayer(currentWeather) {
     layer = app.documents[0].artLayers[0];
   }
   else if (app.name === "Adobe InDesign") {
-    alert(currentWeather);
-    frame = app.documents.item(0).pages.item(0).textFrames.add({geometricBounds:[72, 72, 110, 300]});
+    frame = app.documents.item(0).pages.item(0).textFrames.add({geometricBounds: [72, 72, 110, 300]});
   }
 
   switch (currentWeather) {
     case "clear-day":
-      // if else
       if (app.name === "Adobe Photoshop") {
         layer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
       }
@@ -20,33 +18,86 @@ function adjustArtLayer(currentWeather) {
         frame.contents = "It looks like it's a clear day.";
       }
       break;
+
     case "clear-night":
-      // if else
-      layer.adjustColorBalance([0,0,33], [-39,-14,100], [-10,0,17]);
+      if (app.name === "Adobe Photoshop") {
+        layer.adjustColorBalance([0,0,33], [-39,-14,100], [-10,0,17]);
+      }
+      else if (app.name === "Adobe InDesign") {
+        frame.contents = "It looks like it's a clear night.";
+      }
       break;
+
     case "rain":
-      layer.adjustColorBalance([0,0,-35], [-45,24,41], [-6,8,38]);
+      if (app.name === "Adobe Photoshop") {
+        layer.adjustColorBalance([0,0,-35], [-45,24,41], [-6,8,38]);
+      }
+      else if (app.name === "Adobe InDesign") {
+        frame.contents = "It looks like it's raining.";
+      }
       break;
+
     case "snow":
-      layer.adjustColorBalance([-100,0,2], [-100,0,60], [-58,0,15]);
+      if (app.name === "Adobe Photoshop") {
+        layer.adjustColorBalance([-100,0,2], [-100,0,60], [-58,0,15]);
+      }
+      else if (app.name === "Adobe InDesign") {
+        frame.contents = "It looks like it's snowing.";
+      }
       break;
+
     case "sleet":
-      layer.adjustColorBalance([-100,0,2], [-100,0,60], [-58,0,15]);
+      if (app.name === "Adobe Photoshop") {
+        layer.adjustColorBalance([-100,0,2], [-100,0,60], [-58,0,15]);
+      }
+      else if (app.name === "Adobe InDesign") {
+        frame.contents = "It looks like it's a clear day.";
+      }
       break;
+
     case "wind":
-      //layer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
+      if (app.name === "Adobe Photoshop") {
+        layer.adjustColorBalance([0,0,0], [-10,0,0], [-50,0,0]);
+      }
+      else if (app.name === "Adobe InDesign") {
+        frame.contents = "It looks like it's windy.";
+      }
       break;
+
     case "fog":
-      hueSatLight(0, -50, 50);
+      if (app.name === "Adobe Photoshop") {
+        psHueSatLight(0, -50, 50);
+      }
+      else if (app.name === "Adobe InDesign") {
+        frame.contents = "It looks like it's foggy.";
+      }
       break;
+
     case "cloudy":
-      hueSatLight(0, -69, -21);
+      if (app.name === "Adobe Photoshop") {
+        psHueSatLight(0, -69, -21);
+      }
+      else if (app.name === "Adobe InDesign") {
+        frame.contents = "It looks like it's cloudy.";
+      }
       break;
+
     case "partly-cloudy-day":
-      hueSatLight(0, 0, -25);
+      if (app.name === "Adobe Photoshop") {
+        psHueSatLight(0, 0, -25);
+      }
+      else if (app.name === "Adobe InDesign") {
+        frame.contents = "It looks like it's a partly cloudy day.";
+      }
       break;
+
     case "partly-cloudy-night":
-      hueSatLight(33, -75, -50);
+      if (app.name === "Adobe Photoshop") {
+        psHueSatLight(33, -75, -50);
+      }
+      else if (app.name === "Adobe InDesign") {
+        frame.contents = "It looks like it's a partly cloudy night.";
+      }
       break;
 
     default:
@@ -54,7 +105,7 @@ function adjustArtLayer(currentWeather) {
   }
 }
 
-function hueSatLight(Hue,Sat,Light) {
+function psHueSatLight(Hue,Sat,Light) {
     var desc9 = new ActionDescriptor();
     desc9.putBoolean( charIDToTypeID('Clrz'), false );
         var list2 = new ActionList();

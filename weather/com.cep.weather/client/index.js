@@ -89,5 +89,5 @@ function setWeather(currentWeather, cityName) {
 }
 
 function applyWeatherToAsset(e) {
-  csInterface.evalScript(`adjustArtLayer('${e.target.dataset.currentWeather}'`);
+  csInterface.evalScript(`applyWeatherToAsset('${e.target.dataset.currentWeather}')`);
 }
