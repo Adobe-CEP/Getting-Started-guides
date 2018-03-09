@@ -14,11 +14,13 @@ By the end of this guide, we will have an <!ANDROID || IOS || WEB || ETC> app th
 
 
 ## GitHub
-
 You can find a companion GitHub repo for this developer guide [on GitHub](<!LINK HERE>).
 
 Be sure to follow all instructions in the `readme`.
 
+## Technology Used
+- Supported Host Applications: _(example: Photoshop, Illustrator, InDesign)_
+- Libraries/Frameworks/APIs: _(example: Node JS, Express JS, jQuery, Dropbox Auth API)_
 
 ## Prerequisites
 This guide will assume that you have installed all software and completed all steps in the following guides:
@@ -33,7 +35,6 @@ _**Note:**_ <!OPTIONAL LIST; REMOVE OR EDIT AS NECESSARY>
 
 
 ## Configuration
-<!FRAMEWORK/LIBRARY/SCRIPT DEPENDENCIES>
 <!BUILD SETTINGS SPECIFIC TO THIS COMPONENT>
 
 
@@ -61,12 +62,7 @@ Articles about common issues are [here](!LINK).
 
 You can submit tickets for bugs and feature requests [here](!LINK).
 
-
-## Class Reference
-In this guide, we used the classes in the list below. Explore the documentation for more class methods and details.
-
-- [<!CLASS>](<!LINK HERE>)
-- [<!CLASS>](<!LINK HERE>)
-- [<!CLASS>](<!LINK HERE>)
-- [<!CLASS>](<!LINK HERE>)
-- [<!CLASS>](<!LINK HERE>)
+## Other Resources
+- [<!NAME>](<!LINK HERE>)
+- [<!NAME>](<!LINK HERE>)
+- [<!NAME>](<!LINK HERE>)
