@@ -4,6 +4,16 @@
 const csInterface = new CSInterface();
 const DEBUG_FLAG = false;
 
+/*
+  UI Elements
+*/
+const citySelector = document.querySelector("select[name='city-selector']");
+const applyWeatherButton = document.querySelector("#apply-weather-button");
+const weatherSummary = document.querySelector("#weather-summary");
+
+/*
+  Dark Sky API constants
+*/
 const darkSkyExcludes = "minutely,hourly,daily,alerts,flags";
 
 const weatherTypes = {
@@ -29,13 +39,6 @@ const cities = {
 }
 
 /*
-  UI Elements
-*/
-const citySelector = document.querySelector("select[name='city-selector']");
-const applyWeatherButton = document.querySelector("#apply-weather-button");
-const weatherSummary = document.querySelector("#weather-summary");
-
-/*
   Event listeners
 */
 document.addEventListener("DOMContentLoaded", populateCitySelector);
@@ -57,7 +60,6 @@ function populateCitySelector() {
 }
 
 function setCity(e) {
-  console.log("setCity()");
   weatherSummary.textContent = "";
 
   if (e.target.value === "none") return;
@@ -65,7 +67,6 @@ function setCity(e) {
 }
 
 function getWeather(selectedCity) {
-  console.log("getWeather()");
   let cityObj = cities[selectedCity];
   let reqUrl = `https://api.darksky.net/forecast/${darkSkyKey}/${cityObj.lat},${cityObj.lon}?exclude=${darkSkyExcludes}`;
 
@@ -93,12 +94,7 @@ function setWeather(currentWeather, cityName) {
 
 function applyWeatherToAsset(e) {
   const dataset = e.target.dataset;
-  console.log(dataset);
   const call = `applyWeatherToAsset('${dataset.currentWeather}', '${dataset.currentWeatherString}')`;
-  console.log(call);
 
-  //csInterface.evalScript(`applyWeatherToAsset('${dataset.currentWeather}')`);
-  //csInterface.evalScript(`applyWeatherToAsset('${dataset.currentWeather}', "It\'s ok.")`);
   csInterface.evalScript(`applyWeatherToAsset("${dataset.currentWeather}", "${dataset.currentWeatherString}")`);
-  //csInterface.evalScript("applyWeatherToAsset('" + dataset.currentWeather + "', '" + dataset.currentWeatherString + "')");
 }
