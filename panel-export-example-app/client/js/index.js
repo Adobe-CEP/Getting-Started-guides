@@ -19,17 +19,10 @@ pdfButton.addEventListener('click', function(){exportWithType('pdf');}, false);
 jpgButton.addEventListener('click', function(){exportWithType('jpg');}, false);
 pngButton.addEventListener('click', function(){exportWithType('png');}, false);
 originalButton.addEventListener('click', function(){exportWithType();}, false);
-csInterface.addEventListener("documentAfterSave", exportDoc);
 
 var extDir = csInterface.getSystemPath("extension");
 
-function exportDoc() {
-	csInterface.resizeContent(100,400)
-    buttonGroup.style.display = "block" 
-}
-
 function exportWithType(type){
-	buttonGroup.style.display = "none" 	
 	csInterface.evalScript(`exportFile("${type}")`, function(path){
 		alert("file saved at " + path)
 	})
