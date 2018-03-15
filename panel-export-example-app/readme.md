@@ -38,16 +38,7 @@ Make sure to include these in `<HostList>`.
 
 ## Client-side Setup
 ### index.js
-In this sample, `index.js` listens to user's `save` action. `exportDoc` simply reveals four different file types to save as and resizes the panel.
-```
-csInterface.addEventListener("documentAfterSave", exportDoc);
-
-function exportDoc() {
-	csInterface.resizeContent(100,400)
-    buttonGroup.style.display = "block" 
-}
-```
-Once the options are shown on the screen, `exportWithType(type)` uses `evalScript()` to communicate with the host application.
+In this sample, users can export the current file in four different file types to the current directory.`exportWithType(type)` uses `evalScript()` to communicate with the host application.
 ```
 function exportWithType(type){
 	buttonGroup.style.display = "none" 	
@@ -65,7 +56,7 @@ unction exportFile(type) {
 	var filePath = app.activeDocument.fullName
 	var splitted = filePath.toString().split('.')
 	var originalExtension = splitted[splitted.length-1] 
-    var sanitizedFilePath = File(filePath).fsName;
+        var sanitizedFilePath = File(filePath).fsName;
 	...
 ```
 However, since the host-side script syntax is different from app to app, you will need to handle it case by case like below:
@@ -79,5 +70,8 @@ if (app.name == "Adobe Illustrator") {
 	}
 	...
 ```
-If you want to explore further with the Extend Script, refer to [Adboe Photoshop Scripting](https://www.adobe.com/devnet/photoshop/scripting.html). 
+If you want to explore further with the Extend Script, refer to the following reference docs:
+- [Adboe Photoshop Reference Doc](https://www.adobe.com/devnet/photoshop/scripting.html)
+- [Adobe Illustrator Reference Doc](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/illustrator/pdf/Illustrator_JavaScript_Scripting_Reference_2017.pdf)
+- [InDesign Reference Guide](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/indesign/sdk/cs6/scripting/InDesign_ScriptingGuide_JS_JP.pdf)
 
