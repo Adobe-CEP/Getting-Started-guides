@@ -12,6 +12,34 @@ By the end of this guide, we will have a CEP extension that:
 1. Displays a string in the panel UI that tells the user the current weather.
 1. Lets the user click a button to dynamically alter the open asset based on the weather in Photoshop or InDesign.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Contents**
+
+- [GitHub](#github)
+- [Technology Used](#technology-used)
+- [Prerequisites](#prerequisites)
+- [Configuration](#configuration)
+  - [Setting up the sample extension](#setting-up-the-sample-extension)
+  - [Configuring `manifest.xml`](#configuring-manifestxml)
+- [Setting up your UI](#setting-up-your-ui)
+- [Setting up your service API interaction](#setting-up-your-service-api-interaction)
+  - [Create references to the UI elements](#create-references-to-the-ui-elements)
+  - [Request and display the weather for a particular city](#request-and-display-the-weather-for-a-particular-city)
+- [Set up your Creative Cloud host app interaction](#set-up-your-creative-cloud-host-app-interaction)
+  - [Instantiate `CSInterface`](#instantiate-csinterface)
+  - [Add a click handler to the button](#add-a-click-handler-to-the-button)
+  - [Communicate with the host app](#communicate-with-the-host-app)
+- [Automate the host app with ExtendScript](#automate-the-host-app-with-extendscript)
+  - [Review the `.evalScript()` call](#review-the-evalscript-call)
+  - [Create an ExtendScript function](#create-an-extendscript-function)
+  - [Create element references based on the host app](#create-element-references-based-on-the-host-app)
+  - [Alter the open asset in the host app](#alter-the-open-asset-in-the-host-app)
+- [Best Practices](#best-practices)
+- [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
+- [Other Resources](#other-resources)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## GitHub
 
