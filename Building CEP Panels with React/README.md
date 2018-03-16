@@ -11,15 +11,15 @@
             1. [Create the project's root folder](#create-the-projects-root-folder)
             1. [Create `package.json`](#create-packagejson)
             1. [Create directories](#create-directories)
-        1. [Adding Dependencies](#adding-dependencies)
+        1. [CEP-specific configuration](#cep-specific-configuration)
             1. [Adding `CSInterface.js`](#adding-csinterfacejs)
             1. [Configuring `manifest.xml`](#configuring-manifestxml)
             1. [Configuring .debug](#configuring-debug)
-            1. [Installing npm dependencies](#installing-npm-dependencies)
-                1. [Installing React](#installing-react)
-                1. [Installing Babel](#installing-babel)
-                1. [Installing Webpack](#installing-webpack)
-                1. [Installing Lorem Ipsum](#installing-lorem-ipsum)
+        1. [Installing npm dependencies](#installing-npm-dependencies)
+            1. [Installing React](#installing-react)
+            1. [Installing Babel](#installing-babel)
+            1. [Installing Webpack](#installing-webpack)
+            1. [Installing Lorem Ipsum](#installing-lorem-ipsum)
     1. [Scaffolding your project](#scaffolding-your-project-1)
     1. [Webpack all the things!](#webpack-all-the-things)
     1. [Creating our user interface](#creating-our-user-interface)
@@ -177,7 +177,7 @@ $ mkdir host
 
 The above _should_ be familiar to you if you've read the [Getting Started guide](). If you haven't taken the time to read that yet, you'll definitely want to do so.
 
-### Adding Dependencies
+### CEP-specific configuration
 
 #### Adding `CSInterface.js`
 
@@ -226,7 +226,7 @@ As noted in the [Debugging Guide](), if you want to debug your panel, you'll nee
 </ExtensionList>
 ```
 
-#### Installing npm dependencies
+### Installing npm dependencies
 
 Next, let's install the dependencies we'll be needing for this panel.
 
@@ -244,7 +244,7 @@ We'll end up adding quite a few, but some of them are "for convenience", so chan
 
 Let's get started.
 
-##### Installing React
+#### Installing React
 
 React itself is pretty small and easily installed:
 
@@ -256,7 +256,7 @@ npm install --save react react-dom
 >
 > The `--save` flag adds the two packages to your `package.json` file. That means that next time you can just run `npm install` in this project folder to install everything at once.
 
-##### Installing Babel
+#### Installing Babel
 
 Adobe CEP, even in version 8 with modern JavaScript, can't understand _all_ of the syntax that React uses -- mainly JSX. (If you're not familiar with JSX, it's a domain-specific language that _looks_ like HTML, but is converted to JavaScript.) Babel can convert JSX and modern JavaScript to older versions of JavaScript, which is useful if you're targeting earlier versions of CEP.
 
@@ -284,7 +284,7 @@ Client | `babel-core` | Core babel features
 Client | `babel-polyfill` | Polyfills used to support Babel in older browsers
 Client | `babel-runtime` | Runtime environment used to support Babel
 
-##### Installing Webpack
+#### Installing Webpack
 
 Please, don't run away just yet &mdash; Webpack does have a reputation for being difficult to understand and configure, but for our purposes, it really is pretty straightforward.
 
@@ -331,7 +331,7 @@ Webpack  | `html-webpack-include-assets-plugin` | Allows us to include additiona
 Webpack  | `copy-webpack-plugin`            | Copies files during the webpack bundling process
 Webpack  | `uglifyjs-webpack-plugin`        | Obfuscates and performs tree shaking on JavaScript code
 
-##### Installing Lorem Ipsum
+#### Installing Lorem Ipsum
 
 I don't know about you, but I don't particularly want to type in a large amount of "lorem ipsum" text. Thankfully, there's a package out there that takes care of that for us!
 
