@@ -1,3 +1,27 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Contents**
+
+	1. [Building CEP Panels with React](#building-cep-panels-with-react)
+  	1. [GitHub](#github)
+  	1. [Technology Used](#technology-used)
+  	1. [Prerequisites](#prerequisites)
+  	1. [Configuration](#configuration)
+    	1. [CSInterface.js](#csinterfacejs)
+    	1. [manifest.xml](#manifestxml)
+    	1. [.debug](#debug)
+  	1. [Scaffolding your project](#scaffolding-your-project)
+  	1. [Webpack all the things!](#webpack-all-the-things)
+  	1. [Creating our user interface](#creating-our-user-interface)
+  	1. [Interacting with the host application](#interacting-with-the-host-application)
+  	1. [Customization](#customization)
+  	1. [Best Practices](#best-practices)
+  	1. [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
+  	1. [Resources and References](#resources-and-references)
+    	1. [NOTES](#notes)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Building CEP Panels with React
 
 When it comes to building CEP Panels with complex user interfaces or state management, modern JavaScript frameworks can make a huge impact in terms of developer productivity and future maintainability. By leveraging declarative user interface definitions, component-based view layers, state management libraries, one can create a complex panel that is both easy to build and maintain while also being performant.
@@ -16,6 +40,10 @@ By the end of this guide, we will have an panel that:
 
 You can find a companion GitHub repo for this developer guide [on GitHub](<!LINK HERE>). The project doesn't ship with any installed dependencies, so you'll need to follow the "Configuration" steps below to properly install and configure the project.
 
+## Technology Used
+- Supported Host Applications: Photoshop
+- Libraries/Frameworks/APIs: Node JS, NPM, [React](https://reactjs.org), Adobe CEP
+
 ## Prerequisites
 
 This guide will assume that you have installed all software and completed all steps in the following guides:
@@ -24,16 +52,6 @@ This guide will assume that you have installed all software and completed all st
 - [Debugging your Adobe panel](https://medium.com/adobe-io/debugging-your-adobe-panel-cf73f00f6961)
 
 You should also have the latest LTS release of Node.js and npm installed on your development machine. Installation instructions are available on [Node.js's website](https://nodejs.org/).
-
-## Technologies Used
-
-* NPM
-* [React](https://reactjs.org/)
-* Adobe CEP (version 8)
-
-## Products Supported
-
-* Adobe PhotoShop (CC 2018)
 
 ## Configuration
 
@@ -48,6 +66,8 @@ You'll need to download the most recent version of `CSInterface.js` that's compa
     * This location is purely arbitrary; the build scripts we describe later on will expect it in this location, but you can always change it later.
 
 ### manifest.xml
+
+
 
 ### .debug
 
