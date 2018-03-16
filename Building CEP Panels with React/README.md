@@ -11,10 +11,11 @@
             1. [Create the project's root folder](#create-the-projects-root-folder)
             1. [Create `package.json`](#create-packagejson)
             1. [Create directories](#create-directories)
+        1. [Adding Dependencies](#adding-dependencies)
             1. [Adding `CSInterface.js`](#adding-csinterfacejs)
             1. [Configuring `manifest.xml`](#configuring-manifestxml)
             1. [Configuring .debug](#configuring-debug)
-            1. [Installing dependencies](#installing-dependencies)
+            1. [Installing npm dependencies](#installing-npm-dependencies)
                 1. [Installing React](#installing-react)
                 1. [Installing Babel](#installing-babel)
                 1. [Installing Webpack](#installing-webpack)
@@ -176,6 +177,7 @@ $ mkdir host
 
 The above _should_ be familiar to you if you've read the [Getting Started guide](). If you haven't taken the time to read that yet, you'll definitely want to do so.
 
+### Adding Dependencies
 
 #### Adding `CSInterface.js`
 
@@ -224,7 +226,7 @@ As noted in the [Debugging Guide](), if you want to debug your panel, you'll nee
 </ExtensionList>
 ```
 
-#### Installing dependencies
+#### Installing npm dependencies
 
 Next, let's install the dependencies we'll be needing for this panel.
 
