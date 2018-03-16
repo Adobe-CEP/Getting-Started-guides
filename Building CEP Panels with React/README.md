@@ -1,26 +1,33 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
-
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 **Contents**
 
-1.  [Building CEP Panels with React](#building-cep-panels-with-react)
-    1.  [GitHub](#github)
-    1.  [Technology Used](#technology-used)
-    1.  [Prerequisites](#prerequisites)
-    1.  [Configuration](#configuration)
-        1.  [CSInterface.js](#csinterfacejs)
-        1.  [manifest.xml](#manifestxml)
-        1.  [.debug](#debug)
-    1.  [Scaffolding your project](#scaffolding-your-project)
-    1.  [Webpack all the things!](#webpack-all-the-things)
-    1.  [Creating our user interface](#creating-our-user-interface)
-    1.  [Interacting with the host application](#interacting-with-the-host-application)
-    1.  [Customization](#customization)
-    1.  [Best Practices](#best-practices)
-    1.  [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
-    1.  [Resources and References](#resources-and-references)
-        1.  [NOTES](#notes)
+1. [Building CEP Panels with React](#building-cep-panels-with-react)
+    1. [GitHub](#github)
+    1. [Technology Used](#technology-used)
+    1. [Prerequisites](#prerequisites)
+    1. [Configuration](#configuration)
+        1. [Scaffolding your project](#scaffolding-your-project)
+            1. [Create the project's root folder](#create-the-projects-root-folder)
+            1. [Create `package.json`](#create-packagejson)
+            1. [Create directories](#create-directories)
+            1. [Adding `CSInterface.js`](#adding-csinterfacejs)
+            1. [Configuring `manifest.xml`](#configuring-manifestxml)
+            1. [Configuring .debug](#configuring-debug)
+            1. [Installing dependencies](#installing-dependencies)
+                1. [Installing React](#installing-react)
+                1. [Installing Babel](#installing-babel)
+                1. [Installing Webpack](#installing-webpack)
+                1. [Installing Lorem Ipsum](#installing-lorem-ipsum)
+    1. [Scaffolding your project](#scaffolding-your-project-1)
+    1. [Webpack all the things!](#webpack-all-the-things)
+    1. [Creating our user interface](#creating-our-user-interface)
+    1. [Interacting with the host application](#interacting-with-the-host-application)
+    1. [Customization](#customization)
+    1. [Best Practices](#best-practices)
+    1. [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
+    1. [Resources and References](#resources-and-references)
+        1. [NOTES](#notes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
