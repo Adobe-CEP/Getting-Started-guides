@@ -94,7 +94,7 @@ The only dependency that you will need to install manually is `CSInterface.js`. 
 
 ### configuring `manifest.xml`
 
-As noted in the [Getting Started guide](), the `manifest.xml` file is where, among other things, you indicate which Creative Cloud host apps and version numbers your extension supports. In the sample, `manifest.xml` is located at `[react-panel/src/CSXS/manifest.xml](./react-panel/src/CSXS/manifest.xml)`.
+As noted in the [Getting Started guide](), the `manifest.xml` file is where, among other things, you indicate which Creative Cloud host apps and version numbers your extension supports. In the sample, `manifest.xml` is located at [`react-panel/src/CSXS/manifest.xml`](./react-panel/src/CSXS/manifest.xml).
 
 For this guide, we'll make an extension that supports Photoshop. So in the `manifest.xml`, make sure you list the supported host apps within the `<HostList>` element:
 
@@ -116,7 +116,7 @@ Note that the versions indicted in the example code above only target a single v
 
 ### .debug
 
-As noted in the [Debugging Guide](), if you want to debug your panel, you'll need to configure `.debug` (in `[react-panel/src/.debug](./react-panel/src/.debug)`)
+As noted in the [Debugging Guide](), if you want to debug your panel, you'll need to configure `.debug` (in [`react-panel/src/.debug`](./react-panel/src/.debug))
 
 ## Scaffolding your project
 
