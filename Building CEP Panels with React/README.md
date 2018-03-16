@@ -1,37 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Contents**
-
-1. [Building CEP Panels with React](#building-cep-panels-with-react)
-    1. [GitHub](#github)
-    1. [Technology Used](#technology-used)
-    1. [Prerequisites](#prerequisites)
-    1. [Configuration](#configuration)
-        1. [Scaffolding your project](#scaffolding-your-project)
-            1. [Create the project's root folder](#create-the-projects-root-folder)
-            1. [Create `package.json`](#create-packagejson)
-            1. [Create directories](#create-directories)
-        1. [CEP-specific configuration](#cep-specific-configuration)
-            1. [Adding `CSInterface.js`](#adding-csinterfacejs)
-            1. [Configuring `manifest.xml`](#configuring-manifestxml)
-            1. [Configuring .debug](#configuring-debug)
-        1. [Installing npm dependencies](#installing-npm-dependencies)
-            1. [Installing React](#installing-react)
-            1. [Installing Babel](#installing-babel)
-            1. [Installing Webpack](#installing-webpack)
-            1. [Installing Lorem Ipsum](#installing-lorem-ipsum)
-    1. [Scaffolding your project](#scaffolding-your-project-1)
-    1. [Webpack all the things!](#webpack-all-the-things)
-    1. [Creating our user interface](#creating-our-user-interface)
-    1. [Interacting with the host application](#interacting-with-the-host-application)
-    1. [Customization](#customization)
-    1. [Best Practices](#best-practices)
-    1. [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
-    1. [Resources and References](#resources-and-references)
-        1. [NOTES](#notes)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Building CEP Panels with React
 
 When you build Adobe CEP panels, you're using nearly the very same technologies you would on the web, including HTML, CSS, and JavaScript. In recent years, various JavaScript UI frameworks and libraries like React, Angular, and Vue.js have risen to prominence and introduced a sea change in how modern web applications are built. Because Adobe CEP relies on an embedded Chromium webview which supports modern web technologies, the question naturally arises: _Can you use a modern JavaScript UI framework or library with Adobe CEP_?
@@ -53,6 +19,39 @@ You can see the panel on the far right side of the image. This panel's user inte
 As you might be able to tell, the panel itself just generates some "lorem ipsum" content. The user can choose whether they want "paragraphs", "sentences", or "words", and they can then choose how much content they want. Clicking **Generate** will create a preview of that in the bottom of the panel &mdash; and the user can click that as many times as they want to get different output.
 
 When the user clicks the **Insert** button, the panel communicates with Photoshop via ExtendScript and passes in the text. The ExtendScript code creates a new text layer and adds the content into the active document.
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Contents**
+
+1. [GitHub](#github)
+1. [Technology Used](#technology-used)
+1. [Prerequisites](#prerequisites)
+1. [Configuration](#configuration)
+    1. [Scaffolding your project](#scaffolding-your-project)
+        1. [Create the project's root folder](#create-the-projects-root-folder)
+        1. [Create `package.json`](#create-packagejson)
+        1. [Create directories](#create-directories)
+    1. [CEP-specific configuration](#cep-specific-configuration)
+        1. [Adding `CSInterface.js`](#adding-csinterfacejs)
+        1. [Configuring `manifest.xml`](#configuring-manifestxml)
+        1. [Configuring .debug](#configuring-debug)
+    1. [Installing npm dependencies](#installing-npm-dependencies)
+        1. [Installing React](#installing-react)
+        1. [Installing Babel](#installing-babel)
+        1. [Installing Webpack](#installing-webpack)
+        1. [Installing Lorem Ipsum](#installing-lorem-ipsum)
+    1. [Configuring Webpack](#configuring-webpack)
+    1. [Configuring Build Scripts](#configuring-build-scripts)
+1. [Creating our user interface](#creating-our-user-interface)
+1. [Interacting with the host application](#interacting-with-the-host-application)
+1. [Customization](#customization)
+1. [Best Practices](#best-practices)
+1. [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
+1. [Resources and References](#resources-and-references)
+    1. [NOTES](#notes)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## GitHub
 
@@ -160,16 +159,18 @@ When done, you'll have a `package.json` file that [looks a lot like ours](./reac
 
 #### Create directories
 
-Next, we need a place to put our code. For the sake of simplicity, we'll create a single directory named `src`:
+First, let's create the directory structure you'll need, and then we'll go over the reason why it is the way it is in a little more detail.
 
 ```bash
+# inside react-panel folder
 $ mkdir src
-$ cd src
+$ mkdir dist
 ```
 
 Inside `src`, we need three more directories:
 
 ```bash
+$ cd src
 $ mkdir client
 $ mkdir CSXS
 $ mkdir host
@@ -177,10 +178,24 @@ $ mkdir host
 
 The above _should_ be familiar to you if you've read the [Getting Started guide](). If you haven't taken the time to read that yet, you'll definitely want to do so.
 
+Inside `dist`, we need the same directories:
+
+```bash
+$ cd ../dist
+$ mkdir client
+$ mkdir CSXS
+$ mkdir host
+```
+
+Okay, so _why_ are we creating two directories with identical structures? Well, the answer is simple and not so simple at the same time.
+
+By adding React, we're going to have to have a build step -- this means we'll have code that needs to be transformed from one form to another. For React this might be JSX to JavaScript. It might also just mean transpiling (compiling) modern JavaScript to older JavaScript versions (like ES5 or ES3).
+
+This means the output of the build step can't live in the same place as our original source code. So the code we'll be working on will live in `src`, and the results of any build processes will live in `dist`.
+
 ### CEP-specific configuration
 
 #### Adding `CSInterface.js`
-
 
 *   Download the `CSInterface.js` version you need from https://github.com/Adobe-CEP/CEP-Resources/
     *   Look under the `CEP_#.x` folder for the actual `CSInterface.js` file
@@ -339,13 +354,9 @@ I don't know about you, but I don't particularly want to type in a large amount 
 $ npm install --save lorem-ipsum
 ```
 
+### Configuring Webpack
 
-## Scaffolding your project
-
-
-
-
-## Webpack all the things!
+### Configuring Build Scripts
 
 ## Creating our user interface
 
