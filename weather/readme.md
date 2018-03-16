@@ -6,11 +6,11 @@ Many Creative Cloud app extensions require the ability to talk to API services o
 
 In this guide, we will cover how to call a third-party API service, update the panel UI according to the API response, and interact with the host app's creative asset based on the API response.
 
-By the end of this guide, we will have a CEP extension that:
+By the end of this guide, we will have a CEP extension for Photoshop and InDesign that:
 
 1. Calls the Dark Sky API to get the current weather for a particular city.
 1. Displays a string in the panel UI that tells the user the current weather.
-1. Lets a Photoshop or InDesign user click a button to dynamically alter the open asset based on the weather.
+1. Lets a user click a button to dynamically alter the open asset based on the weather.
 
 <!-- doctoc command config: -->
 <!-- $ doctoc ./readme.md --title "**Contents**" --entryprefix 1. --gitlab -->
@@ -65,7 +65,7 @@ Be sure to follow all instructions in the `readme`.
 This guide will assume that you have installed all software and completed all steps in the following guides:
 
 - [Getting Started](<!LINK HERE>)
-- [Another Guide](<!LINK HERE>)
+- [Debugging](<!LINK HERE>)
 
 
 ## Configuration
@@ -116,7 +116,7 @@ For this guide, we'll make an extension that supports Photoshop and InDesign. So
 
 ```
 
-Note that the versions indicted in the example code above only target a single version of each host app, for the sake of demo simplicity. Most extension developers will want to target a range of host app versions. To learn how to support ranges of host app versions, [see the Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-manifest).
+Note that the versions indicted in the example code above only target a single version of each host app, for the sake of demo simplicity. Most extension developers will want to target a range of host app versions. To learn how to support multiple host app versions, [see the Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-manifest).
 
 
 ## Setting up your UI
@@ -155,7 +155,7 @@ Note that, while this guide will not cover styling an extension with CSS, the CS
 
 As we saw in the previous section's `index.html` code, the client-side JavaScript for this extension is located at `./com.cep.weather-simple/client/js/index.js`. We will look at this `index.js` file in this section.
 
-Note that nothing in this section is specifically related to CEP. This section is all about client-side JavaScript that will set the stage for interacting with CEP features in the next sections.
+Note that nothing in this section is specifically unique to CEP. This section is all about client-side JavaScript that will set the stage for interacting with CEP features in the next sections.
 
 
 ### Create references to the UI elements
@@ -170,7 +170,7 @@ const weatherSummary = document.querySelector("#weather-summary");
 We'll work with these UI elements in the next step.
 
 
-### Map possible API responses to user-readable strings
+### Map potential API responses to user-readable strings
 
 As we will see in the next step, the Dark Sky API JSON response will include an `.icon` property that indicates the weather. The value of the `.icon` property will be a kebob-case slug, like `"clear-day"`.
 
@@ -250,7 +250,7 @@ If the call is successful, you'll see a string in the panel UI that tells you th
 
 ### Instantiate `CSInterface`
 
-For any CEP panel, you'll need an instance of `CSInterface`, which, among other things, gives you access to the host app's scripting engine:
+For any CEP panel, you'll need an instance of `CSInterface`, which, among other things, gives you a way to communicate with the host app's scripting engine:
 
 ```javascript
 const csInterface = new CSInterface();
@@ -267,7 +267,7 @@ We'll add a click handler to `applyWeatherButton`:
 applyWeatherButton.addEventListener("click", applyWeatherToAsset);
 ```
 
-We'll make the `applyWeatherToAsset()` helper method in detail in the next step.
+We'll make the `applyWeatherToAsset()` helper method in the next step.
 
 
 ### Communicate with the host app
@@ -286,28 +286,19 @@ function applyWeatherToAsset(e) {
 }
 ```
 
-We'll make the ExtendScript function in the next section.
+We could interpret the `.evalScript()` call in the last line of code above as meaning:
+
+> Hey host app, call the `applyWeatherToAsset()` function from my ExtendScript file.
+
+We’ll need to make sure that ExtendScript function exists in the next section.
 
 ## Automate the host app with ExtendScript
 
-CC host apps like Photoshop and InDesign (and many more!) can be automated with ExtendScript. In this sample extension, we're going to alter the active asset in Photoshop or InDesign based on the weather.
+Many CC host apps like Photoshop and InDesign (and many more!) can be automated with ExtendScript. In this sample extension, we're going to alter the active asset in Photoshop or InDesign based on the weather.
 
 Note once again that this sample app is extremely simple for the purpose of focus. ExtendScript provides many deep features to automate work in CC host apps; you can explore more ExtendScript features in our Scripting Guides.
 
-The ExtendScript for this extension is located at `./com.cep.weather-simple/host/index.jsx`.
-
-
-### Review the `.evalScript()` call
-
-On the client-side, we finished up by making an `.evalScript()` call:
-
-```javascript
-csInterface.evalScript(`applyWeatherToAsset("${dataset.currentWeatherSlug}", "${dataset.currentWeatherString}")`);
-```
-
-We could interpret this code as meaning "Hey host app, call the `applyWeatherToAsset()` function from my ExtendScript file".
-
-So we'll need to make sure that function exists.
+The ExtendScript file for this extension is located at `./com.cep.weather-simple/host/index.jsx`.
 
 
 ### Create an ExtendScript function
@@ -325,7 +316,7 @@ function applyWeatherToAsset(currentWeatherSlug, currentWeatherString) {
 The function takes the `currentWeatherSlug` and `currentWeatherString` string arguments that we provided in the client-side `.evalScript()` call.
 
 
-### Create element references based on the host app
+### Create document element references based on the host app
 
 Through ExtendScript, we can, among other things, interact with the host app's DOM to interact with elements in an open document. The available DOM properties and methods vary for each host app, so we'll make use of the global `app.name` property to determine which app the extension is running in (see comments **#1-4**):
 
@@ -351,7 +342,7 @@ function applyWeatherToAsset(currentWeatherSlug, currentWeatherString) {
 }
 ```
 
-So depending on the app the extension is running in, we'll either reference an art layer or create a text frame.
+So depending on the app the extension is running in, we'll either reference an art layer (Photoshop) or create a text frame (InDesign).
 
 
 ### Alter the open asset in the host app
@@ -410,16 +401,10 @@ When you run the extension, the output will look like this:
 In other words, if the panel is running in Photoshop, we'll adjust the color balance of an art layer; if the panel is running in InDesign, we'll add a string that tells us the weather to the document.
 
 
-## Best Practices
-_(optional)_
-
-
 ## Troubleshooting and Known Issues
 Articles about common issues are [here](!LINK).
 
 You can submit tickets for bugs and feature requests [here](!LINK).
 
 ## Other Resources
-- [CEP Cookbook](<!LINK HERE>)
-- [Other guide](<!LINK HERE>)
-- [Other guide](<!LINK HERE>)
+- [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md)
