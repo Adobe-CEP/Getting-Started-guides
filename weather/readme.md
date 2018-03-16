@@ -19,37 +19,28 @@ By the end of this guide, we will have a CEP extension for Photoshop and InDesig
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Contents**
 
-1. [GitHub](#github)
 1. [Technology Used](#technology-used)
 1. [Prerequisites](#prerequisites)
 1. [Configuration](#configuration)
-    1. [Setting up the sample extension](#setting-up-the-sample-extension)
-    1. [Configuring `manifest.xml`](#configuring-manifestxml)
-1. [Setting up your UI](#setting-up-your-ui)
-1. [Setting up your service API interaction](#setting-up-your-service-api-interaction)
+    1. [Set up the sample extension](#set-up-the-sample-extension)
+    1. [Configure `manifest.xml`](#configure-manifestxml)
+1. [Client-side: HTML Markup](#client-side-html-markup)
+1. [Client-side: Service API interaction](#client-side-service-api-interaction)
     1. [Create references to the UI elements](#create-references-to-the-ui-elements)
-    1. [Map possible API responses to user-readable strings](#map-possible-api-responses-to-user-readable-strings)
-    1. [Request and display the weather for a particular city](#request-and-display-the-weather-for-a-particular-city)
-1. [Set up your Creative Cloud host app interaction](#set-up-your-creative-cloud-host-app-interaction)
+    1. [Map API responses to user-readable strings](#map-api-responses-to-user-readable-strings)
+    1. [Request and display the weather for a city](#request-and-display-the-weather-for-a-city)
+1. [Client-side: Creative Cloud host app interaction](#client-side-creative-cloud-host-app-interaction)
     1. [Instantiate `CSInterface`](#instantiate-csinterface)
     1. [Add a click handler to the button](#add-a-click-handler-to-the-button)
     1. [Communicate with the host app](#communicate-with-the-host-app)
-1. [Automate the host app with ExtendScript](#automate-the-host-app-with-extendscript)
-    1. [Review the `.evalScript()` call](#review-the-evalscript-call)
+1. [Host app: Automation with ExtendScript](#host-app-automation-with-extendscript)
     1. [Create an ExtendScript function](#create-an-extendscript-function)
-    1. [Create element references based on the host app](#create-element-references-based-on-the-host-app)
+    1. [Create document element references](#create-document-element-references)
     1. [Alter the open asset in the host app](#alter-the-open-asset-in-the-host-app)
-1. [Best Practices](#best-practices)
 1. [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
 1. [Other Resources](#other-resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## GitHub
-
-You can find a companion GitHub repo for this developer guide [on GitHub](<!LINK HERE>).
-
-Be sure to follow all instructions in the `readme`.
 
 
 ## Technology Used
@@ -70,12 +61,12 @@ This guide will assume that you have installed all software and completed all st
 
 ## Configuration
 
-### Setting up the sample extension
+### Set up the sample extension
 
-There are two versions of this guide's companion sample extension:
+There are two versions of this guide's companion sample extension on GitHub:
 
-- `./com.cep.weather/`
-- `./com.cep.weather-simple/`
+- [`./com.cep.weather/`](./com.cep.weather/)
+- [`./com.cep.weather-simple/`](./com.cep.weather-simple/)
 
 This guide will focus on `./com.cep.weather-simple/`, for the sake of focus; if you want to further explore the topics covered in this guide, `./com.cep.weather/` offers slightly more robust functionality.
 
@@ -94,7 +85,7 @@ The following steps will help you get the sample extension for this guide up and
 After following these steps, you'll be able to run the sample extension within the host apps indicated in the [Technology Used](#technology-used) section of this guide.
 
 
-### Configuring `manifest.xml`
+### Configure `manifest.xml`
 
 As noted in the [Getting Started guide](), the `manifest.xml` file is where, among other things, you indicate which Creative Cloud host apps and version numbers your extension supports.
 
@@ -119,7 +110,8 @@ For this guide, we'll make an extension that supports Photoshop and InDesign. So
 Note that the versions indicted in the example code above only target a single version of each host app, for the sake of demo simplicity. Most extension developers will want to target a range of host app versions. To learn how to support multiple host app versions, [see the Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-manifest).
 
 
-## Setting up your UI
+
+## Client-side: HTML Markup
 
 The user interface for CEP extensions is written in HTML. For this sample, the HTML document is located at `./com.cep.weather-simple/client/index.html` and contains the following code (see comments **#1-3**):
 
@@ -151,7 +143,7 @@ The document body in the code above contains two simple HTML elements: `button` 
 Note that, while this guide will not cover styling an extension with CSS, the CSS stylesheet for this sample panel can be found at `./com.cep.weather-simple/client/styles/style.css`.
 
 
-## Setting up your service API interaction
+## Client-side: Service API interaction
 
 As we saw in the previous section's `index.html` code, the client-side JavaScript for this extension is located at `./com.cep.weather-simple/client/js/index.js`. We will look at this `index.js` file in this section.
 
@@ -170,7 +162,7 @@ const weatherSummary = document.querySelector("#weather-summary");
 We'll work with these UI elements in the next step.
 
 
-### Map potential API responses to user-readable strings
+### Map API responses to user-readable strings
 
 As we will see in the next step, the Dark Sky API JSON response will include an `.icon` property that indicates the weather. The value of the `.icon` property will be a kebob-case slug, like `"clear-day"`.
 
@@ -196,7 +188,7 @@ This makes it convenient to translate an API response like `"clear-day"` to some
 We'll use this `weatherTypes` constant in the next step.
 
 
-### Request and display the weather for a particular city
+### Request and display the weather for a city
 
 Our extension will automatically get and display the weather for New York City when it loads.
 
@@ -246,7 +238,7 @@ In step **#6**, we used our `weatherTypes` constant created in the previous step
 If the call is successful, you'll see a string in the panel UI that tells you the current weather in New York City. Otherwise, you'll see a string that says `"We had trouble getting the weather for New York City. Please try again."`.
 
 
-## Set up your Creative Cloud host app interaction
+## Client-side: Creative Cloud host app interaction
 
 ### Instantiate `CSInterface`
 
@@ -292,7 +284,7 @@ We could interpret the `.evalScript()` call in the last line of code above as me
 
 We’ll need to make sure that ExtendScript function exists in the next section.
 
-## Automate the host app with ExtendScript
+## Host app: Automation with ExtendScript
 
 Many CC host apps like Photoshop and InDesign (and many more!) can be automated with ExtendScript. In this sample extension, we're going to alter the active asset in Photoshop or InDesign based on the weather.
 
@@ -316,7 +308,7 @@ function applyWeatherToAsset(currentWeatherSlug, currentWeatherString) {
 The function takes the `currentWeatherSlug` and `currentWeatherString` string arguments that we provided in the client-side `.evalScript()` call.
 
 
-### Create document element references based on the host app
+### Create document element references
 
 Through ExtendScript, we can, among other things, interact with the host app's DOM to interact with elements in an open document. The available DOM properties and methods vary for each host app, so we'll make use of the global `app.name` property to determine which app the extension is running in (see comments **#1-4**):
 
