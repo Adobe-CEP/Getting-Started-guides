@@ -10,7 +10,10 @@ By the end of this guide, we will have a CEP extension that:
 
 1. Calls the Dark Sky API to get the current weather for a particular city.
 1. Displays a string in the panel UI that tells the user the current weather.
-1. Lets the user click a button to dynamically alter the open asset based on the weather in Photoshop or InDesign.
+1. Lets a Photoshop or InDesign user click a button to dynamically alter the open asset based on the weather.
+
+<!-- doctoc command config: -->
+<!-- $ doctoc ./readme.md --title "**Contents**" --entryprefix 1. --gitlab -->
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -25,6 +28,7 @@ By the end of this guide, we will have a CEP extension that:
 1. [Setting up your UI](#setting-up-your-ui)
 1. [Setting up your service API interaction](#setting-up-your-service-api-interaction)
     1. [Create references to the UI elements](#create-references-to-the-ui-elements)
+    1. [Map possible API responses to user-readable strings](#map-possible-api-responses-to-user-readable-strings)
     1. [Request and display the weather for a particular city](#request-and-display-the-weather-for-a-particular-city)
 1. [Set up your Creative Cloud host app interaction](#set-up-your-creative-cloud-host-app-interaction)
     1. [Instantiate `CSInterface`](#instantiate-csinterface)
@@ -73,12 +77,12 @@ There are two versions of this guide's companion sample extension:
 - `./com.cep.weather/`
 - `./com.cep.weather-simple/`
 
-This guide will focus on `./com.cep.weather-simple/`, for the sake of focus; `./com.cep.weather/` offers slightly more robust functionality, and is a good starting point if you want to further explore the topics covered in this guide.
+This guide will focus on `./com.cep.weather-simple/`, for the sake of focus; if you want to further explore the topics covered in this guide, `./com.cep.weather/` offers slightly more robust functionality.
 
 The following steps will help you get the sample extension for this guide up and running:
 
-1. Install the `./com.cep.weather-simple/` directory in your extensions folder. <!(where is this?)>
-1. Download and move CEP's `CSInterface.js` library to `./com.cep.weather-simple/client/js/lib/CSInterface.js`.
+1. Install the `./com.cep.weather-simple/` directory in your `extensions` folder. ([See the Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) if you are unsure where your `extensions` folder is.)
+1. [Download CEP's `CSInterface.js` library](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/CSInterface.js) and move it to `./com.cep.weather-simple/client/js/lib/CSInterface.js`.
 1. Get a free API Key from [Dark Sky](https://darksky.net/dev).
 1. Make a file named `config.js` at this path: `./com.cep.weather-simple/client/js/config.js`.
 1. In your newly created `config.js` file, add this code, substituting in your Dark Sky API Key:
@@ -112,7 +116,7 @@ For this guide, we'll make an extension that supports Photoshop and InDesign. So
 
 ```
 
-Note that the versions indicted in the example code above only target a single version of each host app, for the sake of demo simplicity. Most extension developers will want to target a range of host app versions. To learn how to support ranges of host app versions, see the [CEP cookbook]().
+Note that the versions indicted in the example code above only target a single version of each host app, for the sake of demo simplicity. Most extension developers will want to target a range of host app versions. To learn how to support ranges of host app versions, [see the Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-manifest).
 
 
 ## Setting up your UI
@@ -149,21 +153,47 @@ Note that, while this guide will not cover styling an extension with CSS, the CS
 
 ## Setting up your service API interaction
 
-As we saw in the `index.html` code in the previous section, the client-side JavaScript for this extension is located at `./com.cep.weather-simple/client/js/index.js`.
+As we saw in the previous section's `index.html` code, the client-side JavaScript for this extension is located at `./com.cep.weather-simple/client/js/index.js`. We will look at this `index.js` file in this section.
 
-We will look at this `index.js` file in this section. We won't cover everything in the `index.js` file, but will give an overview, calling out a few important points along the way.
+Note that nothing in this section is specifically related to CEP. This section is all about client-side JavaScript that will set the stage for interacting with CEP features in the next sections.
 
 
 ### Create references to the UI elements
 
-Continuing on in `./com.cep.weather-simple/client/js/index.js`, we'll first reference the elements in our `index.html`:
+In `index.js`, we'll first reference the elements in our `index.html`:
 
 ```javascript
 const applyWeatherButton = document.querySelector("#apply-weather-button");
 const weatherSummary = document.querySelector("#weather-summary");
 ```
 
-We'll work with these UI elements in the following steps.
+We'll work with these UI elements in the next step.
+
+
+### Map possible API responses to user-readable strings
+
+As we will see in the next step, the Dark Sky API JSON response will include an `.icon` property that indicates the weather. The value of the `.icon` property will be a kebob-case slug, like `"clear-day"`.
+
+Let's map all the possible slugs to user-readable strings in a constant:
+
+```javascript
+const weatherTypes = {
+  "clear-day": "a clear day",
+  "clear-night": "a clear night",
+  "rain": "raining",
+  "snow": "snowing",
+  "sleet": "sleeting",
+  "wind": "windy",
+  "fog": "foggy",
+  "cloudy": "cloudy",
+  "partly-cloudy-day": "a partly cloudy day",
+  "partly-cloudy-night": "a partly cloudy night"
+}
+```
+
+This makes it convenient to translate an API response like `"clear-day"` to something that's more natural for the user to read, like `"It looks like it's a clear day."`.
+
+We'll use this `weatherTypes` constant in the next step.
 
 
 ### Request and display the weather for a particular city
@@ -172,7 +202,7 @@ Our extension will automatically get and display the weather for New York City w
 
 ![]()
 
-In `index.js`, we have a `getWeather()` helper method that is immediately invoked. See comments **#1-8** in the code below:
+In `index.js`, let's make a `getWeather()` helper method that is immediately invoked. See comments **#1-8** in the code below:
 
 ```javascript
 (function getWeather() {
@@ -189,10 +219,10 @@ In `index.js`, we have a `getWeather()` helper method that is immediately invoke
       if (res.ok) return res.json();
     })
     .then(function(json) {
-      /* 5) Get the current weather data from the Dark Sky JSON response */
+      /* 5) Get the current weather slug from the Dark Sky JSON response */
       const currentWeatherSlug = json.currently.icon;
 
-      /* 6) Display the weather information in the HTML DOM */
+      /* 6) Display the weather information in the panel's HTML DOM */
       const currentWeatherString = `It looks like it\'s ${weatherTypes[currentWeatherSlug]} in ${cityObj.name}.`;
       weatherSummary.textContent = currentWeatherString;
 
@@ -207,7 +237,13 @@ In `index.js`, we have a `getWeather()` helper method that is immediately invoke
 })();
 ```
 
-This method takes advantage of [the `fetch()` API](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch), provided by Chromium Embedded Framework in CEP, to make a network request. Note that the `fetch()` API returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), which is why we follow up the request with `.then()/.catch()` syntax.
+In step **#3**, we take advantage of [the `fetch()` API](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch), provided by Chromium Embedded Framework in CEP, to make a network request. Note that the `fetch()` API returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), which is why we follow up the request with `.then()/.catch()` syntax.
+
+In step **#6**, we used our `weatherTypes` constant created in the previous step to get the user-readable string.
+
+![]()
+
+If the call is successful, you'll see a string in the panel UI that tells you the current weather in New York City. Otherwise, you'll see a string that says `"We had trouble getting the weather for New York City. Please try again."`.
 
 
 ## Set up your Creative Cloud host app interaction
