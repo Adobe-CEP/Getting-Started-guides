@@ -10,7 +10,7 @@ By the end of this guide, we will have a CEP extension that opens a new document
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Contents**
+## Contents
 
 1. [Technology Used](#technology-used)
 1. [Prerequisites](#prerequisites)
