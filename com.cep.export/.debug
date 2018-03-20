@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <ExtensionList>
-  <Extension Id="com.example.app.panel">
+  <Extension Id="com.cep.export">
     <HostList>
       <Host Name="PHXS" Port="8088" />
       <Host Name="IDSN" Port="8087" />

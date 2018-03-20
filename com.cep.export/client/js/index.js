@@ -20,8 +20,6 @@ jpgButton.addEventListener('click', function(){exportWithType('jpg');}, false);
 pngButton.addEventListener('click', function(){exportWithType('png');}, false);
 originalButton.addEventListener('click', function(){exportWithType();}, false);
 
-var extDir = csInterface.getSystemPath("extension");
-
 function exportWithType(type){
 	csInterface.evalScript(`exportFile("${type}")`, function(path){
 		alert("file saved at " + path)

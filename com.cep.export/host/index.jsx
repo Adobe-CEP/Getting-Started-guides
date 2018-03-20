@@ -1,9 +1,8 @@
 
 function exportFile(type) {
 	var filePath = app.activeDocument.fullName
-	var splitted = filePath.toString().split('/')
 	var originalExtension = filePath.toString().split('.')[1]
-    var folderPath = splitted.slice(0,-1).join('/') + '/'
+    var folderPath = filePath.toString().split('/').slice(0,-1).join('/') + '/'
     var sanitizedFilePath = File(filePath).fsName;
 	if (app.name == "Adobe Illustrator") {
     	if (type == "pdf"){
