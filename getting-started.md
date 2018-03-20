@@ -4,7 +4,7 @@ CEP panels are extensions to Adobe desktop applications like Photoshop, Illustra
 
 ![Example panel](/assets/panel.gif?raw=true)
 
-In this guide, we will cover the basics for creating a simple panel in six easy steps.
+In this guide, we will cover the basics for creating a simple panel.
 
 By the end of this guide, we will have a CEP extension that:
 
@@ -114,7 +114,25 @@ There are many configurations you can change or add in this file, but to keep th
 ### Write Your Front-end Code
 Now, it’s time for you to start using your web development skills to build your panel. You can build this out with HTML, CSS, and JavaScript to suit your goals, but let’s have a look at the basic files.
 
-
+#### Create HTML Markup
+The user interface for CEP extensions is written in HTML. For this example, locate the HTML document at `/client/index.html` and write the following code (see comments **#1-3**):
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Your First Panel</title>
+</head>
+<body>
+    /* 1) Simple HTML UI elements to get us started. */
+    <h1>Your first panel</h1>
+    <button id="open-button">Open</button>
+    /* Add your script dependencies here. */
+    <script type="text/javascript" src="CSInterface.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
+```
 #### Download `CSInterface.js`
 You need to download the latest version of [CSInterface.js](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/CSInterface.js), which is a library that enables you to control the panel and communicate with Adobe products like Photoshop, InDesign, Premiere Pro, and more. Place the downloaded file at the location of your choice. For this example, save the file under `/client`.
 
