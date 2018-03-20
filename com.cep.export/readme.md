@@ -170,12 +170,12 @@ function exportFile(type) {
 Since the host-side script syntax is different from app to app, you will need to handle it case by case like below:
 ```javascript
 if (app.name == "Adobe Illustrator") {
-		...
-	} else if (app.name == "Adobe Photoshop"){
-		...
-	} else if (app.name == "Adobe InDesign"){
-		...
-	}
+	...
+} else if (app.name == "Adobe Photoshop"){
+	...
+} else if (app.name == "Adobe InDesign"){
+	...
+}
 	...
 ```
 
@@ -183,31 +183,33 @@ if (app.name == "Adobe Illustrator") {
 Under each `if` block of the host apps, you will handle each export type separately in multiple `if` blocks like below Photoshop example (see comments **#1-6**):
 ```javascript
 if (type == "pdf"){
-			/* 1) set PDF save options */
-			pdfSaveOptions = new PDFSaveOptions()
-			pdfSaveOptions.optimization = true
 
-			/* 2) Use saveAs to export the PDF document (note you cannot exportFile a PDF) */
-			app.activeDocument.saveAs(File(sanitizedFilePath), pdfSaveOptions);
+	/* 1) set PDF save options */
+	pdfSaveOptions = new PDFSaveOptions()
+	pdfSaveOptions.optimization = true
 
-		} else if (type == "jpg"){
-			/* 3) set JPEG save options */
-			var exportOptions = new ExportOptionsJPEG();
-		    exportOptions.blurAmount = 2;
-		    exportOptions.matte = true;
-		    exportOptions.qualitySetting = 100;
+	/* 2) Use saveAs to export the PDF document (note you cannot exportFile a PDF) */
+	app.activeDocument.saveAs(File(sanitizedFilePath), pdfSaveOptions);
 
-		    /* 4) Use exportFile to export the JPEG document */
-		    app.activeDocument.exportFile(File(sanitizedFilePath), ExportType.JPEG, exportOptions);
+} else if (type == "jpg"){
 
-		} else if (type == "png"){
-			/* 5) set PNG save options */
-			var exportOptions = new ExportOptionsPNG8();
-		    exportOptions.matte = true;
+	/* 3) set JPEG save options */
+	var exportOptions = new ExportOptionsJPEG();
+	exportOptions.blurAmount = 2;
+	exportOptions.matte = true;
+	exportOptions.qualitySetting = 100;
 
-		    /* 6) Use exportFile to export the PNG document */
-		    app.activeDocument.exportFile(File(sanitizedFilePath), ExportType.PNG8, exportOptions);
-		} 
+	/* 4) Use exportFile to export the JPEG document */
+	app.activeDocument.exportFile(File(sanitizedFilePath), ExportType.JPEG, exportOptions);
+
+} else if (type == "png"){
+	/* 5) set PNG save options */
+	var exportOptions = new ExportOptionsPNG8();
+	exportOptions.matte = true;
+
+	/* 6) Use exportFile to export the PNG document */
+	app.activeDocument.exportFile(File(sanitizedFilePath), ExportType.PNG8, exportOptions);
+} 
 ```
 Note that above example is written for Photoshop. Other application's ExtendScripts will follow the same logic flow but syntax might be different for each app.
 
