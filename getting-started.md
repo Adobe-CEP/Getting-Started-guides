@@ -34,7 +34,7 @@ By the end of this guide, we will have a CEP extension that opens a new document
 
 
 ## Prerequisites
-Basic knowledge of HTML, CSS, and Javascript
+Basic knowledge of HTML, CSS, and Javascript.
 
 
 ## Development Steps
@@ -163,7 +163,7 @@ function openDocument(){
   var docRef = app.open(fileRef);
 }
 ```
-Note `openDocument()` will be called when `csInterface.evalScript("openDocument()")` is invoked from your JavaScript file, `/client/index.js`
+Note `openDocument()` will be called when `csInterface.evalScript("openDocument()")` is invoked from your JavaScript file, `/client/index.js`.
 
 ## Best Practices
 _(optional)_
