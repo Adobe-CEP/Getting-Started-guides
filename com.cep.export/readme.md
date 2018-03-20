@@ -1,6 +1,6 @@
 # panel-export-example-app
 
-This sample panel is built to show developers how they can export a saved asset in a different format to a different location.
+This sample panel is built to show developers how they can export a saved asset in a different format.
 
 By the end of this guide, we will have an Adobe Photoshop panel that:
 
