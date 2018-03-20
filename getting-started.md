@@ -40,7 +40,7 @@ There is no specific prerequisite for this guide other than your interest in bui
 
 
 ## Development Steps
-1. Decide the folder structure
+### Decide the folder structure
 You will need to decide where to save your panel code first. Basically, your panel can be saved either at the root level or at the user level, depending on who’s allowed to use the panel (refer to [CEP 8 HTML Extension Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for the actual paths).
 Except for the required `CSXS` folder, which must contain `manifest.xml`, the folder structure is pretty flexible. That said, I would recommend structuring your directories like this:
 
@@ -54,7 +54,7 @@ Except for the required `CSXS` folder, which must contain `manifest.xml`, the fo
 
 This structure allows you to achieve a clear separation of concerns by devoting one folder to each.
 
-1. Configure Your Panel in `manifest.xml`
+### Configure Your Panel in `manifest.xml`
 There are many configurations you can change or add in this file, but to keep things simple, let’s focus on the minimum requirements ([complete version of the manifest available at Adobe CEP Github](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/ExtensionManifest_v_7_0.xsd)).
 
 - **ExtensionBundleId**: A unique bundle ID you assign to your panel like `com.my.test`
@@ -111,14 +111,14 @@ There are many configurations you can change or add in this file, but to keep th
 </ExtensionManifest>
 ```
 
-1. Write Your Front-end Code
+### Write Your Front-end Code
 Now, it’s time for you to start using your web development skills to build your panel. You can build this out with HTML, CSS, and JavaScript to suit your goals, but let’s have a look at the basic files.
 
 
-1. Download `CSInterface.js`
+#### Download `CSInterface.js`
 You need to download the latest version of [CSInterface.js](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/CSInterface.js), which is a library that enables you to control the panel and communicate with Adobe products like Photoshop, InDesign, Premiere Pro, and more. Place the downloaded file at the location of your choice. For this example, save the file under `/client`.
 
-1. Instantiate `CSInterface`
+#### Instantiate `CSInterface`
 After downloading `CSInterface.js`, you need to create an instance of it in your javascript code:
 
 ```javascript
@@ -128,7 +128,7 @@ const csInterface = new CSInterface();
 We'll make use of this `csInterface` constant later on.
 
 
-### Add a click handler to the button
+#### Add a click handler to the button
 
 We'll add a click handler to `applyWeatherButton`:
 
@@ -139,7 +139,7 @@ applyWeatherButton.addEventListener("click", applyWeatherToAsset);
 We'll make the `applyWeatherToAsset()` helper method in detail in the next step.
 
 
-### Communicate with the host app
+#### Communicate with the host app
 
 To communicate with the host app's scripting engine, we'll make use of the `csInterface.evalScript()` method. (If you need a refresher on the `.evalScript()` method, refer to the [Getting Started guide]().)
 
@@ -156,6 +156,8 @@ function applyWeatherToAsset(e) {
 ```
 
 We'll make the ExtendScript function in the next section.
+
+### Write Your ExtendSCript Code
 
 ## Best Practices
 _(optional)_
