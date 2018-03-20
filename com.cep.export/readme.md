@@ -142,7 +142,7 @@ function exportWithType(type){
 ```
 
 ## Host app: Automation with ExtendScript
-Many CC host apps like Photoshop, Illustrator, and InDesign (and many more!) can be automated with ExtendScript, which provides many deep features to automate work in CC host apps; you can explore more ExtendScript features in our Scripting Guides. The ExtendScript file for this extension is located at `./com.cep.export/host/index.jsx`.
+Many CC host apps like Photoshop, Illustrator, and InDesign (and many more) can be automated with ExtendScript, which provides many deep features to automate work in CC host apps; you can explore more ExtendScript features in our Scripting Guides. The ExtendScript file for this extension is located at `./com.cep.export/host/index.jsx`.
 
 ### Create an ExtendScript function
 In the extension's `index.jsx` file, there is only one function written (`exportFile(type)`). 
