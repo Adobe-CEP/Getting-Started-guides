@@ -114,6 +114,9 @@ There are many configurations you can change or add in this file, but to keep th
 ### Write Your Front-end Code
 Now, it’s time for you to start using your web development skills to build your panel. You can build this out with HTML, CSS, and JavaScript to suit your goals, but let’s have a look at the basic files.
 
+#### Download `CSInterface.js`
+You need to download the latest version of [CSInterface.js](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/CSInterface.js), which is a library that enables you to control the panel and communicate with Adobe products like Photoshop, InDesign, Premiere Pro, and more. Place the downloaded file at the location of your choice. For this example, save the file under `/client`.
+
 #### Create HTML Markup
 The user interface for CEP extensions is written in HTML. For this example, locate the HTML document at `/client/index.html` and write the following code (see comments **#1-3**):
 ```html
@@ -124,58 +127,45 @@ The user interface for CEP extensions is written in HTML. For this example, loca
     <title>Your First Panel</title>
 </head>
 <body>
-    /* 1) Simple HTML UI elements to get us started. */
+    /* 1) Simple HTML UI elements to get us started */
     <h1>Your first panel</h1>
+    /* 2) A button */
     <button id="open-button">Open</button>
-    /* Add your script dependencies here. */
+    /* 3) Add your script dependencies here, including CEP's CSInterface.js library */
     <script type="text/javascript" src="CSInterface.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
 ```
-#### Download `CSInterface.js`
-You need to download the latest version of [CSInterface.js](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/CSInterface.js), which is a library that enables you to control the panel and communicate with Adobe products like Photoshop, InDesign, Premiere Pro, and more. Place the downloaded file at the location of your choice. For this example, save the file under `/client`.
 
-#### Instantiate `CSInterface`
-After downloading `CSInterface.js`, you need to create an instance of it in your javascript code:
+#### Write the Main JavaScript Code
+Be as imaginative as you can, but make sure to create an instance of `CSInterface`. Once you do that, one of its methods, `evalScript()`, will let you communicate to your ExtendScript code (`host/index.jsx` - covered in the later section of the guide) (see comments **#1-3**): 
 
 ```javascript
-const csInterface = new CSInterface();
-```
+/* 1) Create an instance of CSInterface. */
+var csInterface = new CSInterface();
 
-We'll make use of this `csInterface` constant later on.
+/* 2) Make a reference to your HTML button and add a click handler. */
+var openButton = document.querySelector("#open-button");
+openButton.addEventListener("click", openDoc);
 
-
-#### Add a click handler to the button
-
-We'll add a click handler to `applyWeatherButton`:
-
-```javascript
-applyWeatherButton.addEventListener("click", applyWeatherToAsset);
-```
-
-We'll make the `applyWeatherToAsset()` helper method in detail in the next step.
-
-
-#### Communicate with the host app
-
-To communicate with the host app's scripting engine, we'll make use of the `csInterface.evalScript()` method. (If you need a refresher on the `.evalScript()` method, refer to the [Getting Started guide]().)
-
-In this sample app, our `.evalScript()` call will be wrapped in a helper method called `applyWeatherToAsset()`, which we attached to our button's click handler in the step above. See comments **#1-3** in the code below:
-
-```javascript
-function applyWeatherToAsset(e) {
-  /* 1) Get the dataset from the click event */
-  const dataset = e.target.dataset;
-
-  /* 2) Pass an ExtendScript function call to the host app with .evalScript() */
-  csInterface.evalScript(`applyWeatherToAsset("${dataset.currentWeatherSlug}", "${dataset.currentWeatherString}")`);
+/* 3) Write a helper function to pass instructions to the ExtendScript side. */
+function openDoc() {
+  csInterface.evalScript("openDocument()");
 }
 ```
 
-We'll make the ExtendScript function in the next section.
+Feel free to refer to [the CEP Github repo](https://github.com/Adobe-CEP/CEP-Resources) if you are curious about what else you can do with `CSInterface`. 
 
 ### Write Your ExtendSCript Code
+ExtendScript code is different from your client-side JavaScript in that, via ExtendScript, you can access the host application’s functionalities, such as opening a document, editing it, exporting it, and almost anything the host application can do. In this example, we will create a function that opens one file inside the host application. Make sure to change the file name and the path to a file that actually exists in your filesystem.
+```
+function openDocument(){
+  var fileRef = new File("~/Downloads/myFile.jpg");
+  var docRef = app.open(fileRef);
+}
+```
+Note `openDocument()` will be called when `csInterface.evalScript("openDocument()");` is invoked from the main JavaScript file, `/client/index.js`
 
 ## Best Practices
 _(optional)_
