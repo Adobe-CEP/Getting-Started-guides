@@ -4,7 +4,7 @@ CEP panels are extensions to Adobe desktop applications like Photoshop, Illustra
 
 ![Example panel](/assets/panel.gif?raw=true)
 
-In this guide, we will cover the basics for creating a simple panel.
+In this guide, we will cover the basics for creating a simple panel in 6 easy steps.
 
 By the end of this guide, we will have a CEP extension that:
 
@@ -16,27 +16,27 @@ By the end of this guide, we will have a CEP extension that:
 
 1. [Technology Used](#technology-used)
 1. [Prerequisites](#prerequisites)
-1. [Folder Structure](#folder-structure)
-1. [Download `CSInterface.js`](#download-csinterfacejs)
-    1. [Instantiate `CSInterface`](#instantiate-csinterface)
-    1. [Add a click handler to the button](#add-a-click-handler-to-the-button)
-    1. [Communicate with the host app](#communicate-with-the-host-app)
+1. [Development Steps](#development-steps)
+    1. [Decide the folder structure](#decide-the-folder-structure)
+    1. [Configure Your Panel in `manifest.xml`](#configure-your-panel-in-manifestxml)
+    1. [Download `CSInterface.js`](#download-csinterfacejs)
+    1. [Write Your Front-end Code](#write-your-front-end-code)
+        1. [Create HTML Markup](#create-html-markup)
+        1. [Write Your JavaScript Code](#write-your-javascript-code)
+    1. [Write Your ExtendSCript Code](#write-your-extendscript-code)
 1. [Best Practices](#best-practices)
-1. [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
 1. [Other Resources](#other-resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Technology Used
-
-- Supported Host Applications: Photoshop, Illustrator, InDesign
+- Supported Host Applications: Photoshop
 - Libraries/Frameworks/APIs:
-    - Adobe-specific: [CEP](), ExtendScript
+    - Adobe-specific: [CEP](https://github.com/Adobe-CEP/CEP-Resources), [Photoshop ExtendScript](https://www.adobe.com/devnet/photoshop/scripting.html)
 
 
 ## Prerequisites
-
-There is no specific prerequisite for this guide other than your interest in building a panel!
+Basic knowledge of HTML, CSS, and Javascript
 
 
 ## Development Steps
@@ -111,11 +111,11 @@ There are many configurations you can change or add in this file, but to keep th
 </ExtensionManifest>
 ```
 
+### Download `CSInterface.js`
+You need to download the latest version of [CSInterface.js](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/CSInterface.js), which is a library that enables you to control the panel and communicate with Adobe products like Photoshop, InDesign, Premiere Pro, and more. Place the downloaded file at the location of your choice. For this example, save the file under `/client`.
+
 ### Write Your Front-end Code
 Now, it’s time for you to start using your web development skills to build your panel. You can build this out with HTML, CSS, and JavaScript to suit your goals, but let’s have a look at the basic files.
-
-#### Download `CSInterface.js`
-You need to download the latest version of [CSInterface.js](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/CSInterface.js), which is a library that enables you to control the panel and communicate with Adobe products like Photoshop, InDesign, Premiere Pro, and more. Place the downloaded file at the location of your choice. For this example, save the file under `/client`.
 
 #### Create HTML Markup
 The user interface for CEP extensions is written in HTML. For this example, locate the HTML document at `/client/index.html` and write the following code (see comments **#1-3**):
@@ -138,7 +138,7 @@ The user interface for CEP extensions is written in HTML. For this example, loca
 </html>
 ```
 
-#### Write the Main JavaScript Code
+#### Write Your JavaScript Code
 Be as imaginative as you can, but make sure to create an instance of `CSInterface`. Once you do that, one of its methods, `evalScript()`, will let you communicate to your ExtendScript code (`host/index.jsx` - covered in the later section of the guide) (see comments **#1-3**): 
 
 ```javascript
@@ -165,7 +165,7 @@ function openDocument(){
   var docRef = app.open(fileRef);
 }
 ```
-Note `openDocument()` will be called when `csInterface.evalScript("openDocument()")` is invoked from the main JavaScript file, `/client/index.js`
+Note `openDocument()` will be called when `csInterface.evalScript("openDocument()")` is invoked from your JavaScript file, `/client/index.js`
 
 ## Best Practices
 _(optional)_
