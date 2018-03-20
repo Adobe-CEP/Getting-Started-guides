@@ -6,9 +6,7 @@ CEP panels are extensions to Adobe desktop applications like Photoshop, Illustra
 
 In this guide, we will cover the basics for creating a simple panel in 6 easy steps.
 
-By the end of this guide, we will have a CEP extension that:
-
-1. Opens a new document from the user's local folder.
+By the end of this guide, we will have a CEP extension that opens a new document from the user's local folder.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
