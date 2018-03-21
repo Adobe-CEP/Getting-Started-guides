@@ -13,30 +13,19 @@ By the end of this guide, we will have a CEP extension for Photoshop and InDesig
 1. Lets a user click a button to dynamically alter the open asset based on the weather.
 
 <!-- doctoc command config: -->
-<!-- $ doctoc ./readme.md --title "**Contents**" --entryprefix 1. --gitlab -->
+<!-- $ doctoc ./readme.md --title "## Contents" --entryprefix 1. --gitlab --maxlevel 2 -->
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Contents**
+## Contents
 
 1. [Technology Used](#technology-used)
 1. [Prerequisites](#prerequisites)
 1. [Configuration](#configuration)
-    1. [Set up the sample extension](#set-up-the-sample-extension)
-    1. [Configure `manifest.xml`](#configure-manifestxml)
 1. [Client-side: HTML Markup](#client-side-html-markup)
 1. [Client-side: Service API interaction](#client-side-service-api-interaction)
-    1. [Create references to the UI elements](#create-references-to-the-ui-elements)
-    1. [Map API responses to user-readable strings](#map-api-responses-to-user-readable-strings)
-    1. [Request and display the weather for a city](#request-and-display-the-weather-for-a-city)
 1. [Client-side: Creative Cloud host app interaction](#client-side-creative-cloud-host-app-interaction)
-    1. [Instantiate `CSInterface`](#instantiate-csinterface)
-    1. [Add a click handler to the button](#add-a-click-handler-to-the-button)
-    1. [Communicate with the host app](#communicate-with-the-host-app)
 1. [Host app: Automation with ExtendScript](#host-app-automation-with-extendscript)
-    1. [Create an ExtendScript function](#create-an-extendscript-function)
-    1. [Create document element references](#create-document-element-references)
-    1. [Alter the open asset in the host app](#alter-the-open-asset-in-the-host-app)
 1. [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
 1. [Other Resources](#other-resources)
 
