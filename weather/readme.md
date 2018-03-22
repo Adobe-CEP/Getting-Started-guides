@@ -1,4 +1,4 @@
-# <!SDK/API/COMPONENT NAME>
+# Working with network requests and responses
 
 Many Creative Cloud app extensions require the ability to talk to API services on the web. With both Chromium Embedded Framework (CEF) and Node.js at its core, CEP gives you the flexibility to make network calls from within your extension in the way that makes sense for your workflow.
 
