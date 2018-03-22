@@ -218,13 +218,20 @@ In `index.js`, let's make a `getWeather()` helper method that is immediately inv
 })();
 ```
 
-In step **#3**, we take advantage of [the `fetch()` API](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch), provided by Chromium Embedded Framework in CEP, to make a network request. Note that the `fetch()` API returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), which is why we follow up the request with `.then()/.catch()` syntax.
+In step **#3**, we take advantage of [the `fetch()` API](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch), provided by Chromium Embedded Framework in CEP, to make a network request. The `fetch()` API returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), which is why we follow up the request with `.then()/.catch()` syntax.
 
 In step **#6**, we used our `weatherTypes` constant created in the previous step to get the user-readable string.
 
 ![](assets/weather-panel-ps.png)
 
 If the call is successful, you'll see a string in the panel UI that tells you the current weather in New York City. Otherwise, you'll see a string that says `"We had trouble getting the weather for New York City. Please try again."`.
+
+
+### Alternatives to `fetch()`
+
+Note that `fetch()` is not the only way that CEP gives you to make network requests.
+
+Since Chromium Embedded Framework is essentially a browser, you can use an `XMLHttpRequest` (or a client-side library that wraps it, such as jQuery). You can also take advantage of Node.js within CEP, which gives you even more alternatives for making network requests.
 
 
 ## Client-side: Creative Cloud host app interaction
