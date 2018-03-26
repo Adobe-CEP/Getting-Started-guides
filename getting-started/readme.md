@@ -72,7 +72,7 @@ For a minimal setup, let's look at the following XML elements and attributes in 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- 1) -->
-<ExtensionManifest ExtensionBundleId="com.my.test" ExtensionBundleVersion="1.0.0" Version="8.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ExtensionManifest ExtensionBundleId="com.my.test" ExtensionBundleVersion="1.0.0" Version="7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ExtensionList>
     <!-- 2) -->
     <Extension Id="com.my.test.panel" Version="1.0.0" />
@@ -87,7 +87,7 @@ For a minimal setup, let's look at the following XML elements and attributes in 
       <Locale Code="All" />
     </LocaleList>
     <RequiredRuntimeList>
-      <RequiredRuntime Name="CSXS" Version="8.0" />
+      <RequiredRuntime Name="CSXS" Version="7.0" />
     </RequiredRuntimeList>
   </ExecutionEnvironment>
   <DispatchInfoList>
