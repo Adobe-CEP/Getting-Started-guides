@@ -24,6 +24,7 @@ By the end of this guide, we will have a CEP extension that opens a new document
     1. [4. Write Your Front-end Code](#4-write-your-front-end-code)
     1. [5. Write Your ExtendScript Code](#5-write-your-extendscript-code)
     1. [6. Launch your extension in the host app](#6-launch-your-extension-in-the-host-app)
+1. [Next Steps](#next-steps)
 1. [Other Resources](#other-resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -203,6 +204,11 @@ Where the user can find and open your extension will depend on the Creative Clou
 Since the sample extension we made in this guide supports Photoshop, you can find the extension under:
 
 > Window > Extensions > My First Panel
+
+## Next Steps
+
+- [Exporting files](export-file/readme.md)
+- [Network requests and responses with Fetch](network-fetch/readme.md)
 
 
 ## Other Resources
