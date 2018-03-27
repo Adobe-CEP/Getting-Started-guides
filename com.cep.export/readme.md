@@ -202,7 +202,8 @@ function exportFile(type) {
 	var filePath = app.activeDocument.fullName;
 
 	/* 2) split the path to get the extension of the file */
-	var originalExtension = filePath.toString().split('.')[1];
+	var splitPath = filePath.toString().split('.');
+	var originalExtension = splitPath[splitPath.length-1];
 
 	/* 3) split the path to get the folder path */
 	var folderPath = filePath.toString().split('/').slice(0,-1).join('/') + '/';
