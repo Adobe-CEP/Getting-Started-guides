@@ -2,8 +2,9 @@
 function exportFile(type) {
 
 	var filePath = app.activeDocument.fullName;
-	var originalExtension = filePath.toString().split('.')[1];
-  var folderPath = filePath.toString().split('/').slice(0,-1).join('/') + '/';
+	var splitPath = filePath.toString().split('.');
+	var originalExtension = splitPath[splitPath.length-1];
+	var folderPath = filePath.toString().split('/').slice(0,-1).join('/') + '/';
 	var sanitizedFilePath = File(filePath).fsName;
 
 	if (app.name == "Adobe Illustrator") {
@@ -17,16 +18,16 @@ function exportFile(type) {
 		} else if (type == "jpg") {
 
 			var exportOptions = new ExportOptionsJPEG();
-		  exportOptions.blurAmount = 2;
-		  exportOptions.matte = true;
-		  exportOptions.qualitySetting = 100;
-		  app.activeDocument.exportFile(File(sanitizedFilePath), ExportType.JPEG, exportOptions);
+			exportOptions.blurAmount = 2;
+			exportOptions.matte = true;
+			exportOptions.qualitySetting = 100;
+			app.activeDocument.exportFile(File(sanitizedFilePath), ExportType.JPEG, exportOptions);
 
 		} else if (type == "png") {
 
 			var exportOptions = new ExportOptionsPNG8();
-		  exportOptions.matte = true;
-		  app.activeDocument.exportFile(File(sanitizedFilePath), ExportType.PNG8, exportOptions);
+			exportOptions.matte = true;
+			app.activeDocument.exportFile(File(sanitizedFilePath), ExportType.PNG8, exportOptions);
 
 		};
 
@@ -68,17 +69,17 @@ function exportFile(type) {
 
 		if (type == "pdf") {
 
-			savePath = sanitizedFilePath.replace(originalExtension,"pdf");
+			var savePath = sanitizedFilePath.replace(originalExtension,"pdf");
 			app.activeDocument.exportFile(ExportFormat.PDF_TYPE, File(savePath), false);
 
 		} else if (type == "jpg") {
 
-			savePath = sanitizedFilePath.replace(originalExtension,"jpeg");
+			var savePath = sanitizedFilePath.replace(originalExtension,"jpeg");
 			app.activeDocument.exportFile(ExportFormat.JPG, File(savePath), false);
 
 		} else if (type == "png") {
 
-			savePath = sanitizedFilePath.replace(originalExtension,"png");
+			var savePath = sanitizedFilePath.replace(originalExtension,"png");
 			app.activeDocument.exportFile(ExportFormat.PNG_FORMAT, File(savePath), false);
 
 		};
