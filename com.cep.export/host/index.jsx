@@ -35,14 +35,14 @@ function exportFile(type) {
 
     if (type == "pdf") {
 
-			pdfSaveOptions = new PDFSaveOptions();
+			var pdfSaveOptions = new PDFSaveOptions();
 			pdfSaveOptions.embedColorProfile = true;
 			pdfSaveOptions.optimizeForWeb = true;
 			app.activeDocument.saveAs(File(sanitizedFilePath), pdfSaveOptions, true);
 
 		} else if (type == "jpg") {
 
-			jpgSaveOptions = new JPEGSaveOptions();
+			var jpgSaveOptions = new JPEGSaveOptions();
 			jpgSaveOptions.embedColorProfile = true;
 			jpgSaveOptions.formatOptions = FormatOptions.STANDARDBASELINE;
 			jpgSaveOptions.matte = MatteType.NONE;
@@ -51,8 +51,8 @@ function exportFile(type) {
 
 		} else if (type == "png") {
 
-			pngSaveOptions = new PNGSaveOptions();
-			pngSaveOptions.compression = 2;
+			var pngSaveOptions = new PNGSaveOptions();
+			pngSaveOptions.interlaced = false;
 			app.activeDocument.saveAs(File(sanitizedFilePath), pngSaveOptions, true);
 
 		} else {
