@@ -4,7 +4,7 @@ Many Creative Cloud app extensions require the ability to talk to API services o
 
 In this guide, we will cover how to call a third-party API service, update the panel UI according to the API response, and interact with the host app's creative asset based on the API response.
 
-![](assets/weather-panel-ps.png)
+![](readme-assets/weather-panel-ps.png)
 
 By the end of this guide, we will have a CEP extension for Photoshop and InDesign that:
 
@@ -51,13 +51,6 @@ This guide will assume that you have installed all software and completed all st
 ## Configuration
 
 ### Set up the sample extension
-
-There are two versions of this guide's companion sample extension on GitHub:
-
-- [`./com.cep.weather/`](./com.cep.weather/)
-- [`./com.cep.weather-simple/`](./com.cep.weather-simple/)
-
-This guide will focus on `./com.cep.weather-simple/`, for the sake of focus; if you want to further explore the topics covered in this guide, `./com.cep.weather/` offers slightly more robust functionality.
 
 The following steps will help you get the sample extension for this guide up and running:
 
@@ -181,7 +174,7 @@ We'll use this `weatherTypes` constant in the next step.
 
 Our extension will automatically get and display the weather for New York City when it loads.
 
-![](assets/weather-panel-ps.png)
+![](readme-assets/weather-panel-ps.png)
 
 In `index.js`, let's make a `getWeather()` helper method that is immediately invoked. See comments **#1-8** in the code below:
 
@@ -222,7 +215,7 @@ In step **#3**, we take advantage of [the `fetch()` API](https://developer.mozil
 
 In step **#6**, we used our `weatherTypes` constant created in the previous step to get the user-readable string.
 
-![](assets/weather-panel-ps.png)
+![](readme-assets/weather-panel-ps.png)
 
 If the call is successful, you'll see a string in the panel UI that tells you the current weather in New York City. Otherwise, you'll see a string that says `"We had trouble getting the weather for New York City. Please try again."`.
 
@@ -383,8 +376,8 @@ function applyWeatherToAsset(currentWeatherSlug, currentWeatherString) {
 
 When you click the button, the output will look like this:
 
-![](assets/photoshop.png)
-![](assets/indesign.png)
+![](readme-assets/photoshop.png)
+![](readme-assets/indesign.png)
 
 In other words, if the panel is running in Photoshop, we'll adjust the color balance of an art layer; if the panel is running in InDesign, we'll add a text frame to the document that tells us the weather.
 
