@@ -1,8 +1,8 @@
-
 /*
   CSInterface
 */
 var csInterface = new CSInterface();
+
 /*
   UI Elements
 */
@@ -20,8 +20,8 @@ jpgButton.addEventListener('click', function(){exportWithType('jpg');}, false);
 pngButton.addEventListener('click', function(){exportWithType('png');}, false);
 originalButton.addEventListener('click', function(){exportWithType();}, false);
 
-function exportWithType(type){
-	csInterface.evalScript(`exportFile("${type}")`, function(path){
-		alert("file saved at " + path)
-	})
+function exportWithType(type) {
+	csInterface.evalScript(`exportFile("${type}")`, function(path) {
+		alert("file saved at " + path);
+	});
 }
