@@ -4,9 +4,11 @@ CEP (Common Extensibility Platform) lets you build extensions in Adobe Creative 
 
 ![Example extension: opening a new file in Photoshop](meta/readme-assets/extension.gif?raw=true)
 
-In this guide, we will help you get started building a CEP extension by covering the basics for creating a simple extension in 6 easy steps.
+In this guide, we will help you quickly get started building a CEP extension by covering the basics in 6 easy steps.
 
 By the end of this guide, we will have a CEP extension that opens a new document from the user's local folder.
+
+When you're finished, be sure to check out the [Next Steps section](#next-steps), which has links to guides and samples that will walk you through some common intermediate and advanced topics.
 
 <!-- doctoc command config: -->
 <!-- $ doctoc ./readme.md --title "## Contents" --entryprefix 1. --gitlab --maxlevel 3 -->
@@ -205,7 +207,10 @@ Since the sample extension we made in this guide supports Photoshop, you can fin
 
 > Window > Extensions > My First Panel
 
+
 ## Next Steps
+
+Now that you've seen the basics, check out these guides that walk you through some common intermediate and advanced topics.
 
 - [Exporting files](export-file/readme.md)
 - [Network requests and responses with Fetch](network-fetch/readme.md)
