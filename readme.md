@@ -2,7 +2,7 @@
 
 CEP (Common Extensibility Platform) lets you build extensions in Adobe Creative Cloud applications like Photoshop, Illustrator, InDesign, After Effects, and many more. Extensions built with CEP let users customize their Creative Cloud experience for their unique workflows.
 
-![Example extension: opening a new file in Photoshop](meta/readme-assets/extension.gif?raw=true)
+![Example extension: opening a new file in Photoshop](.meta/readme-assets/extension.gif?raw=true)
 
 In this guide, we will help you quickly get started building a CEP extension by covering the basics in 6 easy steps.
 
@@ -48,7 +48,7 @@ You will need to decide where to save your extension code first. Your extension 
 
 Except for the required `CSXS` folder, which must contain `manifest.xml`, the folder structure is flexible. One recommended way to structure the folders would be:
 
-![Extension structure](meta/readme-assets/extension-structure.png?raw=true)
+![Extension structure](.meta/readme-assets/extension-structure.png?raw=true)
 
 - `/CSXS` -- contains the `manifest.xml` file, which stores the extension configuration data. As noted above, this is a requirement for your extension to show up in the host app.
 
@@ -149,13 +149,13 @@ The user interface for CEP extensions is written in HTML. For this example, loca
     <title>Your First Panel</title>
 </head>
 <body>
-    /* 1) Simple HTML UI elements to get us started */
+    <!-- 1) Simple HTML UI elements to get us started -->
     <h1>Your first panel</h1>
 
-    /* 2) A button */
+    <!-- 2) A button -->
     <button id="open-button">Open</button>
 
-    /* 3) Add your script dependencies here, including CEP's CSInterface.js library */
+    <!-- 3) Add your script dependencies here, including CEP's CSInterface.js library -->
     <script type="text/javascript" src="CSInterface.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>

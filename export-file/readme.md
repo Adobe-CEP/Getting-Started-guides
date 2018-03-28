@@ -274,13 +274,6 @@ if (type == "pdf") {
 Note that the above example is written for Photoshop. ExtendScript methods and properties may differ depending on the host app, but the same login will apply. See this guide's sample extension code for further examples.
 
 
-## Troubleshooting and Known Issues
-
-Articles about common issues are [here](!LINK).
-
-You can submit tickets for bugs and feature requests [here](!LINK).
-
-
 ## Other Resources
 
 If you want to explore further with ExtendScript, refer to the following reference docs:
