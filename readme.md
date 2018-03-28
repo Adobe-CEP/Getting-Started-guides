@@ -212,8 +212,8 @@ Since the sample extension we made in this guide supports Photoshop, you can fin
 
 Now that you've seen the basics, check out these guides that walk you through some common intermediate and advanced topics.
 
-- [Exporting files](export-file/readme.md)
-- [Network requests and responses with Fetch](network-fetch/readme.md)
+- [Exporting files from the host app](Exporting%20files%20from%20the%20host%20app)
+- [Network requests and responses with Fetch](Network%20requests%20and%20responses%20with%20Fetch)
 
 
 ## Other Resources
