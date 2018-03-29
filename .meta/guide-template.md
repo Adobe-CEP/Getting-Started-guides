@@ -12,6 +12,9 @@ By the end of this guide, we will have an <!ANDROID || IOS || WEB || ETC> app th
 1. <!DOES THIS>
 1. <!DOES THIS>
 
+<!-- $ doctoc ./readme.md --title "## Contents" --entryprefix 1. --gitlab --maxlevel 2 -->
+<!-- START doctoc -->
+<!-- END doctoc -->
 
 ## GitHub
 You can find a companion GitHub repo for this developer guide [on GitHub](<!LINK HERE>).
