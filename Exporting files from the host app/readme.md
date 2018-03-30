@@ -1,6 +1,6 @@
 # Exporting files from the host app
 
-This guide will show you how to use CEP (Common Extensibility Platform) and ExtendScript to export a saved asset from Adobe Creative applications.
+This guide will show you how to use CEP (Common Extensibility Platform) and ExtendScript to export a saved asset from Adobe Creative Cloud applications.
 
 By the end of this guide, we will have a CEP extension that:
 
