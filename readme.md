@@ -210,7 +210,7 @@ Since the sample extension we made in this guide supports Photoshop, you can fin
 
 ## Next Steps
 
-Now that you've seen the basics, check out these guides that walk you through some common intermediate and advanced topics.
+Now that you've seen the basics, check out these guides and samples that walk you through some common intermediate and advanced topics in CEP:
 
 - [Exporting files from the host app](Exporting%20files%20from%20the%20host%20app)
 - [Network requests and responses with Fetch](Network%20requests%20and%20responses%20with%20Fetch)
@@ -218,6 +218,7 @@ Now that you've seen the basics, check out these guides that walk you through so
 
 ## Other Resources
 - [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md)
+- [CEP Samples repo](https://github.com/Adobe-CEP/Samples)
 - [Adboe Photoshop Reference Doc](https://www.adobe.com/devnet/photoshop/scripting.html)
 - [Adobe Illustrator Reference Doc](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/illustrator/pdf/Illustrator_JavaScript_Scripting_Reference_2017.pdf)
 - [InDesign Reference Guide](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/indesign/sdk/cs6/scripting/InDesign_ScriptingGuide_JS_JP.pdf)
