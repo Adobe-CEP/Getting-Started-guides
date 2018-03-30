@@ -22,8 +22,6 @@ By the end of this guide, we will have a CEP extension that:
 1. [Client-side: HTML Markup](#client-side-html-markup)
 1. [Client-side: Creative Cloud host app interaction](#client-side-creative-cloud-host-app-interaction)
 1. [Host app: Automation with ExtendScript](#host-app-automation-with-extendscript)
-1. [Best Practices](#best-practices)
-1. [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
 1. [Other Resources](#other-resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -39,8 +37,9 @@ By the end of this guide, we will have a CEP extension that:
 
 This guide will assume that you have read and completed the following resources.
 
-- [Getting Started with CEP Extensions]()
+- [Getting Started with CEP Extensions](../readme.md)
 - [Debugging your Adobe panel](https://medium.com/adobe-io/debugging-your-adobe-panel-cf73f00f6961)
+
 
 ## Configuration
 
@@ -54,7 +53,7 @@ The following steps will help you get the sample extension for this guide up and
 
 
 ### Configure `manifest.xml`
-As noted in the [Getting Started guide](), the `manifest.xml` file is where, among other things, you indicate which Creative Cloud host apps and versions your extension supports.
+As noted in the [Getting Started guide](../readme.md), the `manifest.xml` file is where, among other things, you indicate which Creative Cloud host apps and versions your extension supports.
 
 This sample is designed to be compatible with three different Adobe applications: Photoshop, Illustrator, and InDesign.
 
@@ -149,7 +148,7 @@ We'll make use of this `csInterface` variable in the next step.
 
 ### Communicate with the host app
 
-To communicate with the host app's scripting engine, we'll make use of the `csInterface.evalScript()` method. (If you need a refresher on the `.evalScript()` method, refer to the [Getting Started guide]().)
+To communicate with the host app's scripting engine, we'll make use of the `csInterface.evalScript()` method. (If you need a refresher on the `.evalScript()` method, refer to the [Getting Started guide](../readme.md).)
 
 In this sample extension, users can export the current asset as four different file types to the current asset's directory. To achieve this, the following `exportWithType(type)` helper function calls `evalScript()` to communicate with the host application:
 

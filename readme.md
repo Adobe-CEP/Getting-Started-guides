@@ -8,7 +8,7 @@ In this guide, we will help you quickly get started building a CEP extension by 
 
 By the end of this guide, we will have a CEP extension that opens a new document from the user's local folder.
 
-When you're finished, be sure to check out the [Next Steps section](#next-steps), which has links to guides and samples that will walk you through some common intermediate and advanced topics.
+When you're finished, be sure to check out the [Next Steps section](#next-steps), which has links to guides and samples that will walk you through some common intermediate and advanced topics, like exporting files from the host app, making network requests, and more.
 
 <!-- doctoc command config: -->
 <!-- $ doctoc ./readme.md --title "## Contents" --entryprefix 1. --gitlab --maxlevel 3 -->

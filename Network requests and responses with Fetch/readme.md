@@ -26,7 +26,6 @@ By the end of this guide, we will have a CEP extension for Photoshop and InDesig
 1. [Client-side: Service API interaction](#client-side-service-api-interaction)
 1. [Client-side: Creative Cloud host app interaction](#client-side-creative-cloud-host-app-interaction)
 1. [Host app: Automation with ExtendScript](#host-app-automation-with-extendscript)
-1. [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
 1. [Other Resources](#other-resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -36,16 +35,16 @@ By the end of this guide, we will have a CEP extension for Photoshop and InDesig
 
 - Supported Host Applications: Photoshop, InDesign
 - Libraries/Frameworks/APIs:
-    - Adobe-specific: [CEP](), ExtendScript for Photoshop and InDesign
-    - Other: [Fetch](), [Dark Sky API]()
+    - Adobe-specific: [CEP](https://www.adobe.io/apis/creativecloud/cep.html), ExtendScript for Photoshop and InDesign
+    - Other: [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), [Dark Sky API](https://darksky.net/dev)
 
 
 ## Prerequisites
 
 This guide will assume that you have installed all software and completed all steps in the following guides:
 
-- [Getting Started](<!LINK HERE>)
-- [Debugging](<!LINK HERE>)
+- [Getting Started](../readme.md)
+- [Debugging your Adobe panel](https://medium.com/adobe-io/debugging-your-adobe-panel-cf73f00f6961)
 
 
 ## Configuration
@@ -69,7 +68,7 @@ After following these steps, you'll be able to run the sample extension within t
 
 ### Configure `manifest.xml`
 
-As noted in the [Getting Started guide](), the `manifest.xml` file is where, among other things, you indicate which Creative Cloud host apps and version numbers your extension supports.
+As noted in the [Getting Started guide](../readme.md), the `manifest.xml` file is where, among other things, you indicate which Creative Cloud host apps and version numbers your extension supports.
 
 For this guide, we'll make an extension that supports Photoshop and InDesign. So in the `manifest.xml`, make sure you list the supported host apps within the `<HostList>` element:
 
@@ -253,7 +252,7 @@ We'll make the `applyWeatherToAsset()` helper method in the next step.
 
 ### Communicate with the host app
 
-To communicate with the host app's scripting engine, we'll make use of the `csInterface.evalScript()` method. (If you need a refresher on the `.evalScript()` method, refer to the [Getting Started guide]().)
+To communicate with the host app's scripting engine, we'll make use of the `csInterface.evalScript()` method. (If you need a refresher on the `.evalScript()` method, refer to the [Getting Started guide](../readme.md).)
 
 In this sample app, our `.evalScript()` call will be wrapped in a helper method called `applyWeatherToAsset()`, which we attached to our button's click handler in the step above. See comments **#1-3** in the code below:
 
@@ -381,11 +380,6 @@ When you click the button, the output will look like this:
 
 In other words, if the panel is running in Photoshop, we'll adjust the color balance of an art layer; if the panel is running in InDesign, we'll add a text frame to the document that tells us the weather.
 
-
-## Troubleshooting and Known Issues
-Articles about common issues are [here](!LINK).
-
-You can submit tickets for bugs and feature requests [here](!LINK).
 
 ## Other Resources
 - [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md)
