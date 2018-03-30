@@ -2,11 +2,11 @@
 
 CEP (Common Extensibility Platform) lets you build extensions in Adobe Creative Cloud applications like Photoshop, Illustrator, InDesign, After Effects, and many more. Extensions built with CEP let users customize their Creative Cloud experience for their unique workflows.
 
-![Example extension: opening a new file in Photoshop](.meta/readme-assets/extension.gif?raw=true)
-
 In this guide, we will help you quickly get started building a CEP extension by covering the basics in 6 easy steps.
 
 By the end of this guide, we will have a CEP extension that opens a new document from the user's local folder.
+
+![Example extension: opening a new file in Photoshop](.meta/readme-assets/extension.gif?raw=true)
 
 When you're finished, be sure to check out the [Next Steps section](#next-steps), which has links to guides and samples that will walk you through some common intermediate and advanced topics, like exporting files from the host app, making network requests, and more.
 
