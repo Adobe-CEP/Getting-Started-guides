@@ -70,7 +70,8 @@ Important points to note:
 
 Now, you can open Chrome and go to http://localhost:8088/ or whichever port you’re using, which you set in your .debug file in the previous section.
 
-![CEF Remote Debugging in Chrome](debugging_assets/CEFdebugger.png)
+![CEF Remote Debugging in Chrome](debugging_assets/CEFdebugger.png) 
+
 *CEF Remote Debugging in Chrome*
 
 If your panel is working, you’ll see a link you can click on, just like in the image above. The link will take you to a mostly blank page. To see some helpful information, click on “View → Developer → JavaScript Console”. Now, if there are errors or console messages, you can see them.
