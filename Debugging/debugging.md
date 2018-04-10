@@ -107,7 +107,7 @@ This assumes everything went well. If your debug console in Chrome appears blank
 
 Once you’ve got the debug console working, you’re ready to start testing your panel! Remember the file structure graphic from last week?
 
-![This is true for Photoshop, but in After Effects and Premiere Pro you only need to close and open your panel.](debugging_assets/1*GPadnSD9WmLK6V3mK5OePg.png)*This is true for Photoshop, but in After Effects and Premiere Pro you only need to close and open your panel.*
+![This is true for Photoshop, but in After Effects and Premiere Pro you only need to close and open your panel.](debugging_assets/OpenAndClose.png)*This is true for Photoshop, but in After Effects and Premiere Pro you only need to close and open your panel.*
 
 If you make changes to your index.html or index.js file, you’ll need to open and close your panel within the application (in this case Photoshop) to see the changes. Then, refresh your debugging tab in Chrome.
 
