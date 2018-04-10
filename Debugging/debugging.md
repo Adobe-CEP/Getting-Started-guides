@@ -22,6 +22,7 @@ If you’re just starting out, opening up Terminal (Applications > Utilities > T
 This change is invisible if you do it right. If you skip this step, or did it wrong, you’ll get the following error about unsigned extensions:
 
 ![*The “Your Panel Name” extension could not be loaded because it was not properly signed.*](debugging_assets/UnsignedError.png)
+
 **The “Your Panel Name” extension could not be loaded because it was not properly signed.**
 
 Don’t worry about [signing your extensions](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#signing-extensions) until you’re ready to distribute to users.
