@@ -63,7 +63,7 @@ If you have a directory structure similar to the one suggested in the [Getting S
 
 The `main.js` file is a Node.js file where write server logic. The root directory can be saved either at the root level or at the user level, depending on who’s allowed to use the extension (refer to the [CEP 8 HTML Extension Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for the exact paths).
 
-Note that except for the required CSXS folder, which must contain manifest.xml, the folder structure is flexible.
+Note that except for the required `CSXS` folder, which must contain manifest.xml, the folder structure is flexible.
 
 ## Configuration Setup
 
