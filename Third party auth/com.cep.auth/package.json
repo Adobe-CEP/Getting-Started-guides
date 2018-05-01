@@ -1,0 +1,23 @@
+{
+  "name": "panel-dropbox-example-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.corp.adobe.com/kwak/panel-trello-example-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "nconf": "^0.10.0",
+    "oauth": "^0.9.15"
+  }
+}
