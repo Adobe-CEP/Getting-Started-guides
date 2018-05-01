@@ -9,11 +9,11 @@ By the end of this guide, we will have an Adobe Photoshop extension that:
 1. Loads the image in Photoshop
 
 <!-- doctoc command config: -->
-<!-- $ doctoc ./readme.md --title "##Contents" --entryprefix 1. --gitlab --maxlevel 3 -->
+<!-- $ doctoc ./readme.md --title "## Contents" --entryprefix 1. --gitlab --maxlevel 3 -->
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-##Contents
+## Contents
 
 1. [Technology Used](#technology-used)
 1. [Prerequisites](#prerequisites)
@@ -34,6 +34,7 @@ By the end of this guide, we will have an Adobe Photoshop extension that:
 1. [Host app: Automation with ExtendScript](#host-app-automation-with-extendscript)
     1. [Create an ExtendScript function](#create-an-extendscript-function)
 1. [Server-side: Setup](#server-side-setup)
+    1. [Install Node.js and npm](#install-nodejs-and-npm)
     1. [Install node modules](#install-node-modules)
     1. [Write server logic in `main.js`](#write-server-logic-in-mainjs)
 1. [Troubleshooting and Known Issues](#troubleshooting-and-known-issues)
