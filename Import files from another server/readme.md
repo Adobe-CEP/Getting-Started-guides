@@ -17,6 +17,7 @@ By the end of this guide, we will have an Adobe Photoshop extension that:
 
 1. [Technology Used](#technology-used)
 1. [Prerequisites](#prerequisites)
+1. [Folder Structure](#folder-structure)
 1. [Configuration Setup](#configuration-setup)
     1. [Set up the sample extension](#set-up-the-sample-extension)
     1. [Configure `manifest.xml`](#configure-manifestxml)
