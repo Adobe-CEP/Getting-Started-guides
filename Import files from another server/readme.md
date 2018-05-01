@@ -56,6 +56,11 @@ This guide will assume that you have installed all software and completed all st
 
 - [Getting Started Guide](https://github.com/Adobe-CEP/Getting-Started-guides)
 
+## Folder Structure
+If you have a directory structure similar to the one suggested in the [Getting Started Guide](https://github.com/Adobe-CEP/Getting-Started-guides), all you have to add is a folder designated for your server, a Node.js file, a `main.js` file inside the server folder, and another HTML file, `localServer.html`, all under the existing client folder:
+
+![](readme-assets/folder-structure.png)
+
 ## Configuration Setup
 
 ### Set up the sample extension
