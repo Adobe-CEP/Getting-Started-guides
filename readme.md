@@ -214,7 +214,7 @@ When you try to launch your extension, if you get an alert about unsigned extens
 
 Now that you've seen the basics, check out these guides and samples that walk you through some common intermediate and advanced topics in CEP:
 
-- [Client-side debugging](Client-side%20debugging)
+- [Client-side debugging](Client-side%20Debugging)
 - [Exporting files from the host app](Exporting%20files%20from%20the%20host%20app)
 - [Network requests and responses with Fetch](Network%20requests%20and%20responses%20with%20Fetch)
 
