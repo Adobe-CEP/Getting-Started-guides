@@ -1,4 +1,4 @@
-# Client-side Debugging
+# Client-side debugging
 
 This guide will walk you through the necessary steps to debug client-side code in a CEP extension.
 
@@ -22,7 +22,7 @@ This guide will walk you through the necessary steps to debug client-side code i
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Prerequisites
-This guide will assume that you have completed all steps in the [Getting Started with CEP Extensions Guide](https://github.com/Adobe-CEP/Getting-Started-guides/blob/master/readme.md).
+This guide will assume that you have completed all steps in the [Getting Started with CEP Extensions Guide](../readme.md).
 
 
 ## Set the Debug Mode
