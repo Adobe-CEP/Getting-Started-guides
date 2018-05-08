@@ -11,11 +11,12 @@ This guide will walk you through the necessary steps to debug client-side code i
 
 1. [Prerequisites](#prerequisites)
 1. [Set the Debug Mode](#set-the-debug-mode)
-1. [Troubleshooting “Your Panel Name” ...was not properly signed.](#troubleshooting-your-panel-name-was-not-properly-signed)
 1. [Create a `.debug` File](#create-a-debug-file)
 1. [Write Contents for the `.debug` File](#write-contents-for-the-debug-file)
 1. [Debugging in Chrome](#debugging-in-chrome)
-1. [Troubleshooting a blank Chrome console](#troubleshooting-a-blank-chrome-console)
+1. [Troubleshooting common issues](#troubleshooting-common-issues)
+    1. [Getting a "not properly signed" alert](#getting-a-not-properly-signed-alert)
+    1. [Getting a blank debug console](#getting-a-blank-debug-console)
 1. [Next Steps](#next-steps)
 1. [Other Resources](#other-resources)
 
@@ -124,7 +125,13 @@ Don’t worry about [signing your extensions](https://github.com/Adobe-CEP/CEP-R
 If you’ve set the debug mode and are still getting the error above, [try killing the **cfprefsd** process](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#special-notes-for-mac-109-and-higher), or check out this [thread about troubleshooting debug mode](https://forums.adobe.com/thread/2444749) in the Adobe forums.
 
 ### Getting a blank debug console
-If your debug console in Chrome appears blank, check your `.debug` file one more time or try following [the steps on this Adobe forum thread](https://forums.adobe.com/thread/2426224).
+If your debug console in Chrome appears blank, [check the contents of your `.debug` file one more time](#write-contents-for-the-debug-file):
+
+- Does your extension ID in the `.debug` file match what's in `manifest.xml`?
+- Are you listing the supported host app(s) correctly with the right Host ID(s)?
+- Are you attempting to access `localhost` on the same port that you have indicated in your debug console?
+
+If you are still having trouble, try following [the steps on this Adobe forum thread](https://forums.adobe.com/thread/2426224).
 
 ## Next Steps
 
