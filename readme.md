@@ -207,7 +207,7 @@ Since the sample extension we made in this guide supports Photoshop, you can fin
 
 > Window > Extensions > My First Panel
 
-When you try to launch your extension, if you get an alert about unsigned extensions, see the ["Set the Debug Mode" section](Client-side%20debugging/readme.md#set-the-debug-mode) of our Client-side debugging guide.
+When you try to launch your extension, if you get an alert about unsigned extensions, see the ["Set the Debug Mode" section](Client-side%20Debugging/readme.md#set-the-debug-mode) of our Client-side debugging guide.
 
 
 ## Next Steps
