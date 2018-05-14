@@ -21,8 +21,9 @@ class App extends Component {
 
     insertLoremIpsum() {
         const text = this.state.ipsum.replace(/\n/g, '\\r');
-        const script = `_addTextLayer("${text}")`;
+        const script = `addTextLayer("${text}")`;
         if (typeof window.__adobe_cep__ !== 'undefined') {
+            /*global CSInterface */
             const csInterface = new CSInterface();
             csInterface.evalScript(script);
         } else {

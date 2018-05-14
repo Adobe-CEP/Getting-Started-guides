@@ -20,7 +20,7 @@
     <Extension Id="com.adobe.guides.react.panel">
       <DispatchInfo>
         <Resources>
-          <MainPath>./client/index.html</MainPath>
+          <MainPath>./build/index.html</MainPath>
           <ScriptPath>./host/index.jsx</ScriptPath>
           <CEFCommandLine />
         </Resources>

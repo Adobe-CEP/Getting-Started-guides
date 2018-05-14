@@ -1,9 +1,9 @@
 function addTextLayer(text) {
-    const layers = app.activeDocument.artLayers;
-    const layer = layers.add();
+    var layers = app.activeDocument.artLayers;
+    var layer = layers.add();
     layer.kind = LayerKind.TEXT;
 
-    const textItem = layer.textItem;
+    var textItem = layer.textItem;
     textItem.kind = TextType.PARAGRAPHTEXT;
     textItem.size = 24;
     textItem.position = [10, 10];
