@@ -95,9 +95,6 @@ If your package only includes one HTML extension, you can create a signed packag
 ```
 ZXPSignCmd -sign <inputDir> <outputZxp> <p12> <p12Password> [options]
 ```
-Make sure your input directory, `<inputDir>`, follows the following example folder structure:
-<img src="../.meta/readme-assets/html-folder-structure.png" width="50%" height="50%">
-
 
 | Parameters       | Description                                             | 
 | -------------    |:--------------------------------------------------------| 
@@ -111,6 +108,11 @@ Make sure your input directory, `<inputDir>`, follows the following example fold
 ```
 ./ZXPSignCmd -sign myExtProject myExtension.zxp MyCert.p12 abc123 -tsa http://time.certum.pl/
 ```
+
+Note that your input directory, `<inputDir>`, should follow the following example folder structure:
+
+<img src="../.meta/readme-assets/html-folder-structure.png" width="100%" height="100%">
+
 #### Multiple Extensions in one ZXP
 If you have more than one HTML extension to include in your package, follow the instructions below:
 
