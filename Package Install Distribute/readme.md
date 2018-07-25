@@ -105,6 +105,7 @@ ZXPSignCmd -sign <inputDir> <outputZxp> <p12> <p12Password> [options]
 
 
 **Folder Structure**
+
 Note that your input directory, `<inputDir>`, should follow the following example folder structure:
 
 <img src="../.meta/readme-assets/html-folder-structure.png" width="100%" height="100%">
