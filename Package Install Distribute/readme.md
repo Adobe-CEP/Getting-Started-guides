@@ -89,15 +89,108 @@ Once you run the command, this will output the self-signed certificate at the sp
 ## Creating and verifying a signed package
 Once you have a signed, verified certificate from the previous step, you are ready to create a signed pacakge. For CS6 hosts, and for more complex products on CC hosts, you must create an Adobe `ZXP` package that conforms to the Adobe Exchange requirements.
 
-### Use `ZXPSignCmd` to package your HTML extension
+### Decide what to include in your package and provide the configuration file
 If your package only includes one HTML extension, you can construct your folder structure like below and include an XML file named `manifest.xml` inside the `CSXS`folder:
 
 <img src="../.meta/readme-assets/html-folder-structure.png" width="100%" height="100%">
 
-If want to include other files or provide additional configurations, you must provide a configuration `.mxi` file, where you can specify all of the configuration details for the product, such as where to install files, which applications are supported, and so on. See below for the required folder structure:
+And here is an example `manifest.xml` based on the folder structure above:
+
+```
+<?xml version="1.0"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  ExtensionBundleId="com.example.extension"
+  ExtensionBundleVersion="1.0.0" Version="7.0">
+  <ExtensionList>
+    <Extension Id="com.example.extension.panel" Version="1.0.0"/>
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+        <Host Name="PHXS" Version="16.0" />
+        <Host Name="PHSP" Version="16.0" /
+    </HostList>
+    <LocaleList>
+      <Locale Code="All"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="7.0"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="com.example.extension.panel">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>./client/index.html</MainPath>
+          <ScriptPath>./host/index.jsx</ScriptPath>
+          <CEFCommandLine/>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>Example Extension</Menu>
+          <Geometry>
+            <Size>
+              <Height>500</Height>
+              <Width>350</Width>
+            </Size>
+          </Geometry>
+          <Icons/>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>
+```
+_SEE: [complete version of the manifest spec](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/ExtensionManifest_v_7_0.xsd)_
+
+If you want to include other files and/or provide additional configurations, you must provide a configuration `.mxi` file, where you can specify all of the configuration details for the product, such as where to install files, which applications are supported, and so on. See below for the recommended folder structure:
 
 <img src="../.meta/readme-assets/package-folder-structure.png" width="30%" height="30%">
 
+And here is an example `id.xml` based on the folder structure above:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<macromedia-extension
+        id="id"
+        name="Example Package"
+        requires-restart="true"
+        version="1.0.0">
+
+        <author name="AUTHOR NAME"/>
+        <description>
+                <![CDATA[YOUR DESCRIPTION]]>
+        </description>
+         <ui-access>
+                <![CDATA[YOUR INSTRUCTION]]>
+        </ui-access>
+
+        <license-agreement>
+                <![CDATA[YOUR LICENSE AGREEMENT]]>
+        </license-agreement>
+        <products>
+                <product familyname="Photoshop" version="13"/>
+        </products>
+        <files>
+                <file source="Extension/com.example.extension.zxp"
+			        destination=""
+			        file-type="CSXS"
+			        products="Photoshop,Photoshop32,Photoshop64"
+			        minVersion="15.0" />
+                <file source="PSD/"
+                    destination="$Downloads"
+                    file-type="ordinary"
+                    products="Photoshop,Photoshop32,Photoshop64"
+                    minVersion="14.0" />
+        </files>
+</macromedia-extension>
+
+```
+_SEE: [Configuration File Reference](https://helpx.adobe.com/extension-manager/kb/configuration-file-reference.html)_
+
+### Use `ZXPSignCmd` to package your HTML extension
 Once you have the input directory ready, run the following command to finish packaging:
 
 ```
