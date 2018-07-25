@@ -147,7 +147,7 @@ _SEE: [complete version of the manifest spec](https://github.com/Adobe-CEP/CEP-R
 
 If you want to include other files and/or provide additional configurations, you must provide a configuration `.mxi` file, where you can specify all of the configuration details for the product, such as where to install files, which applications are supported, and so on. See below for the recommended folder structure:
 
-<img src="../.meta/readme-assets/package-folder-structure.png" width="30%" height="30%">
+<img src="../.meta/readme-assets/package-folder-structure2.png" width="30%" height="30%">
 
 And here is an example `id.xml` based on the folder structure above:
 
@@ -172,7 +172,7 @@ And here is an example `id.xml` based on the folder structure above:
         <product familyname="Photoshop" version="13"/>
     </products>
     <files>
-        <file source="Extension/com.example.extension.zxp"
+        <file source="Extension/html.zxp"
             destination=""
             file-type="CSXS"
             products="Photoshop,Photoshop32,Photoshop64"
