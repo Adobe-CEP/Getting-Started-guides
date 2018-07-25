@@ -8,7 +8,7 @@ By the end of this guide, we will have a CEP extension that opens a new document
 
 ![Example extension: opening a new file in Photoshop](.meta/readme-assets/extension.gif?raw=true)
 
-When you're finished, be sure to check out the [Next Steps section](#next-steps), which has links to guides and samples that will walk you through some common intermediate and advanced topics, like exporting files from the host app, making network requests, and more.
+When you're finished, be sure to check out the [Next Steps section](#next-steps), which has links to guides and samples that will walk you through debugging as well as some common intermediate and advanced topics, like exporting files from the host app, making network requests, and more.
 
 <!-- doctoc command config: -->
 <!-- $ doctoc ./readme.md --title "## Contents" --entryprefix 1. --gitlab --maxlevel 3 -->
@@ -207,11 +207,14 @@ Since the sample extension we made in this guide supports Photoshop, you can fin
 
 > Window > Extensions > My First Panel
 
+When you try to launch your extension, if you get an alert about unsigned extensions, see the ["Set the Debug Mode" section](Client-side%20Debugging/readme.md#set-the-debug-mode) of our Client-side debugging guide.
+
 
 ## Next Steps
 
 Now that you've seen the basics, check out these guides and samples that walk you through some common intermediate and advanced topics in CEP:
 
+- [Client-side debugging](Client-side%20Debugging)
 - [Exporting files from the host app](Exporting%20files%20from%20the%20host%20app)
 - [Network requests and responses with Fetch](Network%20requests%20and%20responses%20with%20Fetch)
 
