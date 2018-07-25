@@ -18,8 +18,8 @@ By the end of this guide, we will be able to:
 1. [Prerequisites](#prerequisites)
 1. [Signing your extension](#signing-your-extension)
 1. [Creating and verifying a signed package](#creating-and-verifying-a-signed-package)
-1. [Installing the `ZXP` Packaged Extension](#installing-the-zxp-packaged-extension)
 1. [Distributing the `ZXP` Packaged Extension](#distributing-the-zxp-packaged-extension)
+1. [Installing the `ZXP` Packaged Extension](#installing-the-zxp-packaged-extension)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
