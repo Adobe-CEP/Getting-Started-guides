@@ -96,7 +96,7 @@ If your package only includes one HTML extension, you can construct your folder 
 
 If want to include other files or provide additional configurations, you must provide a configuration `.mxi` file, where you can specify all of the configuration details for the product, such as where to install files, which applications are supported, and so on. See below for the required folder structure:
 
-<img src="../.meta/readme-assets/package-folder-structure.png" width="50%" height="50%">
+<img src="../.meta/readme-assets/package-folder-structure.png" width="30%" height="30%">
 
 Once you have the input directory ready, run the following command to finish packaging:
 
