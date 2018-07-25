@@ -104,7 +104,7 @@ ZXPSignCmd -sign <inputDir> <outputZxp> <p12> <p12Password> [options]
 | options(tsa)   | `-tsa <timestampURL>` The timestamp server. Examples:<br>http://time.certum.pl/<br>http://timestamp.comodoca.com/rfc3161| 
 
 
-**Folder Structure**
+**Folder Structure**<br>
 
 Note that your input directory, `<inputDir>`, should follow the following example folder structure:
 
