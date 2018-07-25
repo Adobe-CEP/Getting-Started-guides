@@ -90,7 +90,6 @@ Once you run the command, this will output the self-signed certificate at the sp
 Once you have a signed, verified certificate from the previous step, you are ready to create a signed pacakge. For CS6 hosts, and for more complex products on CC hosts, you must create an Adobe `ZXP` package that conforms to the Adobe Exchange requirements. In order to package your product in the `ZXP` format, on top of the signed certificate created in the previous step, you must provide a configuration manifest, which is an XML file that specifies all of the configuration details for the product, such as where to install files, which applications are supported, and so on. Depending on how you created your product, the manifest can be an XML file named `manifest.xml`, or an `MXI` file. If you are unfamiliar with these terms, take a look at the [Adobe CEP Getting Started Guide](https://github.com/Adobe-CEP/Getting-Started-guides) first.
 
 ### Use `ZXPSignCmd` to package your extension
-#### HTML Extension
 If your package only includes one HTML extension, you can create a signed package by running the following command:
 ```
 ZXPSignCmd -sign <inputDir> <outputZxp> <p12> <p12Password> [options]
@@ -104,16 +103,18 @@ ZXPSignCmd -sign <inputDir> <outputZxp> <p12> <p12Password> [options]
 | p12Password | The password for the certificate.| 
 | options(tsa)   | `-tsa <timestampURL>` The timestamp server. Examples:<br>http://time.certum.pl/<br>http://timestamp.comodoca.com/rfc3161| 
 
+
+**Folder Structure**
+Note that your input directory, `<inputDir>`, should follow the following example folder structure:
+
+<img src="../.meta/readme-assets/html-folder-structure.png" width="100%" height="100%">
+
 **Example**
 ```
 ./ZXPSignCmd -sign myExtProject myExtension.zxp MyCert.p12 abc123 -tsa http://time.certum.pl/
 ```
 
-Note that your input directory, `<inputDir>`, should follow the following example folder structure:
-
-<img src="../.meta/readme-assets/html-folder-structure.png" width="100%" height="100%">
-
-#### Multiple Extensions in one ZXP
+### Use `ZXPSignCmd` to include other files in your package 
 If you have more than one HTML extension to include in your package, follow the instructions below:
 
 
