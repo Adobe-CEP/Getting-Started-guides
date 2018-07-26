@@ -91,7 +91,7 @@ Once you run the command, this will output the self-signed certificate at the sp
 ```
 
 ## Creating and verifying a signed package
-Once you have a signed, verified certificate from the previous step, you are ready to create a signed pacakge. For CS6 hosts, and for more complex products on CC hosts, you must create an Adobe `ZXP` package that conforms to the Adobe Exchange requirements.
+Once you have a signed, verified certificate from the previous step, you are ready to create a signed pacakge. In order to conform to the Adobe Exchange requirements or distribute using Admin Console, you must create an Adobe `ZXP` package.
 
 ### Decide what to include in your package and provide the configuration file
 If your package only includes one HTML extension, you can construct your folder structure like below and include an XML file named `manifest.xml` inside the `CSXS`folder:
@@ -296,3 +296,13 @@ Anastaisy’s extension manager is a third-party developed tool that can help yo
 Visit [Anastaisy's extension manager download page](https://install.anastasiy.com/) and follow the instructions.
 
 After the installation is completed, your extension will be stored at the root level of the extension folder (Note that the root extension folder location is different depending on which OS you use. See [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for more details.)
+
+### Option #3 - Adobe Exchange
+Adobe Exchange is a marketplace where you can upload and download extensions, custom tags, scripts, content, and other items that extend the functionality of Adobe applications. In order to download a Adobe Exchange hosted product, simply follow the instructions below:
+
+1. Visit https://www.adobeexchange.com/
+1. Choose the marketplace (Creative Cloud / Experience Cloud / Document Cloud)
+1. Choose the product that fits your need
+1. Click on the "Buy" or "Free" button, depending on whether the product is free or not
+1. The product will be downloaded in the appropriate location (Note that the download location is specified in the ZXP package. Most sellers include the download location in the "Where 
+To Find It" section)
