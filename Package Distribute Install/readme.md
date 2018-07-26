@@ -270,9 +270,9 @@ The enterprise console allows you to bundle extensions into the deployment packa
   - [ExManCmd - Mac](http://www.adobeexchange.com/ExManCmd_mac.zip)
   - [ExManCmd - Windows](http://www.adobeexchange.com/ExManCmd_win.zip)
 
-2. Unzip the `ExManCmd` toolkit - Unzip the downloaded toolkit and have the `ExManCmd` file available for use in the next step.
+1. Unzip the `ExManCmd` toolkit - Unzip the downloaded toolkit and have the `ExManCmd` file available for use in the next step.
 
-3. Install the package - You can easily install/uninstall the package using the available commands in `ExManCmd`. Refer to [Extension Manager command-line basics](https://helpx.adobe.com/extension-manager/using/command-line.html) for more details.
+1. Install the package - You can easily install/uninstall the package using the available commands in `ExManCmd`. Refer to [Extension Manager command-line basics](https://helpx.adobe.com/extension-manager/using/command-line.html) for more details.
 
   ```
   ExManCmd --install <zxpPath>
