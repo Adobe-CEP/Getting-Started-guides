@@ -57,7 +57,7 @@ There are two types of code-signing certificate: commercial certificates provide
 
 - Using CA (Certificate Authority) - Your certificate signed by CA must satisfy these conditions:
 	- The root certificate of the code-signing certificate must be installed in the target operating system by
-default. This can vary with different variations of an operating system. 
+default. This can vary with different variations of an operating system.
 
 	- The issuing certificate authority (CA) of the code-signing certificate must permit you to use that
 certificate to sign extensions.
@@ -89,7 +89,7 @@ Once you run the command, this will output the self-signed certificate at the sp
 ```
 
 ## Creating and verifying a signed package
-Once you have a signed, verified certificate from the previous step, you are ready to create a signed pacakge. In order to conform to the Adobe Exchange requirements or distribute using Admin Console, you must create an Adobe `ZXP` package.
+Once you have a signed, verified certificate from the previous step, you are ready to create a signed pacakge. In order to conform to the Adobe Exchange requirements or distribute using the Admin Console, you must create an Adobe `ZXP` package. If you aren't distributing on Adobe Exchange or the Admin Console, ZXP may not be required. Check with your distribution channel for details.
 
 ### Decide what to include in your package and provide the configuration file
 If your package only includes one HTML extension, you can construct your folder structure like below and include an XML file named `manifest.xml` inside the `CSXS`folder:
