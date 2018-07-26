@@ -266,18 +266,14 @@ The enterprise console allows you to bundle extensions into the deployment packa
 
 ## Installing the `ZXP` Packaged Extension
 ### Option #1 - `ExManCmd`
-##### Download `ExManCmd`
-Download the Extension Manager Command Line tool (ExManCmd) from the following locations:
+1. Download `ExManCmd` - Download the Extension Manager Command Line tool (ExManCmd) from the following locations:
 - [ExManCmd - Mac](http://www.adobeexchange.com/ExManCmd_mac.zip)
 - [ExManCmd - Windows](http://www.adobeexchange.com/ExManCmd_win.zip)
-
 You can use the command line to perform various operations you would normally perform in the Extension Manager workspace.
 
-##### Unzip the `ExManCmd` toolkit
-Unzip the downloaded toolkit and have the `ExManCmd` file available for use in the next step.
+2. Unzip the `ExManCmd` toolkit - Unzip the downloaded toolkit and have the `ExManCmd` file available for use in the next step.
 
-##### Install the package
-You can easily install/uninstall the package using the available commands in `ExManCmd`. Refer to [Extension Manager command-line basics](https://helpx.adobe.com/extension-manager/using/command-line.html) for more details.
+3. Install the package - You can easily install/uninstall the package using the available commands in `ExManCmd`. Refer to [Extension Manager command-line basics](https://helpx.adobe.com/extension-manager/using/command-line.html) for more details.
 
 ```
 ExManCmd --install <zxpPath>
