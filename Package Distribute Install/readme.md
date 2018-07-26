@@ -242,7 +242,7 @@ Signing Certificate: Valid (from 2018-04-02 until 2029-06-19)
 ```
 _Note: You can check the validity of your timestamp like above_
 
-## Distributing the `ZXP` Packaged Extension within Adobe
+## Distributing the `ZXP` Packaged Extension
 There are numerous options for developers to distribute extensions. In this section, we'll note two options preferred by Adobe. If you opt for another method of distributing, check with that distribution channel for details.
 ### Option #1 - Adobe Exchange
 You can distribute your package to the public via the Adobe Exchange where Adobe users can download your extension. In order to list your extension, visit the [Producer Portal](https://technologypartners.adobe.com/home.html#). If you need further help, check out the [New Adobe Exchange Producer Portal article](https://medium.com/adobe-io/adobe-exchange-producer-portal-4f7af3d5f6fe). 
