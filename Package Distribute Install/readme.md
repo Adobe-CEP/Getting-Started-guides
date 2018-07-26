@@ -294,10 +294,10 @@ To Find It" section)
     ```
     If you get an error, see the [extensions installation error codes and description](https://helpx.adobe.com/exchange/kb/error-codes.html) for more information.
 
-### Option #3 - Anastaisy’s extension manager
-Anastaisy’s extension manager is a third-party developed tool that can help you install extensions packaged in `.zxp` format. 
+### Option #3 - Anastasiy’s extension manager
+Anastasiy’s extension manager is a third-party developed tool that can help you install extensions packaged in `.zxp` format. 
 
-1. Download and install Anastaisy’s extension manager
-    Visit [Anastaisy's extension manager download page](https://install.anastasiy.com/) and follow the instructions.
+1. Download and install Anastasiy’s extension manager
+    Visit [Anastasiy's extension manager download page](https://install.anastasiy.com/) and follow the instructions.
 
     After the installation is completed, your extension will be stored at the root level of the extension folder (Note that the root extension folder location is different depending on which OS you use. See [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for more details.)
