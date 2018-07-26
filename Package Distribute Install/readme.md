@@ -108,8 +108,8 @@ And here is an example `manifest.xml` based on the folder structure above:
   </ExtensionList>
   <ExecutionEnvironment>
     <HostList>
-        <Host Name="PHXS" Version="16.0" />
-        <Host Name="PHSP" Version="16.0" /
+        <Host Name="PHXS" Version="14.0" />
+        <Host Name="PHSP" Version="14.0" /
     </HostList>
     <LocaleList>
       <Locale Code="All"/>
@@ -179,7 +179,7 @@ And here is an example `id.xml` based on the folder structure above:
             destination=""
             file-type="CSXS"
             products="Photoshop,Photoshop32,Photoshop64"
-            minVersion="15.0" />
+            minVersion="14.0" />
         <file source="PSD/"
             destination="$Downloads"
             file-type="ordinary"
