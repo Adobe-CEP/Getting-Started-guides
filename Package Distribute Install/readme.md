@@ -266,24 +266,23 @@ The enterprise console allows you to bundle extensions into the deployment packa
 
 ## Installing the `ZXP` Packaged Extension
 ### Option #1 - `ExManCmd`
-1. Download `ExManCmd` - Download the Extension Manager Command Line tool (ExManCmd) from the following locations:
-- [ExManCmd - Mac](http://www.adobeexchange.com/ExManCmd_mac.zip)
-- [ExManCmd - Windows](http://www.adobeexchange.com/ExManCmd_win.zip)
-You can use the command line to perform various operations you would normally perform in the Extension Manager workspace.
+1. Download `ExManCmd` - Download the Extension Manager Command Line tool (ExManCmd) from the following locations (You can use the command line to perform various operations you would normally perform in the Extension Manager workspace):
+  - [ExManCmd - Mac](http://www.adobeexchange.com/ExManCmd_mac.zip)
+  - [ExManCmd - Windows](http://www.adobeexchange.com/ExManCmd_win.zip)
 
 2. Unzip the `ExManCmd` toolkit - Unzip the downloaded toolkit and have the `ExManCmd` file available for use in the next step.
 
 3. Install the package - You can easily install/uninstall the package using the available commands in `ExManCmd`. Refer to [Extension Manager command-line basics](https://helpx.adobe.com/extension-manager/using/command-line.html) for more details.
 
-```
-ExManCmd --install <zxpPath>
-```
+  ```
+  ExManCmd --install <zxpPath>
+  ```
 
-**Example**
-```
-./ExManCmd --install ~/Documents/myExtension.zxp
-```
-If you get an error, see the [extensions installation error codes and description](https://helpx.adobe.com/exchange/kb/error-codes.html) for more information.
+  **Example**
+  ```
+  ./ExManCmd --install ~/Documents/myExtension.zxp
+  ```
+  If you get an error, see the [extensions installation error codes and description](https://helpx.adobe.com/exchange/kb/error-codes.html) for more information.
 
 ### Option #2 - Anastaisy’s extension manager
 Anastaisy’s extension manager is a third-party developed tool that can help you install extensions packaged in `.zxp` format. 
