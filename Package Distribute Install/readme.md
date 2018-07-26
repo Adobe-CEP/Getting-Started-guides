@@ -18,7 +18,7 @@ By the end of this guide, you will be able to:
 1. [Prerequisites](#prerequisites)
 1. [Signing your extension](#signing-your-extension)
 1. [Creating and verifying a signed package](#creating-and-verifying-a-signed-package)
-1. [Distributing the `ZXP` Packaged Extension](#distributing-the-zxp-packaged-extension)
+1. [Distributing the `ZXP` Packaged Extension within Adobe](#distributing-the-zxp-packaged-extension-within-adobe)
 1. [Installing the `ZXP` Packaged Extension](#installing-the-zxp-packaged-extension)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -157,6 +157,7 @@ And here is an example `id.xml` based on the folder structure above:
 <?xml version="1.0" encoding="UTF-8"?>
 <macromedia-extension
     id="id"
+    icon="icon.png"
     name="Example Package"
     requires-restart="true"
     version="1.0.0">
@@ -242,6 +243,7 @@ Signing Certificate: Valid (from 2018-04-02 until 2029-06-19)
 _Note: You can check the validity of your timestamp like above_
 
 ## Distributing the `ZXP` Packaged Extension within Adobe
+There are numerous options for developers to distribute extensions. In this section, we'll note two options preferred by Adobe. If you opt for another method of distributing, check with that distribution channel for details.
 ### Option #1 - Adobe Exchange
 You can distribute your package to the public via the Adobe Exchange where Adobe users can download your extension. In order to list your extension, visit the [Producer Portal](https://technologypartners.adobe.com/home.html#). If you need further help, check out the [New Adobe Exchange Producer Portal article](https://medium.com/adobe-io/adobe-exchange-producer-portal-4f7af3d5f6fe). 
 
@@ -263,7 +265,17 @@ The enterprise console allows you to bundle extensions into the deployment packa
 1. Navigate back to `YOUR_PACKAGE_NAME.pkg` and double-click the `.pkg` file. Installation process will kick-off
 
 ## Installing the `ZXP` Packaged Extension
-### Option #1 - `ExManCmd`
+### Option #1 - Adobe Exchange
+Adobe Exchange is a marketplace where you can upload and download extensions, custom tags, scripts, content, and other items that extend the functionality of Adobe applications. In order to download a Adobe Exchange hosted product, simply follow the instructions below:
+
+1. Visit https://www.adobeexchange.com/
+1. Choose the marketplace (Creative Cloud / Experience Cloud / Document Cloud)
+1. Choose the product that fits your need
+1. Click on the "Buy" or "Free" button, depending on whether the product is free or not
+1. The product will be downloaded in the appropriate location (Note that the download location is specified in the ZXP package. Most sellers include the download location in the "Where 
+To Find It" section)
+
+### Option #2 - `ExManCmd`
 1. Download `ExManCmd` - Download the Extension Manager Command Line tool (ExManCmd) from the following locations (You can use the command line to perform various operations you would normally perform in the Extension Manager workspace):
     - [ExManCmd - Mac](http://www.adobeexchange.com/ExManCmd_mac.zip)
     - [ExManCmd - Windows](http://www.adobeexchange.com/ExManCmd_win.zip)
@@ -282,20 +294,10 @@ The enterprise console allows you to bundle extensions into the deployment packa
     ```
     If you get an error, see the [extensions installation error codes and description](https://helpx.adobe.com/exchange/kb/error-codes.html) for more information.
 
-### Option #2 - Anastaisy’s extension manager
+### Option #3 - Anastaisy’s extension manager
 Anastaisy’s extension manager is a third-party developed tool that can help you install extensions packaged in `.zxp` format. 
 
 1. Download and install Anastaisy’s extension manager
     Visit [Anastaisy's extension manager download page](https://install.anastasiy.com/) and follow the instructions.
 
     After the installation is completed, your extension will be stored at the root level of the extension folder (Note that the root extension folder location is different depending on which OS you use. See [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for more details.)
-
-### Option #3 - Adobe Exchange
-Adobe Exchange is a marketplace where you can upload and download extensions, custom tags, scripts, content, and other items that extend the functionality of Adobe applications. In order to download a Adobe Exchange hosted product, simply follow the instructions below:
-
-1. Visit https://www.adobeexchange.com/
-1. Choose the marketplace (Creative Cloud / Experience Cloud / Document Cloud)
-1. Choose the product that fits your need
-1. Click on the "Buy" or "Free" button, depending on whether the product is free or not
-1. The product will be downloaded in the appropriate location (Note that the download location is specified in the ZXP package. Most sellers include the download location in the "Where 
-To Find It" section)
