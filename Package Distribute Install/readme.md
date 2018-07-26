@@ -57,9 +57,7 @@ There are two types of code-signing certificate: commercial certificates provide
 
 - Using CA (Certificate Authority) - Your certificate signed by CA must satisfy these conditions:
 	- The root certificate of the code-signing certificate must be installed in the target operating system by
-default. This can vary with different variations of an operating system. For example, you may need to
-check that your root certificate is installed into all variations of Win XP, including home/professional,
-SP1, SP2, SP3, and so on.
+default. This can vary with different variations of an operating system. 
 
 	- The issuing certificate authority (CA) of the code-signing certificate must permit you to use that
 certificate to sign extensions.
