@@ -2,7 +2,7 @@
 
 After you have successfully built your extension, you should package the extension in the `ZXP` format and sign the extension with a valid certificate in order to distribute your extension properly. This guide will walk you through the process of packaging, distributing, and installing your extension.
 
-By the end of this guide, we will be able to:
+By the end of this guide, you will be able to:
 
 1. Package your extension in the `ZXP` format with a certificate
 1. Install the packaged extension in your or others' machine
@@ -18,18 +18,18 @@ By the end of this guide, we will be able to:
 1. [Prerequisites](#prerequisites)
 1. [Signing your extension](#signing-your-extension)
 1. [Creating and verifying a signed package](#creating-and-verifying-a-signed-package)
-1. [Installing the `ZXP` Packaged Extension](#installing-the-zxp-packaged-extension)
 1. [Distributing the `ZXP` Packaged Extension](#distributing-the-zxp-packaged-extension)
+1. [Installing the `ZXP` Packaged Extension](#installing-the-zxp-packaged-extension)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Prerequisites
-This guide assumes that you have a finished, working version of an Adobe extension. If you have not built an Adobe extension yet, make sure to visit [Adobe CEP Getting Started Guide](https://github.com/Adobe-CEP/Getting-Started-guides).
+This guide assumes that you have a finished, working version of an CEP extension. If you have not built an CEP extension yet, make sure to visit [Adobe CEP Getting Started Guide](https://github.com/Adobe-CEP/Getting-Started-guides).
 
 ## Signing your extension
 The signature verifies that the package has not been altered since it was packaged. When installing a package, your extension installer validates the package against the signature, and checks for a valid certificate. In addition, CEP checks for a valid certificate each time a host application tries to run an extension.
 
-Certificates used to cryptographically sign documents or software commonly have expiration options between one and four years. If the certificate has no valid timestamp, and the certificate used to sign the extension has expired, the extension cannot be installed or loaded. There is no warning or notification to the user before the signature expires. To make your extension available to users again, you would have to repackage it with a new certificate. Thus, it is recommended to repackage the extension well before your installer certificae is due to expire to avoid users being unable to install your extension.
+Certificates used to cryptographically sign documents or software commonly have expiration options between one and four years. If the certificate has no valid timestamp, and the certificate used to sign the extension has expired, the extension cannot be installed or loaded. There is no warning or notification to the user before the signature expires. To make your extension available to users again, you would have to repackage it with a new certificate. Thus, it is recommended to repackage the extension well before your installer certificate is due to expire to avoid users being unable to install your extension.
 
 A valid timestamp ensures that the certificate used to sign the extension was valid at the time of signing.
 For this reason, you should always add a timestamp to the signature when you package and sign your
@@ -46,7 +46,11 @@ These are the possible validation results:
 | Signature valid | Extension runs normally|
 
 ### Download the signing and packaging tool, `ZXPSignCmd`
-Adobe provides a command-line tool, `ZXPSignCmd`, that you can use to package and sign extensions. Access the [CEP Resources page](https://github.com/Adobe-CEP/CEP-Resources/tree/master/ZXPSignCMD) to download the toolkit for your platform. You can use this tool to create a self-signed certificate, create a signed ZXP package, or verify an existing ZXP package. Note that this tool does not validate the content of your extension. If you are unfamiliar with the required structure and content of the extension, refer to [Adobe CEP Getting Started Guide](https://github.com/Adobe-CEP/Getting-Started-guides).
+Adobe provides a command-line tool, `ZXPSignCmd`, that you can use to package and sign extensions. Access the [CEP Resources page](https://github.com/Adobe-CEP/CEP-Resources/tree/master/ZXPSignCMD) to download the toolkit for your platform. 
+
+You can use this tool to create a self-signed certificate, create a signed ZXP package, or verify an existing ZXP package. Note that this tool does not validate the content of your extension. 
+
+If you are unfamiliar with the required structure and content of the extension, refer to [Adobe CEP Getting Started Guide](https://github.com/Adobe-CEP/Getting-Started-guides).
 
 ### Decide how to sign your extension
 There are two types of code-signing certificate: commercial certificates provided by a trusted certificate authority, and self-signed certificates. Commercial certificates must be purchased from a trusted certificate authority.
@@ -266,6 +270,7 @@ The enterprise console allows you to bundle extensions into the deployment packa
 Download the Extension Manager Command Line tool (ExManCmd) from the following locations:
 - [ExManCmd - Mac](http://www.adobeexchange.com/ExManCmd_mac.zip)
 - [ExManCmd - Windows](http://www.adobeexchange.com/ExManCmd_win.zip)
+
 You can use the command line to perform various operations you would normally perform in the Extension Manager workspace.
 
 ##### Unzip the `ExManCmd` toolkit
@@ -289,4 +294,5 @@ Anastaisy’s extension manager is a third-party developed tool that can help yo
 
 ##### Download and install Anastaisy’s extension manager
 Visit [Anastaisy's extension manager download page](https://install.anastasiy.com/) and follow the instructions.
-1. After the installation is completed, your extension will be stored at the root level of the extension folder (Note that the root extension folder location is different depending on which OS you use. See [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for more details.)
+
+After the installation is completed, your extension will be stored at the root level of the extension folder (Note that the root extension folder location is different depending on which OS you use. See [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for more details.)
