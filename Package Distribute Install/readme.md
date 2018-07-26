@@ -287,10 +287,10 @@ The enterprise console allows you to bundle extensions into the deployment packa
 ### Option #2 - Anastaisy’s extension manager
 Anastaisy’s extension manager is a third-party developed tool that can help you install extensions packaged in `.zxp` format. 
 
-##### Download and install Anastaisy’s extension manager
-Visit [Anastaisy's extension manager download page](https://install.anastasiy.com/) and follow the instructions.
+1. Download and install Anastaisy’s extension manager
+    Visit [Anastaisy's extension manager download page](https://install.anastasiy.com/) and follow the instructions.
 
-After the installation is completed, your extension will be stored at the root level of the extension folder (Note that the root extension folder location is different depending on which OS you use. See [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for more details.)
+    After the installation is completed, your extension will be stored at the root level of the extension folder (Note that the root extension folder location is different depending on which OS you use. See [CEP Cookbook](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_8.x/Documentation/CEP%208.0%20HTML%20Extension%20Cookbook.md#extension-folders) for more details.)
 
 ### Option #3 - Adobe Exchange
 Adobe Exchange is a marketplace where you can upload and download extensions, custom tags, scripts, content, and other items that extend the functionality of Adobe applications. In order to download a Adobe Exchange hosted product, simply follow the instructions below:
