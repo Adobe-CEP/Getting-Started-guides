@@ -16,9 +16,9 @@ By the end of this guide, you will be able to:
 ## Contents
 
 1. [Prerequisites](#prerequisites)
-1. [Signing your extension](#signing-your-extension)
+1. [Acquiring a signed certificate](#acquiring-a-signed-certificate)
 1. [Creating and verifying a signed package](#creating-and-verifying-a-signed-package)
-1. [Distributing the `ZXP` Packaged Extension within Adobe](#distributing-the-zxp-packaged-extension-within-adobe)
+1. [Distributing the `ZXP` Packaged Extension](#distributing-the-zxp-packaged-extension)
 1. [Installing the `ZXP` Packaged Extension](#installing-the-zxp-packaged-extension)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -26,7 +26,7 @@ By the end of this guide, you will be able to:
 ## Prerequisites
 This guide assumes that you have a finished, working version of an CEP extension. If you have not built an CEP extension yet, make sure to visit [Adobe CEP Getting Started Guide](https://github.com/Adobe-CEP/Getting-Started-guides).
 
-## Signing your extension
+## Acquiring a signed certificate
 The signature verifies that the package has not been altered since it was packaged. When installing a package, your extension installer validates the package against the signature, and checks for a valid certificate. In addition, CEP checks for a valid certificate each time a host application tries to run an extension.
 
 Certificates used to cryptographically sign documents or software commonly have expiration options between one and four years. If the certificate has no valid timestamp, and the certificate used to sign the extension has expired, the extension cannot be installed or loaded. There is no warning or notification to the user before the signature expires. To make your extension available to users again, you would have to repackage it with a new certificate. Thus, it is recommended to repackage the extension well before your installer certificate is due to expire to avoid users being unable to install your extension.
@@ -52,7 +52,7 @@ You can use this tool to create a self-signed certificate, create a signed ZXP p
 
 If you are unfamiliar with the required structure and content of the extension, refer to [Adobe CEP Getting Started Guide](https://github.com/Adobe-CEP/Getting-Started-guides).
 
-### Decide how to sign your extension
+### Decide how to acquire the certificate
 There are two types of code-signing certificate: commercial certificates provided by a trusted certificate authority, and self-signed certificates. Commercial certificates must be purchased from a trusted certificate authority.
 
 - Using CA (Certificate Authority) - Your certificate signed by CA must satisfy these conditions:
