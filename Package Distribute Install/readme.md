@@ -191,7 +191,7 @@ And here is an example `id.xml` based on the folder structure above:
 ```
 _SEE: [Configuration File Reference](https://helpx.adobe.com/extension-manager/kb/configuration-file-reference.html)_
 
-### Use `ZXPSignCmd` to package your HTML extension
+### Use `ZXPSignCmd` to package your extension
 Once you have the input directory ready, run the following command to finish packaging:
 
 ```
