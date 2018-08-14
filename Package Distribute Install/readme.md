@@ -277,8 +277,8 @@ To Find It" section)
 
 ### Option #2 - `ExManCmd`
 1. Download `ExManCmd` - Download the Extension Manager Command Line tool (ExManCmd) from the following locations (You can use the command line to perform various operations you would normally perform in the Extension Manager workspace):
-    - [ExManCmd - Mac](http://www.adobeexchange.com/ExManCmd_mac.zip)
-    - [ExManCmd - Windows](http://www.adobeexchange.com/ExManCmd_win.zip)
+    - [ExManCmd - Mac](http://www.adobe.com/go/ExManCmdMac)
+    - [ExManCmd - Windows](http://www.adobe.com/go/ExManCmdWin)
 
 1. Unzip the `ExManCmd` toolkit - Unzip the downloaded toolkit and have the `ExManCmd` file available for use in the next step.
 
