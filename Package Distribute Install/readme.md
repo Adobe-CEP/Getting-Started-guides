@@ -191,6 +191,8 @@ And here is an example `id.xml` based on the folder structure above:
 ```
 _SEE: [Configuration File Reference](https://helpx.adobe.com/extension-manager/kb/configuration-file-reference.html)_
 
+If you want more information and step-by-step guide, read [How to Customize Your Adobe Creative Cloud Extension Package](https://medium.com/adobetech/how-to-customize-your-adobe-creative-cloud-extension-package-1aba6111aee4).
+
 ### Use `ZXPSignCmd` to package your extension
 Once you have the input directory ready, run the following command to finish packaging:
 
