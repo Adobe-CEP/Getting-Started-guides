@@ -20,7 +20,7 @@ Here's how to tell which version of ExManCmd you're running:
 
 ![](https://raw.githubusercontent.com/Adobe-CEP/Getting-Started-guides/master/.meta/readme-assets/filepathdrag_drop.small.gif)
 
-     * Hit return to run the command.
+  * Hit return to run the command.
 
 6. Double click ExManCmd Tool (from within `/Contents/MacOS/ExManBridgeTalkCmd`)
 
