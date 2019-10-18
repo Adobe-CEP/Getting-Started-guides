@@ -18,7 +18,7 @@ Here's how to tell which version of ExManCmd you're running:
 5. This command will remove the BridgeTalk component from Apple's quarantine: `xattr -dr com.apple.quarantine Your/SystemPath/Contents/MacOS/ExManBridgeTalkCmd`
      * My favorite method of doing this is to drag the `ExManBridgeTalk` file directly onto the Terminal after pasting in the command, so you don't have to navigate through your file system:
 
-![](https://raw.githubusercontent.com/Adobe-CEP/Getting-Started-guides/blob/master/.meta/readme-assets/filepathdrag_drop.gif "")
+![](https://raw.githubusercontent.com/Adobe-CEP/Getting-Started-guides/master/.meta/readme-assets/filepathdrag_drop.small.gif)
      * Hit return to run the command.
 
 6. Double click ExManCmd Tool (from within `/Contents/MacOS/ExManBridgeTalkCmd`)
