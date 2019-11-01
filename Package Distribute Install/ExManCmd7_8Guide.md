@@ -33,5 +33,6 @@ Here's how to tell which version of ExManCmd you're running:
 
 8. ExManCmd should now run properly... unless you rely on BridgeTalk components. Let us know if this doesn't work! 
 9. Use ExManCmd to install/remove addons as usual.
-    * We recommend running ExManCmd using `sudo`
+    * We recommend running ExManCmd using `sudo` in cases where you're installing directly into the Creative Cloud app.
+    * `sudo` may not be necessary for other types of installations.
 
