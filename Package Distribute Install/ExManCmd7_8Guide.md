@@ -1,4 +1,6 @@
-ExManCmd 7.8 just came out, which macOS Catalina compatibility... with some caveats:
+----
+Please note: With the release of ExManCmd 7.10 in July of 2020, this guide is now obsolete.
+----
 
 - [**Don't update to Catalina if you still depend on ExtendScript ToolKit.**](https://medium.com/adobetech/estk-and-macos-10-15-catalina-cbcc30300918?source=friends_link&sk=76b9896b1eec630691f5603839ae28fe "Don't update to Catalina if you still depend on ExtendScript ToolKit.") Perhaps try Catalina in a separate partition on your Mac first.
 - The BridgeTalk component is not quite Catalina compliant and requires additional steps upon download, documented below.
@@ -9,7 +11,8 @@ Here's how to tell which version of ExManCmd you're running:
 
 # Use the following steps to set up ExManCmd 7.8
 
-1. Download ExManCmd 7.8 here: [https://partners.adobe.com/exchangeprogram/creativecloud/support/exman-com-line-tool.html](https://partners.adobe.com/exchangeprogram/creativecloud/support/exman-com-line-tool.html "https://partners.adobe.com/exchangeprogram/creativecloud/support/exman-com-line-tool.html")
+~~1. Download ExManCmd 7.8 here: [https://partners.adobe.com/exchangeprogram/creativecloud/support/exman-com-line-tool.html](https://partners.adobe.com/exchangeprogram/creativecloud/support/exman-com-line-tool.html "https://partners.adobe.com/exchangeprogram/creativecloud/support/exman-com-line-tool.html")~~
+The link above hosts the latest version of ExManCmd. Version 7.8 is no longer available.
 
 2. Double click on the `.dmg` folder to mount the `.dmg` volume
 3. Copy and paste the `Contents` folder to your hard drive (or other System location)
