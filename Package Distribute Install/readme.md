@@ -247,7 +247,7 @@ _Note: You can check the validity of your timestamp like above_
 ## Distributing the `ZXP` Packaged Extension
 There are numerous options for developers to distribute extensions. In this section, we'll note two options preferred by Adobe. If you opt for another method of distributing, check with that distribution channel for details.
 ### Option #1 - Adobe Exchange
-You can distribute your package to the public via the Adobe Exchange where Adobe users can download your extension. In order to list your extension, visit the [Producer Portal](https://technologypartners.adobe.com/home.html#). If you need further help, check out the [New Adobe Exchange Producer Portal article](https://medium.com/adobe-io/adobe-exchange-producer-portal-4f7af3d5f6fe). 
+You can distribute your package to the public via the Adobe Exchange where Adobe users can download your extension. In order to list your extension, visit the [Exchange Producer Portal](https://partners.adobe.com/exchangeprogram/creativecloud). If you need further help, check out the [Adobe Exchange Producer Portal](https://partners.adobe.com/exchangeprogram/creativecloud). 
 
 ### Option #2 - Multiple User Deployment in Managed Environments
 The enterprise console allows you to bundle extensions into the deployment package. This means installation of your Creative Cloud applications and installation of your extensions happens as part of a single deployment process. Please take a look at the following steps:
@@ -270,7 +270,7 @@ The enterprise console allows you to bundle extensions into the deployment packa
 ### Option #1 - Adobe Exchange
 Adobe Exchange is a marketplace where you can upload and download extensions, custom tags, scripts, content, and other items that extend the functionality of Adobe applications. In order to download a Adobe Exchange hosted product, simply follow the instructions below:
 
-1. Visit https://www.adobeexchange.com/
+1. Visit https://exchange.adobe.com/creativecloud.html
 1. Choose the marketplace (Creative Cloud / Experience Cloud / Document Cloud)
 1. Choose the product that fits your need
 1. Click on the "Buy" or "Free" button, depending on whether the product is free or not
@@ -279,8 +279,8 @@ To Find It" section)
 
 ### Option #2 - `ExManCmd`
 1. Download `ExManCmd` - Download the Extension Manager Command Line tool (ExManCmd) from the following locations (You can use the command line to perform various operations you would normally perform in the Extension Manager workspace):
-    - [ExManCmd - Mac](https://www.adobe.com/go/ExManCmdMac)
-    - [ExManCmd - Windows](https://www.adobe.com/go/ExManCmdWin)
+    - ExManCmd - Mac: https://www.adobe.com/go/ExManCmdMac 
+    - ExManCmd - Windows: https://www.adobe.com/go/ExManCmdWin
 
 1. Unzip the `ExManCmd` toolkit - Unzip the downloaded toolkit and have the `ExManCmd` file available for use in the next step.
 
