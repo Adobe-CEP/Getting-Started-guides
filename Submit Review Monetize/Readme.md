@@ -232,7 +232,7 @@ Note: Make sure that you are logged in on the Exchange Developer Portal, otherwi
 
 #   FAQ's
 
-Question 1: How can I generate coupon code(s)? 
+**Question 1: How can I generate coupon code(s)?**
 
 Answer: You can ask the Review Team to create a coupon code (or codes) on your behalf. You will need to share the following details with Review Team: 
 
@@ -253,7 +253,7 @@ Multiple Random Codes: If you want, for example, 100 coupon codes, the Review Te
 The Review Team will contact you once the coupon creation process is complete. You may then distribute your coupon code(s) to your customers and instruct them to enter the code during the checkout process. 
 
  
-Question 2: How can I submit a patch? 
+**Question 2: How can I submit a patch?**
 
 Answer: You may submit a patch when you update functionality for an existing listing. Updating functionality might include new features or bug fixes.  
 
@@ -313,7 +313,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
  
 
-Question 3: How can I edit my metadata? 
+**Question 3: How can I edit my metadata?** 
 
 Answer: If you want to change the description, images, link or any of the information listed here, follow the instructions below:  
 
@@ -373,19 +373,17 @@ The Exchange Portal will show a message that your changes were submitted success
 
  
 
- 
-
-Question 4: Can I reply to a review left by a user? 
+**Question 4: Can I reply to a review left by a user?**
 
 Answer: Yes, you may reply to comments directly from the Exchange Portal or using the Creative Cloud Desktop App. 
 
-Question 5: How can I change the bundled ID for a CEP extension? 
+
+**Question 5: How can I change the bundled ID for a CEP extension?**
 
 Answer: The bundled ID is a unique identifier. Once an extension is published you can’t change the bundled ID. If you want to use a new bundled ID, you must create a new listing. 
 
  
-
-Question 6: How can I fix the following .DS_Store or macOSX error? 
+**Question 6: How can I fix the following .DS_Store or macOSX error?**
 
 DS_Store or _MACOSX were detected and rejected in upload due to security reasons. Please upload a new package without these files. Please contact ccintrev@adobe.com with questions. 
 
@@ -409,7 +407,7 @@ Select OK. The .DS_Store files in the folder you selected will be deleted.
 
  
 
-Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal? 
+**Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal?**
 
 Answer: You may provide access to collaborators so that they may update or change your listing.  
 
@@ -429,13 +427,14 @@ Once the registration is complete, the collaborator has to create an account on 
 
  
 
-Question 8: How can I drop support for a Creative Cloud app while submitting a patch? 
+**Question 8: How can I drop support for a Creative Cloud app while submitting a patch?**
 
 Answer: It is not possible to drop support for Creative Cloud apps (e.g., your listing is compatible with Photoshop, Illustrator, and InDesign, but you wish to remove Photoshop support). The listing must support all point products that are supported by the first published version you submitted. 
 
 In some cases where developers can no longer support Creative Cloud apps, they must submit a new listing and withdraw the old listing once the new listing is approved. 
 
-Question 9: How can I fix a server error encountered on the Exchange portal? 
+
+**Question 9: How can I fix a server error encountered on the Exchange portal?**
 
 Answer: Kindly clear the cache and cookies (at least the adobe.com cookies) before logging into the Exchange Developer Portal. If the issue persists, then please follow these steps: 
 
