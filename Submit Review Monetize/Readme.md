@@ -8,7 +8,7 @@ Index 
 
 -   Benefits & Best Practices 
 
--   [FAQ's](https://adobe.sharepoint.com/:w:/s/cc-devex/Ealoqm50Bd5AvEKYnnr9dzgBPramYM2Q8H1AcMTcm81jDw?e=dJgSEv) 
+-   FAQ's
 
 # Submission Checklist 
 
@@ -34,7 +34,7 @@ This document will give you an idea of what we're checking for during the review
 
 -   The listing should not link to the websites that are still under development (i.e., "under construction", "coming soon", etc.). 
 
-1.  Icons, screenshots and videos 
+2.  Icons, screenshots and videos 
 
 -   Plugin icons must not contain Adobe product assets or icons. (Please note that many submissions are rejected because they contain Adobe product icons.) 
 
@@ -46,7 +46,7 @@ This document will give you an idea of what we're checking for during the review
 
 -   The videos in the listing must be relevant to the plugin/publisher. They should not contain any Adobe assets or icons  without getting permission from the Adobe  Branding team  (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
 
-1.  Adobe Branding 
+3.  Adobe Branding 
 
 -   Make sure to review and adhere to the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). 
 
@@ -54,19 +54,19 @@ This document will give you an idea of what we're checking for during the review
 
 -   Using Adobe assets and icons in your plugin or your plugin marketing material requires explicit permission from Adobe (login required). Note that getting permission to use Adobe branding assets can add to the time it takes to get your plugin reviewed, approved and published.
 
-1.  Inappropriate Content 
+4.  Inappropriate Content 
 
 -   The plugin and associated marketing surfaces must not include any intense violence, blood, gore, sexual content, nudity, or strong language. 
 
 -   The plugin must not promote or conduct phishing, spamming, hacking, password trafficking, or spyware, nor contain malware, trojans, or viruses. 
 
-1.  External Services 
+5.  External Services 
 
 -   If your plugin requires paid credentials, when you submit your plugin to Adobe, you must provide test credentials for login, license key, API Key, or anything else that would be required to fully review your plugin. 
 
 -   All plugin functionalities must be accessible, either openly or through the credentials that you provide to Adobe, for Adobe's reviewers. 
 
-1.  Installation Instructions 
+6.  Installation Instructions 
 
 -   If a  plugin requires additional steps before it can be used with the Adobe products, the steps need to be present in the "Where to find it" section. For example: After acquiring the plugin from the Creative Cloud desktop application, the user needs to perform more steps like moving or placing some files at desired location and  such instructions must be clearly mentioned in the "Where to find it" section. 
 
@@ -74,7 +74,7 @@ This document will give you an idea of what we're checking for during the review
 
 -   Instructions should be clear and precise so that end users can locate the  plugin for each supported point product. 
 
-1.  Product: ZXP installation 
+7.  Product: ZXP installation 
 
 -   The ZXP must install  successfully. 
 
@@ -82,11 +82,11 @@ This document will give you an idea of what we're checking for during the review
 
 -   After opening the ZIP, if the resulting file is an EXE and/or DMG, ensure that the file plugin matches the supported platform(s) noted in the listing information (for example "Windows only."). 
 
-1.  Plugin functionality and UI (User Interface) 
+8.  Plugin functionality and UI (User Interface) 
 
 Once the user  installs the plugin, we make sure that the newly added plugin is working seamlessly, and customers can use it  to enhance their productivity. 
 
-1.  Functionality: 
+a.  Functionality: 
 
 -   The plugin must install without error. 
 
@@ -106,7 +106,7 @@ Once the user  installs the plugin, we make sure that the newly added plugin is 
 
 -   All the external links that are added to the plugin must open a website when clicked. 
 
-1.  User Interface 
+b.  User Interface 
 
 -   UI elements in the plugin must not overlap or truncate. 
 
@@ -118,7 +118,7 @@ Once the user  installs the plugin, we make sure that the newly added plugin is 
 
 -   The plugin UI must scroll when all content is not visible on the screen. 
 
-1.  Performance 
+9.  Performance 
 
 -   The plugin must not degrade the performance of Adobe products. 
 
@@ -128,7 +128,7 @@ Once the user  installs the plugin, we make sure that the newly added plugin is 
 
 -   The plugin must not cause crashes, system errors, or any major failures. 
 
-1.  License distribution 
+10.  License distribution 
 
 -   Share the license code with review team if the end users need to enter them in the plugin so that the plugin can be activated. 
 
@@ -142,7 +142,7 @@ Once the user  installs the plugin, we make sure that the newly added plugin is 
 
 -   Link: [https://adobe](https://adobe/)-my.sharepoint.com/:w:/p/yjugran/Ecdqp0MaUz9IpZefzi7H0BgB5v-QxbuRDQ_t5yidIx4K2A?email=aabrol%40adobe.com&e=lfTQp9 
 
--   Top 3 Rejection Reasons 
+#  Top 3 Rejection Reasons 
 
 During the review process, we check plugins with the aim to make sure users have positive experiences with the plugins they install. Sometimes developers' plugins are rejected during the process, particularly when submitting a plugin for the first time. When that happens, we request certain changes be made before they are re-submitted for review.
 
@@ -164,7 +164,7 @@ During the review process, we check plugins with the aim to make sure users have
 
 1.  If the review  team  cannot  find the files mentioned in the "Where to find it" section of your  listing, your plugin will be rejected. Please supply the path where users would find this plugin from within the Adobe product. 
 
--   Adobe Branding Guidelines: 
+#   Adobe Branding Guidelines: 
 
 There is a predefined set of guidelines that are published by Adobe periodically for the use of Adobe assets and product icons. It is expected that developers strictly adhere to these  guidelines.  
 
@@ -178,9 +178,9 @@ Link: <https://partners.adobe.com/exchangeprogram/creativecloud/marketing/dev-br
 
 Note: Make sure that you are logged in on the Exchange Developer Portal, otherwise, you will not be able to access the link. 
 
--   Benefits & Best Practices 
+#   Benefits & Best Practices 
 
-Best Practices:  
+## Best Practices:  
 
 1.  Use same developer AdobeID for both UXP and CEP plugins:  You should always use the same developer ID to submit CEP and UXP plugins. This makes it  easier  to track plugin performance, manage your listings, and respond to user comments. 
 
@@ -206,7 +206,7 @@ Best Practices:  
 
 1.  Companion application: If any kind of additional application is required for your  plugin to work then information about this must be mentioned in the plugin description and you  should specify where the user can download the companion application.
 
-Benefits of Listing in Our Marketplace: 
+## Benefits of Listing in Our Marketplace: 
 
 1.  Millions of Creative Cloud users will have direct access to  your plugin(s) through the Creative Cloud desktop app or
     the Adobe Exchange webpage. 
@@ -230,31 +230,7 @@ Benefits of Listing in Our Marketplace: 
 1.  Developers receive a free  Creative Cloud subscription.  (For a free seat please contact us at <ccintrev@adobe.com>).
 
 
-​​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​​ 
-
- 
+#   FAQ's
 
 Question 1: How can I generate coupon code(s)? 
 
@@ -492,5 +468,3 @@ If possible, record a video and share it as well, via link or in the same Google
 Share the logs described above with us (share the logs in the HAR file along with screenshot of network/console logs with ccintrev@adobe.com. 
 
 Providing logs (and optionally video) will help the Adobe Engineering team in fixing the problem expeditiously. 
-
- 
