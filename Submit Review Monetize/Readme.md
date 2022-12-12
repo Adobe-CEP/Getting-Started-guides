@@ -34,15 +34,15 @@ This document will give you an idea of what we're checking for during the review
 
 2.  ***Icons, screenshots and videos*** 
 
--   Plugin icons must not contain Adobe product assets or icons. (Please note that many submissions are rejected because they contain Adobe product icons.) 
+        -   Plugin icons must not contain Adobe product assets or icons. (Please note that many submissions are rejected because they contain Adobe product icons.) 
 
--   Plugin icons must be clear and free of distortion. 
+        -   Plugin icons must be clear and free of distortion. 
 
--   Plugin icons should be clearly visible when the Creative Cloud desktop app is set to dark mode. 
+        -   Plugin icons should be clearly visible when the Creative Cloud desktop app is set to dark mode. 
 
--   Screenshots in the listing must not contain Adobe product assets or icons without prior permission from Adobe Branding team (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
+        -   Screenshots in the listing must not contain Adobe product assets or icons without prior permission from Adobe Branding team (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
 
--   The videos in the listing must be relevant to the plugin/publisher. They should not contain any Adobe assets or icons  without getting permission from the Adobe  Branding team  (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
+        -   The videos in the listing must be relevant to the plugin/publisher. They should not contain any Adobe assets or icons  without getting permission from the Adobe  Branding team  (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
 
 
 3.  ***Adobe Branding Guidelines*** 
