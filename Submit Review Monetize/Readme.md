@@ -256,9 +256,9 @@ With due diligence, we expect you to thoroughly read the [Adobe Branding Guideli
 
   4. Coupon code and code format: Coupon codes are supported in two formats: single coupon code, and multiple random codes. 
 
-  5. For a single coupon code, please choose a unique coupon code that will be stored on FastSpring. Every time a user enters your coupon code on the payment page, a discount will be applied to the cart value. (For example, “MYCOUPON-FREE".) 
+   - For a single coupon code, please choose a unique coupon code that will be stored on FastSpring. Every time a user enters your coupon code on the payment page, a discount will be applied to the cart value. (For example, “MYCOUPON-FREE".) 
 
-  6. Multiple Random Codes: If you want, for example, 100 coupon codes, the Review Team will generate the codes. Please supply a five-character prefix that will be added at the beginning of each coupon code. 
+   - Multiple Random Codes: If you want, for example, 100 coupon codes, the Review Team will generate the codes. Please supply a five-character prefix that will be added at the beginning of each coupon code. 
 
  
 
