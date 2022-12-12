@@ -416,7 +416,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
   4. Select OK. The .DS_Store files in the folder you selected will be deleted. 
 
  
-![Example](.meta/readme-assets/extension-structure.png?raw=true)
+![Example](.meta/image.png?raw=true)
 
 **Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal?**
 
