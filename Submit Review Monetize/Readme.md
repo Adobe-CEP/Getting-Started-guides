@@ -2,26 +2,29 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [Contents](#contents)
-  - [Submission Checklist ](#submission-checklist)
+- [Submission Checklist ](#submission-checklist)
 - [Top 3 Rejection Reasons ](#top-3-rejection-reasons)
+  - [1.  *Non-compliance with Adobe Branding Guidelines.* ](#1--non-compliance-with-adobe-branding-guidelines)
+  - [1.  *Plugin does not function as described by the developer.* ](#1--plugin-does-not-function-as-described-by-the-developer)
+  - [1.  *Insufficient installation instructions.* ](#1--insufficient-installation-instructions)
 - [Adobe Branding Guidelines: ](#adobe-branding-guidelines)
 - [Benefits & Best Practices ](#benefits--best-practices)
   - [Best Practices:  ](#best-practices)
   - [Benefits of Listing in Our Marketplace: ](#benefits-of-listing-in-our-marketplace)
 - [FAQ's](#faqs)
+  - [**Question 1: How can I generate coupon code(s)?**](#question-1-how-can-i-generate-coupon-codes)
+  - [**Question 2: How can I submit a patch?**](#question-2-how-can-i-submit-a-patch)
+  - [**Question 3: How can I edit my metadata?**](#question-3-how-can-i-edit-my-metadata)
+  - [**Question 4: Can I reply to a review left by a user?**](#question-4-can-i-reply-to-a-review-left-by-a-user)
+  - [**Question 5: How can I change the bundled ID for a CEP extension?**](#question-5-how-can-i-change-the-bundled-id-for-a-cep-extension)
+  - [**Question 6: How can I fix the following .DS_Store or macOSX error?**](#question-6-how-can-i-fix-the-following-ds_store-or-macosx-error)
+  - [**Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal?**](#question-7-how-can-i-add-a-collaborator-colleague-or-teammate-to-the-exchange-portal)
+  - [**Question 8: How can I drop support for a Creative Cloud app while submitting a patch?**](#question-8-how-can-i-drop-support-for-a-creative-cloud-app-while-submitting-a-patch)
+  - [**Question 9: How can I fix a server error encountered on the Exchange portal?**](#question-9-how-can-i-fix-a-server-error-encountered-on-the-exchange-portal)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Contents
-
-1. [Submission Checklist](#Submission-Checklist)
-1. [Top 3 Rejection Reasons](#Top-3-Rejection-Reasons)
-1. [Adobe Branding Guidelines](#Adobe-Branding-Guidelines)
-1. [Benefits & Best Practices](#Benefits-&-Best-Practices)
-1. [FAQ's](#FAQs)
-
-## Submission Checklist 
+# Submission Checklist 
 
 By reviewing every plugin submission, Adobe aims to help developers get ready for primetime and ensure that users have great experiences with the plugins they install. 
 
@@ -166,12 +169,12 @@ During the review process, we check plugins with the aim to make sure users have
 During the review process, we check plugins with the aim to make sure users have positive experiences with the plugins they install. Sometimes developers' plugins are rejected during the process, particularly when submitting a plugin for the first time. When that happens, we request certain changes be made before they are re-submitted for review.
 
 
-1.  *Non-compliance with Adobe Branding Guidelines.* 
+## 1.  *Non-compliance with Adobe Branding Guidelines.* 
 
     -  Developers often use Adobe brand assets without getting prior permission, (for example, Adobe's "A" icon).  This violates the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). It is advised that before you start using the Adobe assets, please get permission from the Adobe Branding Team by contacting them at <brand@adobe.com>. Once the permissions are granted you can start using Adobe  assets on your  website and in  your  screenshots.
 
 
-1.  *Plugin does not function as described by the developer.* 
+## 1.  *Plugin does not function as described by the developer.* 
 
     - At the time of testing, the review team validates all of  the functionality of your plugin. Please make sure before submission that your plugin is functioning as  advertised, and all the features are working properly. 
 
@@ -180,7 +183,7 @@ During the review process, we check plugins with the aim to make sure users have
     - Your plugin is compatible with all of  the Adobe products, product versions, and operating systems you listed in the "Product Compatibility Information" section of your listing.
 
 
-1.  *Insufficient installation instructions.* 
+## 1.  *Insufficient installation instructions.* 
 
     - Sometimes the installation instructions provided with the submission are not descriptive enough to help a user find the plugin and install it for each of the Adobe applications this product supports. Please note each version of an Adobe application your product supports should have a unique set of instructions listed in the "Where to find it" section of the listing. 
 
@@ -259,7 +262,7 @@ With due diligence, we expect you to thoroughly read the [Adobe Branding Guideli
 
 #   FAQ's
 
-**Question 1: How can I generate coupon code(s)?**
+## **Question 1: How can I generate coupon code(s)?**
 
 *Answer:* You can ask the Review Team to create a coupon code (or codes) on your behalf. You will need to share the following details with Review Team: 
 
@@ -279,8 +282,8 @@ With due diligence, we expect you to thoroughly read the [Adobe Branding Guideli
 
 The Review Team will contact you once the coupon creation process is complete. You may then distribute your coupon code(s) to your customers and instruct them to enter the code during the checkout process. 
 
- 
-**Question 2: How can I submit a patch?**
+
+## **Question 2: How can I submit a patch?**
 
 *Answer:* You may submit a patch when you update functionality for an existing listing. Updating functionality might include new features or bug fixes.  
 
@@ -340,7 +343,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
  
 
-**Question 3: How can I edit my metadata?** 
+## **Question 3: How can I edit my metadata?** 
 
 *Answer:* If you want to change the description, images, link or any of the information listed here, follow the instructions below:  
 
@@ -400,17 +403,17 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
  
 
-**Question 4: Can I reply to a review left by a user?**
+## **Question 4: Can I reply to a review left by a user?**
 
 *Answer:* Yes, you may reply to comments directly from the [Exchange Portal](https://exchange.adobe.com/apps/browse/cc) or using the Creative Cloud Desktop App. 
 
 
-**Question 5: How can I change the bundled ID for a CEP extension?**
+## **Question 5: How can I change the bundled ID for a CEP extension?**
 
 *Answer:* The bundled ID is a unique identifier. Once an extension is published you can’t change the bundled ID. If you want to use a new bundled ID, you must create a new listing. 
 
  
-**Question 6: How can I fix the following .DS_Store or macOSX error?**
+## **Question 6: How can I fix the following .DS_Store or macOSX error?**
 
  - DS_Store or _MACOSX were detected and rejected in upload due to security reasons. Please upload a new package without these files. Please contact ccintrev@adobe.com with questions. 
 
@@ -432,7 +435,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
  
 
-**Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal?**
+## **Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal?**
 
 *Answer:* You may provide access to collaborators so that they may update or change your listing.  
 
@@ -452,14 +455,14 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
 
 
-**Question 8: How can I drop support for a Creative Cloud app while submitting a patch?**
+## **Question 8: How can I drop support for a Creative Cloud app while submitting a patch?**
 
 *Answer:* It is not possible to drop support for Creative Cloud apps (e.g., your listing is compatible with Photoshop, Illustrator, and InDesign, but you wish to remove Photoshop support). The listing must support all point products that are supported by the first published version you submitted. 
 
 In some cases where developers can no longer support Creative Cloud apps, they must submit a new listing and withdraw the old listing once the new listing is approved. 
 
 
-**Question 9: How can I fix a server error encountered on the Exchange portal?**
+## **Question 9: How can I fix a server error encountered on the Exchange portal?**
 
 *Answer:* Kindly clear the cache and cookies (at least the adobe.com cookies) before logging into the Exchange Developer Portal. If the issue persists, then please follow these steps: 
 
