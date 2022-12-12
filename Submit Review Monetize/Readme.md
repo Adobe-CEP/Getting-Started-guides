@@ -15,21 +15,21 @@ This document will give you an idea of what we're checking for during the review
 
 1.  ***Plugin Description*** 
 
- -   A plugin name can only include "Adobe Photoshop" if it fits the pattern "\${Plugin Name} for Photoshop". Refer to the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf) for further information. For example: 
+    -   A plugin name can only include "Adobe Photoshop" if it fits the pattern "\${Plugin Name} for Photoshop". Refer to the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf) for further information. For example: 
 
- -   OK: "Rectanglator", or "Rectanglator for Adobe Photoshop" 
+    -   OK: "Rectanglator", or "Rectanglator for Adobe Photoshop" 
 
- -   Not OK: "PS Rectanglator", or "Rectanglator PS". "Rectanglator PS" would be rejected based on the plugin name. 
+    -   Not OK: "PS Rectanglator", or "Rectanglator PS". "Rectanglator PS" would be rejected based on the plugin name. 
 
- -   The plugin description must be both relevant and self-explanatory. 
+    -   The plugin description must be both relevant and self-explanatory. 
 
- -   Regardless of supported languages, an English description must be provided. 
+    -   Regardless of supported languages, an English description must be provided. 
 
- -   All listing content, including author name, email address, and website must comply with [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide-062218.pdf) . 
+    -   All listing content, including author name, email address, and website must comply with [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide-062218.pdf) . 
 
- -   Any plugin website must provide an email address or contact form so that the users can contact the plugin developer easily.  (We will check your provided website to confirm this information is present.) 
+    -   Any plugin website must provide an email address or contact form so that the users can contact the plugin developer easily.  (We will check your provided website to confirm this information is present.) 
 
- -   The listing should not link to the websites that are still under development (i.e., "under construction", "coming soon", etc.). 
+    -   The listing should not link to the websites that are still under development (i.e., "under construction", "coming soon", etc.). 
 
 
 2.  ***Icons, screenshots and videos*** 
