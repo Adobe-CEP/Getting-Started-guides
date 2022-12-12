@@ -417,7 +417,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
  
 ![Example](.meta/image.png?raw=true)
-![Alt text](.Getting-Started-guides/Submit Review Monetize/meta/image.png?raw=true)
+![Alt text](.Getting-Started-guides/SubmitReviewMonetize/meta/image.png?raw=true)
 
 
 
