@@ -4,7 +4,7 @@
 1. [Top 3 Rejection Reasons](#Top-3-Rejection-Reasons)
 1. [Adobe Branding Guidelines](#Adobe-Branding-Guidelines)
 1. [Benefits & Best Practices](#Benefits-&-Best-Practices)
-1. [FAQ's](#FAQ's)
+1. [FAQ's](#FAQs)
 
 ## Submission Checklist 
 
@@ -260,7 +260,7 @@ With due diligence, we expect you to thoroughly read the [Adobe Branding Guideli
 
    - Multiple Random Codes: If you want, for example, 100 coupon codes, the Review Team will generate the codes. Please supply a five-character prefix that will be added at the beginning of each coupon code. 
 
- 
+
 
 The Review Team will contact you once the coupon creation process is complete. You may then distribute your coupon code(s) to your customers and instruct them to enter the code during the checkout process. 
 
@@ -416,6 +416,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
   4. Select OK. The .DS_Store files in the folder you selected will be deleted. 
 
  
+![Example](.meta/readme-assets/extension-structure.png?raw=true)
 
 **Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal?**
 
