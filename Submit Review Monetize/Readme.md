@@ -289,7 +289,7 @@ The Review Team will contact you once the coupon creation process is complete. Y
 
 ***How to submit a patch:*** 
 
-  1. Login to the Exchange Developer Portal.  
+  1. Login to the [Exchange Developer Portal.](https://partners.adobe.com/exchangeprogram/creativecloud)  
 
   2. Go to the Dashboard.  
 
@@ -321,7 +321,7 @@ The Review Team will contact you once the coupon creation process is complete. Y
 
  
 
-If you face an issue while creating metadata or patches, contact the Review Team at ccintrev@adobe.com. Also be sure to check the Exchange FAQs (Frequently Asked Questions). 
+If you face an issue while creating metadata or patches, contact the Review Team at ccintrev@adobe.com. Also be sure to check the [Exchange FAQs (Frequently Asked Questions).](https://partners.adobe.com/exchangeprogram/creativecloud/support/faq.html)
 
  
 
@@ -367,7 +367,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
 ***Steps for submitting a Metadata Change Request:***  
 
-  1. Login to￼the Exchange Developer Portal and go to the Dashboard.   
+  1. Login to the [Exchange Developer Portal](https://partners.adobe.com/exchangeprogram/creativecloud) and go to the [Dashboard.](https://partners.adobe.com/exchangeprogram/creativecloud/appslist.html)   
 
   2. Select the listing you want to change in the ‘Published’ tab to edit it.  
 
@@ -387,7 +387,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
 **Question 4: Can I reply to a review left by a user?**
 
-*Answer:* Yes, you may reply to comments directly from the Exchange Portal or using the Creative Cloud Desktop App. 
+*Answer:* Yes, you may reply to comments directly from the [Exchange Portal](https://exchange.adobe.com/apps/browse/cc) or using the Creative Cloud Desktop App. 
 
 
 **Question 5: How can I change the bundled ID for a CEP extension?**
