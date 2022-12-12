@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [Contents](#contents)
+  - [Submission Checklist ](#submission-checklist)
+- [Top 3 Rejection Reasons ](#top-3-rejection-reasons)
+- [Adobe Branding Guidelines: ](#adobe-branding-guidelines)
+- [Benefits & Best Practices ](#benefits--best-practices)
+  - [Best Practices:  ](#best-practices)
+  - [Benefits of Listing in Our Marketplace: ](#benefits-of-listing-in-our-marketplace)
+- [FAQ's](#faqs)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Contents
 
 1. [Submission Checklist](#Submission-Checklist)
