@@ -418,12 +418,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
  
 ![Example](.meta/image.png?raw=true)
 ![Alt text](.Getting-Started-guides/Submit-Review-Monetize/meta/image.png?raw=true)
-![Alt text](/Getting-Started-guides/Submit-Review-Monetize/meta/image.png?raw=true)
-![Alt text](/Submit-Review-Monetize/meta/image.png?raw=true)
-![Alt text](/meta/image.png?raw=true)
-![Alt text](/image.png?raw=true)
-![Alt text](.image.png?raw=true)
-![Alt text](.image.png)
+
 
 
 **Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal?**
