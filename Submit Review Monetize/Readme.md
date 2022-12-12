@@ -6,14 +6,15 @@
   - [Plugin Description](#plugin-description)
   - [Icons, screenshots and videos](#icons-screenshots-and-videos)
   - [Adobe Branding Guidelines](#adobe-branding-guidelines)
-    - [Inappropriate Content](#inappropriate-content)
-    - [External Services ](#external-services)
-    - [Installation Instructions](#installation-instructions)
-    - [ZXP installation](#zxp-installation)
-    - [Plugin functionality and UI (User Interface)](#plugin-functionality-and-ui-user-interface)
-      - [User Interface](#user-interface)
-    - [Performance](#performance)
-    - [License Distribution](#license-distribution)
+  - [Inappropriate Content](#inappropriate-content)
+  - [External Services ](#external-services)
+  - [Installation Instructions](#installation-instructions)
+  - [ZXP installation](#zxp-installation)
+  - [Plugin functionality and UI (User Interface)](#plugin-functionality-and-ui-user-interface)
+    - [Functionality](#functionality)
+    - [User Interface](#user-interface)
+  - [Performance](#performance)
+  - [License Distribution](#license-distribution)
 - [Top 3 Rejection Reasons ](#top-3-rejection-reasons)
   - [*Non-compliance with Adobe Branding Guidelines.* ](#non-compliance-with-adobe-branding-guidelines)
   - [*Plugin does not function as described by the developer.* ](#plugin-does-not-function-as-described-by-the-developer)
@@ -71,21 +72,21 @@ This document will give you an idea of what we're checking for during the review
 -   Avoid using publisher names, domain names, email addresses, and other such property names that are confusingly similar to existing Adobe brand, product, or service names.  Eg: <adobexd@gmail.com>, <AdobePS@gmail.com> or XYZforAdobe.com 
 -   Using Adobe assets and icons in your plugin or your plugin marketing material requires explicit permission from Adobe. Note that getting permission to use Adobe branding assets can add to the time it takes to get your plugin reviewed, approved and published.
 
-### Inappropriate Content
+## Inappropriate Content
 
 -   The plugin and associated marketing surfaces must not include any intense violence, blood, gore, sexual content, nudity, or strong language. 
 
 -   The plugin must not promote or conduct phishing, spamming, hacking, password trafficking, or spyware, nor contain malware, trojans, or viruses. 
 
 
-### External Services 
+## External Services 
 
 -   If your plugin requires paid credentials, when you submit your plugin to Adobe, you must provide test credentials for login, license key, API Key, or anything else that would be required to fully review your plugin. 
 
 -   All plugin functionalities must be accessible, either openly or through the credentials that you provide to Adobe, for Adobe's reviewers. 
 
 
-### Installation Instructions
+## Installation Instructions
 
 -   If a  plugin requires additional steps before it can be used with the Adobe products, the steps need to be present in the "Where to find it" section. For example: After acquiring the plugin from the Creative Cloud desktop application, the user needs to perform more steps like moving or placing some files at desired location and  such instructions must be clearly mentioned in the "Where to find it" section. 
 
@@ -94,7 +95,7 @@ This document will give you an idea of what we're checking for during the review
 -   Instructions should be clear and precise so that end users can locate the  plugin for each supported point product. 
 
 
-### ZXP installation
+## ZXP installation
 
 -   The ZXP must install  successfully. 
 
@@ -103,45 +104,45 @@ This document will give you an idea of what we're checking for during the review
 -   After opening the ZIP, if the resulting file is an EXE and/or DMG, ensure that the file plugin matches the supported platform(s) noted in the listing information (for example "Windows only."). 
 
 
-### Plugin functionality and UI (User Interface)
+## Plugin functionality and UI (User Interface)
 
-    Once the user  installs the plugin, we make sure that the newly added plugin is working seamlessly, and customers can use it  to enhance their productivity. 
+Once the user  installs the plugin, we make sure that the newly added plugin is working seamlessly, and customers can use it  to enhance their productivity. 
 
-    -  **Functionality** 
+### Functionality
 
-    1. The plugin must install without error. 
+1. The plugin must install without error. 
 
-    2. The plugin should  launch successfully in the maximum supported version of the point product. 
+2. The plugin should  launch successfully in the maximum supported version of the point product. 
 
-    3. The plugin should  launch successfully in the minimum supported version of the point product. 
+3. The plugin should  launch successfully in the minimum supported version of the point product. 
 
-    4. Modal dialogs must provide an affordance in the UI for closing the modal (e.g., a cancel/close button). 
+4. Modal dialogs must provide an affordance in the UI for closing the modal (e.g., a cancel/close button). 
 
-    5. The plugin must never show a completely blank UI. 
+5. The plugin must never show a completely blank UI. 
 
-    6. The plugin  shouldn't get stuck on any screens with no way to navigate out. 
+6. The plugin  shouldn't get stuck on any screens with no way to navigate out. 
 
-    7. The plugin must indicate to the user if an internet connection is not available but is required. 
+7. The plugin must indicate to the user if an internet connection is not available but is required. 
 
-    8. The plugin must work as described by the developer. 
+8. The plugin must work as described by the developer. 
 
-    9. All the external links that are added to the plugin must open a website when clicked. 
-
-
-  #### User Interface
-
-    1. UI elements in the plugin must not overlap or truncate. 
-
-    2. Plugin content must follow  [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). 
-
-    3. No content should be clipped. 
-
-    4. UI content must wrap or adapt as necessary to accommodate the available width of the UI. 
-
-    5. The plugin UI must scroll when all content is not visible on the screen. 
+9. All the external links that are added to the plugin must open a website when clicked. 
 
 
-### Performance
+  ### User Interface
+
+1. UI elements in the plugin must not overlap or truncate. 
+
+2. Plugin content must follow  [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). 
+
+3. No content should be clipped. 
+
+4. UI content must wrap or adapt as necessary to accommodate the available width of the UI. 
+
+5. The plugin UI must scroll when all content is not visible on the screen. 
+
+
+## Performance
 
 -   The plugin must not degrade the performance of Adobe products. 
 
@@ -151,7 +152,7 @@ This document will give you an idea of what we're checking for during the review
 
 -   The plugin must not cause crashes, system errors, or any major failures. 
 
-### License Distribution
+## License Distribution
 
 - Share the license code with review team if the end users need to enter them in the plugin so that the plugin can be activated. 
 
