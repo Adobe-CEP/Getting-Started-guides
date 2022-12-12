@@ -416,8 +416,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
   4. Select OK. The .DS_Store files in the folder you selected will be deleted. 
 
  
-![Example](.meta/image.png?raw=true)
-![Alt text](.Getting-Started-guides/Submit-Review-Monetize/meta/image.png?raw=true)
+
 
 
 
