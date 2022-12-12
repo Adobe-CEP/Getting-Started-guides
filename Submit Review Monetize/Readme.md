@@ -34,56 +34,56 @@ This document will give you an idea of what we're checking for during the review
 
 2.  ***Icons, screenshots and videos*** 
 
-        -   Plugin icons must not contain Adobe product assets or icons. (Please note that many submissions are rejected because they contain Adobe product icons.) 
+    -   Plugin icons must not contain Adobe product assets or icons. (Please note that many submissions are rejected because they contain Adobe product icons.) 
 
-        -   Plugin icons must be clear and free of distortion. 
+    -   Plugin icons must be clear and free of distortion. 
 
-        -   Plugin icons should be clearly visible when the Creative Cloud desktop app is set to dark mode. 
+    -   Plugin icons should be clearly visible when the Creative Cloud desktop app is set to dark mode. 
 
-        -   Screenshots in the listing must not contain Adobe product assets or icons without prior permission from Adobe Branding team (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
+    -   Screenshots in the listing must not contain Adobe product assets or icons without prior permission from Adobe Branding team (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
 
-        -   The videos in the listing must be relevant to the plugin/publisher. They should not contain any Adobe assets or icons  without getting permission from the Adobe  Branding team  (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
+    -   The videos in the listing must be relevant to the plugin/publisher. They should not contain any Adobe assets or icons  without getting permission from the Adobe  Branding team  (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
 
 
 3.  ***Adobe Branding Guidelines*** 
 
--   Make sure to review and adhere to the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). 
+    -   Make sure to review and adhere to the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). 
 
--   Avoid using publisher names, domain names, email addresses, and other such property names that are confusingly similar to existing Adobe brand, product, or service names.  Eg: <adobexd@gmail.com>, <AdobePS@gmmail.com> or XYZforAdobe.com 
+    -   Avoid using publisher names, domain names, email addresses, and other such property names that are confusingly similar to existing Adobe brand, product, or service names.  Eg: <adobexd@gmail.com>, <AdobePS@gmmail.com> or XYZforAdobe.com 
 
--   Using Adobe assets and icons in your plugin or your plugin marketing material requires explicit permission from Adobe (login required). Note that getting permission to use Adobe branding assets can add to the time it takes to get your plugin reviewed, approved and published.
+    -   Using Adobe assets and icons in your plugin or your plugin marketing material requires explicit permission from Adobe (login required). Note that getting permission to use Adobe branding assets can add to the time it takes to get your plugin reviewed, approved and published.
 
 
 4.  ***Inappropriate Content*** 
 
--   The plugin and associated marketing surfaces must not include any intense violence, blood, gore, sexual content, nudity, or strong language. 
+    -   The plugin and associated marketing surfaces must not include any intense violence, blood, gore, sexual content, nudity, or strong language. 
 
--   The plugin must not promote or conduct phishing, spamming, hacking, password trafficking, or spyware, nor contain malware, trojans, or viruses. 
+    -   The plugin must not promote or conduct phishing, spamming, hacking, password trafficking, or spyware, nor contain malware, trojans, or viruses. 
 
 
 5.  ***External Services*** 
 
--   If your plugin requires paid credentials, when you submit your plugin to Adobe, you must provide test credentials for login, license key, API Key, or anything else that would be required to fully review your plugin. 
+    -   If your plugin requires paid credentials, when you submit your plugin to Adobe, you must provide test credentials for login, license key, API Key, or anything else that would be required to fully review your plugin. 
 
--   All plugin functionalities must be accessible, either openly or through the credentials that you provide to Adobe, for Adobe's reviewers. 
+    -   All plugin functionalities must be accessible, either openly or through the credentials that you provide to Adobe, for Adobe's reviewers. 
 
 
 6.  ***Installation Instructions*** 
 
--   If a  plugin requires additional steps before it can be used with the Adobe products, the steps need to be present in the "Where to find it" section. For example: After acquiring the plugin from the Creative Cloud desktop application, the user needs to perform more steps like moving or placing some files at desired location and  such instructions must be clearly mentioned in the "Where to find it" section. 
+    -   If a  plugin requires additional steps before it can be used with the Adobe products, the steps need to be present in the "Where to find it" section. For example: After acquiring the plugin from the Creative Cloud desktop application, the user needs to perform more steps like moving or placing some files at desired location and  such instructions must be clearly mentioned in the "Where to find it" section. 
 
--   Installation instructions should be present for all the supported point products. 
+    -   Installation instructions should be present for all the supported point products. 
 
--   Instructions should be clear and precise so that end users can locate the  plugin for each supported point product. 
+    -   Instructions should be clear and precise so that end users can locate the  plugin for each supported point product. 
 
 
 7.  ***Product: ZXP installation*** 
 
--   The ZXP must install  successfully. 
+    -   The ZXP must install  successfully. 
 
--   After installation, the plugin  should be visible at the desired place as mentioned in "Where to find it" section. 
+    -   After installation, the plugin  should be visible at the desired place as mentioned in "Where to find it" section. 
 
--   After opening the ZIP, if the resulting file is an EXE and/or DMG, ensure that the file plugin matches the supported platform(s) noted in the listing information (for example "Windows only."). 
+    -   After opening the ZIP, if the resulting file is an EXE and/or DMG, ensure that the file plugin matches the supported platform(s) noted in the listing information (for example "Windows only."). 
 
 
 8.  ***Plugin functionality and UI (User Interface)*** 
@@ -126,21 +126,21 @@ Once the user  installs the plugin, we make sure that the newly added plugin is 
 
 9.  ***Performance*** 
 
--   The plugin must not degrade the performance of Adobe products. 
+    -   The plugin must not degrade the performance of Adobe products. 
 
--   The plugin must load in a timely manner. 
+    -   The plugin must load in a timely manner. 
 
--   The plugin must not cause abnormal resource usage (e.g., CPU, RAM, storage). 
+    -   The plugin must not cause abnormal resource usage (e.g., CPU, RAM, storage). 
 
--   The plugin must not cause crashes, system errors, or any major failures. 
+    -   The plugin must not cause crashes, system errors, or any major failures. 
 
 10.  ***License distribution*** 
 
--   Share the license code with review team if the end users need to enter them in the plugin so that the plugin can be activated. 
+        - Share the license code with review team if the end users need to enter them in the plugin so that the plugin can be activated. 
 
--   The team will store the license keys on FastSpring and when the end user buys the plugin from Adobe Marketplace, FastSpring will distribute the license key to the user. 
+        - The team will store the license keys on FastSpring and when the end user buys the plugin from Adobe Marketplace, FastSpring will distribute the license key to the user. 
 
--   Developers can mention details of license keys in the "Notes to approver" section. 
+        - Developers can mention details of license keys in the "Notes to approver" section. 
 
 
 #  Top 3 Rejection Reasons 
@@ -151,25 +151,25 @@ During the review process, we check plugins with the aim to make sure users have
 During the review process, we check plugins with the aim to make sure users have positive experiences with the plugins they install. Sometimes developers' plugins are rejected during the process, particularly when submitting a plugin for the first time. When that happens, we request certain changes be made before they are re-submitted for review.
 
 
-1.  Non-compliance with Adobe Branding Guidelines. 
+1.  *Non-compliance with Adobe Branding Guidelines.* 
 
-          a.  Developers often use Adobe brand assets without getting prior permission, (for example, Adobe's "A" icon).  This violates the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). It is advised that before you start using the Adobe assets, please get permission from the Adobe Branding Team by contacting them at <brand@adobe.com>. Once the permissions are granted you can start using Adobe  assets on your  website and in  your  screenshots.
-
-
-1.  Plugin does not function as described by the developer. 
-
-         a.  At the time of testing, the review team validates all of  the functionality of your plugin. Please make sure before submission that your plugin is functioning as  advertised, and all the features are working properly. 
-
-         b.  Silent failures: If the plugin user attempts an unsupported function, the plugin must not fail silently. Plugins must display a dialog that this action/functionality is not supported so that users understand it and avoid repeating the same action. 
-
-         c.  Your plugin is compatible with all of  the Adobe products, product versions, and operating systems you listed in the "Product Compatibility Information" section of your listing.
+    -  Developers often use Adobe brand assets without getting prior permission, (for example, Adobe's "A" icon).  This violates the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). It is advised that before you start using the Adobe assets, please get permission from the Adobe Branding Team by contacting them at <brand@adobe.com>. Once the permissions are granted you can start using Adobe  assets on your  website and in  your  screenshots.
 
 
-1.  Insufficient installation instructions. 
+1.  *Plugin does not function as described by the developer.* 
 
-         a.  Sometimes the installation instructions provided with the submission are not descriptive enough to help a user find the plugin and install it for each of the Adobe applications this product supports. Please note each version of an Adobe application your product supports should have a unique set of instructions listed in the "Where to find it" section of the listing. 
+    - At the time of testing, the review team validates all of  the functionality of your plugin. Please make sure before submission that your plugin is functioning as  advertised, and all the features are working properly. 
 
-         b.  If the review  team  cannot  find the files mentioned in the "Where to find it" section of your  listing, your plugin will be rejected. Please supply the path where users would find this plugin from within the Adobe product. 
+    - Silent failures: If the plugin user attempts an unsupported function, the plugin must not fail silently. Plugins must display a dialog that this action/functionality is not supported so that users understand it and avoid repeating the same action. 
+
+    - Your plugin is compatible with all of  the Adobe products, product versions, and operating systems you listed in the "Product Compatibility Information" section of your listing.
+
+
+1.  *Insufficient installation instructions.* 
+
+    - Sometimes the installation instructions provided with the submission are not descriptive enough to help a user find the plugin and install it for each of the Adobe applications this product supports. Please note each version of an Adobe application your product supports should have a unique set of instructions listed in the "Where to find it" section of the listing. 
+
+    - If the review  team  cannot  find the files mentioned in the "Where to find it" section of your  listing, your plugin will be rejected. Please supply the path where users would find this plugin from within the Adobe product. 
 
 
 
