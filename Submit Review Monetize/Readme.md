@@ -245,19 +245,19 @@ With due diligence, we expect you to thoroughly read the [Adobe Branding Guideli
 
 **Question 1: How can I generate coupon code(s)?**
 
-Answer: You can ask the Review Team to create a coupon code (or codes) on your behalf. You will need to share the following details with Review Team: 
+*Answer:* You can ask the Review Team to create a coupon code (or codes) on your behalf. You will need to share the following details with Review Team: 
 
-1. Extension name (or listing name) 
+  1. Extension name (or listing name) 
 
-2. Coupon validity period: You may restrict your discount to a certain date range or request a perpetual coupon. 
+  2. Coupon validity period: You may restrict your discount to a certain date range or request a perpetual coupon. 
 
-3. Percent off: Specify the discount you want to give your user(s). 
+  3. Percent off: Specify the discount you want to give your user(s). 
 
-4. Coupon code and code format: Coupon codes are supported in two formats: single coupon code, and multiple random codes. 
+  4. Coupon code and code format: Coupon codes are supported in two formats: single coupon code, and multiple random codes. 
 
-5. For a single coupon code, please choose a unique coupon code that will be stored on FastSpring. Every time a user enters your coupon code on the payment page, a discount will be applied to the cart value. (For example, “MYCOUPON-FREE".) 
+  5. For a single coupon code, please choose a unique coupon code that will be stored on FastSpring. Every time a user enters your coupon code on the payment page, a discount will be applied to the cart value. (For example, “MYCOUPON-FREE".) 
 
-6. Multiple Random Codes: If you want, for example, 100 coupon codes, the Review Team will generate the codes. Please supply a five-character prefix that will be added at the beginning of each coupon code. 
+  6. Multiple Random Codes: If you want, for example, 100 coupon codes, the Review Team will generate the codes. Please supply a five-character prefix that will be added at the beginning of each coupon code. 
 
  
 
@@ -266,57 +266,57 @@ The Review Team will contact you once the coupon creation process is complete. Y
  
 **Question 2: How can I submit a patch?**
 
-Answer: You may submit a patch when you update functionality for an existing listing. Updating functionality might include new features or bug fixes.  
+*Answer:* You may submit a patch when you update functionality for an existing listing. Updating functionality might include new features or bug fixes.  
 
-Below are the fields that you may edit when submitting patches:  
+**Below are the fields that you may edit when submitting patches:**  
 
-1. Upload File (Note: For a non-ZXP upload, the file type of the patch needs to be of the same file type as the parent upload file.)  
+  1. Upload File (Note: For a non-ZXP upload, the file type of the patch needs to be of the same file type as the parent upload file.)  
 
-2. Version Number (Note: This applies only to ZIP based extensions. CEP based extensions have version numbers that are automatically generated from the manifest file and cannot be entered manually.)  
+  2. Version Number (Note: This applies only to ZIP based extensions. CEP based extensions have version numbers that are automatically generated from the manifest file and cannot be entered manually.)  
 
-3. EULA (End User License Agreements) 
+  3. EULA (End User License Agreements) 
 
-4. Where to Find It 
+  4. Where to Find It 
 
-5. Installation Instructions for Enterprise Users or Creative Cloud Teams users 
+  5. Installation Instructions for Enterprise Users or Creative Cloud Teams users 
 
-6. Release Notes 
+  6. Release Notes 
 
-7. Note to the approver 
+  7. Note to the approver 
 
   
 
 ***How to submit a patch:*** 
 
-1. Login to the Exchange Developer Portal.  
+  1. Login to the Exchange Developer Portal.  
 
-2. Go to the Dashboard.  
+  2. Go to the Dashboard.  
 
-3. Select the name of your extension or listing (this applies only to listings that have already been published).  
+  3. Select the name of your extension or listing (this applies only to listings that have already been published).  
 
-4. Click on the “More” dropdown button (upper right) and choose “Create New Patch”.  
+  4. Click on the “More” dropdown button (upper right) and choose “Create New Patch”.  
 
-5. Now click on the Patch Details Tab. 
+  5. Now click on the Patch Details Tab. 
 
-6. For ZIP-based extensions, you may change the version number. ZXP-based extensions acquire version numbers automatically from the manifest file and cannot be updated manually.  
+  6. For ZIP-based extensions, you may change the version number. ZXP-based extensions acquire version numbers automatically from the manifest file and cannot be updated manually.  
 
-7. If you don’t want the patch to be published immediately upon approval, uncheck “Publish this patch immediately upon approval”. In this case, the patch will appear in the “Not Published” section of Dashboard once approved, and you will need to publish it manually for it to appear on the Creative Cloud Exchange Marketplace.  
+  7. If you don’t want the patch to be published immediately upon approval, uncheck “Publish this patch immediately upon approval”. In this case, the patch will appear in the “Not Published” section of Dashboard once approved, and you will need to publish it manually for it to appear on the Creative Cloud Exchange Marketplace.  
 
-8. Scroll down and click submit. 
+  8. Scroll down and click submit. 
 
-9. The Exchange Portal will show a message that changes requested are submitted successfully and you will receive an email from noreply@salesforce.com and ccintegrationsreview@adobe.com confirming your submission.  
+  9. The Exchange Portal will show a message that changes requested are submitted successfully and you will receive an email from noreply@salesforce.com and ccintegrationsreview@adobe.com confirming your submission.  
 
    
 
 ***How to submit a patch for a rejected submission:***   
 
-1. If your last patch submission was rejected, you will need to click on the “Not Published” section and open the last rejected version.  
+  1. If your last patch submission was rejected, you will need to click on the “Not Published” section and open the last rejected version.  
 
-2. Click on the “Edit” button and select the “Patch Details” tab.  
+  2. Click on the “Edit” button and select the “Patch Details” tab.  
 
-3. Now replace the previously uploaded file with the new one. 
+  3. Now replace the previously uploaded file with the new one. 
 
-4. For a patch upload, the file type needs to match the parent file type. For example, during the first-time submission, if you uploaded a ZXP file, then during the patch submission, you need to upload another ZXP file. 
+  4. For a patch upload, the file type needs to match the parent file type. For example, during the first-time submission, if you uploaded a ZXP file, then during the patch submission, you need to upload another ZXP file. 
 
  
 
@@ -326,79 +326,79 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
 **Question 3: How can I edit my metadata?** 
 
-Answer: If you want to change the description, images, link or any of the information listed here, follow the instructions below:  
+*Answer:* If you want to change the description, images, link or any of the information listed here, follow the instructions below:  
 
-1. Purchase Method  
+  1. Purchase Method  
 
-2. Primary Tags  
+  2. Primary Tags  
 
-3. Secondary Tags  
+  3. Secondary Tags  
 
-4. Custom Tags  
+  4. Custom Tags  
 
-5. Language Supported  
+  5. Language Supported  
 
-6. Summary  
+  6. Summary  
 
-7. Detailed Description  
+  7. Detailed Description  
 
-8. Listing Icon  
+  8. Listing Icon  
 
-9. Featured Image  
+  9. Featured Image  
 
-10. Preview Images and Videos  
+  10. Preview Images and Videos  
 
-11. Release Notes  
+  11. Release Notes  
 
-12. Documents  
+  12. Documents  
 
-13. How to Sell  
+  13. How to Sell  
 
-14. EULA  
+  14. EULA  
 
-15. Where To Find It  
+  15. Where To Find It  
 
-16. CCT/Enterprise user  
+  16. CCT/Enterprise user  
 
-17. Note to approver  
+  17. Note to approver  
 
   
 
 ***Steps for submitting a Metadata Change Request:***  
 
-1. Login to￼the Exchange Developer Portal and go to the Dashboard.   
+  1. Login to￼the Exchange Developer Portal and go to the Dashboard.   
 
-2. Select the listing you want to change in the ‘Published’ tab to edit it.  
+  2. Select the listing you want to change in the ‘Published’ tab to edit it.  
 
-3. Select Edit. 
+  3. Select Edit. 
 
-4. Make edits to any of the four Tabs (Details, Images, Upload & Docs, Notes & EULA). 
+  4. Make edits to any of the four Tabs (Details, Images, Upload & Docs, Notes & EULA). 
 
-5. Scroll down and click “Save & Next” (or back to switch between tabs).  
+  5. Scroll down and click “Save & Next” (or back to switch between tabs).  
 
-6. Once you’ve made your changes, click on the ‘Save’ button and preview the listing.  
+  6. Once you’ve made your changes, click on the ‘Save’ button and preview the listing.  
 
-7. If all the changes are correct, click on the ‘Submit’ button.  
+  7. If all the changes are correct, click on the ‘Submit’ button.  
 
-8. The Exchange Portal will show a message that your changes were submitted successfully. You will receive a submission email from ccintegrationsreview@adobe.com and noreply@salesforce.com. 
+  8. The Exchange Portal will show a message that your changes were submitted successfully. You will receive a submission email from ccintegrationsreview@adobe.com and noreply@salesforce.com. 
 
  
 
 **Question 4: Can I reply to a review left by a user?**
 
-Answer: Yes, you may reply to comments directly from the Exchange Portal or using the Creative Cloud Desktop App. 
+*Answer:* Yes, you may reply to comments directly from the Exchange Portal or using the Creative Cloud Desktop App. 
 
 
 **Question 5: How can I change the bundled ID for a CEP extension?**
 
-Answer: The bundled ID is a unique identifier. Once an extension is published you can’t change the bundled ID. If you want to use a new bundled ID, you must create a new listing. 
+*Answer:* The bundled ID is a unique identifier. Once an extension is published you can’t change the bundled ID. If you want to use a new bundled ID, you must create a new listing. 
 
  
 **Question 6: How can I fix the following .DS_Store or macOSX error?**
 
-DS_Store or _MACOSX were detected and rejected in upload due to security reasons. Please upload a new package without these files. Please contact ccintrev@adobe.com with questions. 
+ - DS_Store or _MACOSX were detected and rejected in upload due to security reasons. Please upload a new package without these files. Please contact ccintrev@adobe.com with questions. 
 
-Answer: When uploading a ZXP file, you may encounter the .DS_Store or a macOSX error above. The macOS operating system adds hidden files to directories. 
+*Answer:* When uploading a ZXP file, you may encounter the .DS_Store or a macOSX error above. The macOS operating system adds hidden files to directories. 
 
 ***How to Delete a DS_Store File for a Specific Folder***
 
@@ -406,46 +406,46 @@ Answer: When uploading a ZXP file, you may encounter the .DS_Store or a macOSX e
 
 **Note:** If you’re not signed in as an administrator, you may be asked to enter your name and password to access the Terminal app and use the commands needed to delete DS_Store files. 
 
-1. From the desktop, select Go > Utilities > Terminal. 
+  1. From the desktop, select Go > Utilities > Terminal. 
 
-2. Locate the folder containing the DS_Store file and navigate to that directory in the Terminal. For example, if your folder is on the desktop, use the cd desktop command and press Enter. 
+  2. Locate the folder containing the DS_Store file and navigate to that directory in the Terminal. For example, if your folder is on the desktop, use the cd desktop command and press Enter. 
 
-3. Type find . –name '.DS_Store' –type f –delete to delete all of the .DS_Store files in the current directory and press Enter. 
+  3. Type find . –name '.DS_Store' –type f –delete to delete all of the .DS_Store files in the current directory and press Enter. 
 
-4. Select OK. The .DS_Store files in the folder you selected will be deleted. 
+  4. Select OK. The .DS_Store files in the folder you selected will be deleted. 
 
  
 
 **Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal?**
 
-Answer: You may provide access to collaborators so that they may update or change your listing.  
+*Answer:* You may provide access to collaborators so that they may update or change your listing.  
 
-1. Login to the Exchange Developer Portal. 
+  1. Login to the Exchange Developer Portal. 
 
-2. On the top right side click the “Edit Profile” button. 
+  2. On the top right side click the “Edit Profile” button. 
 
-3. Now click on Add/Edit Users and click on “Invite contact”. 
+  3. Now click on Add/Edit Users and click on “Invite contact”. 
 
-4. Fill in your contact’s details (FirstName, LastName, Email) and click on “Invite”. 
+  4. Fill in your contact’s details (FirstName, LastName, Email) and click on “Invite”. 
 
-5. An invitation will be sent to the requested user. 
+  5. An invitation will be sent to the requested user. 
 
-6. Your collaborator must complete the AdobeID registration through the email link. 
+  6. Your collaborator must complete the AdobeID registration through the email link. 
 
-7. Once the registration is complete, the collaborator has to create an account on Exchange Developer Portal, and after this step, the collaborator will be able to update the listing. 
+  7. Once the registration is complete, the collaborator has to create an account on Exchange Developer Portal, and after this step, the collaborator will be able to update the listing. 
 
- 
+
 
 **Question 8: How can I drop support for a Creative Cloud app while submitting a patch?**
 
-Answer: It is not possible to drop support for Creative Cloud apps (e.g., your listing is compatible with Photoshop, Illustrator, and InDesign, but you wish to remove Photoshop support). The listing must support all point products that are supported by the first published version you submitted. 
+*Answer:* It is not possible to drop support for Creative Cloud apps (e.g., your listing is compatible with Photoshop, Illustrator, and InDesign, but you wish to remove Photoshop support). The listing must support all point products that are supported by the first published version you submitted. 
 
 In some cases where developers can no longer support Creative Cloud apps, they must submit a new listing and withdraw the old listing once the new listing is approved. 
 
 
 **Question 9: How can I fix a server error encountered on the Exchange portal?**
 
-Answer: Kindly clear the cache and cookies (at least the adobe.com cookies) before logging into the Exchange Developer Portal. If the issue persists, then please follow these steps: 
+*Answer:* Kindly clear the cache and cookies (at least the adobe.com cookies) before logging into the Exchange Developer Portal. If the issue persists, then please follow these steps: 
 
 1. Clear the browser cache and cookies. 
 
