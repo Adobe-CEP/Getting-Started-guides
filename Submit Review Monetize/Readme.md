@@ -192,30 +192,30 @@ With due diligence, we expect you to thoroughly read the [Adobe Branding Guideli
 
 ## Best Practices:  
 
-1.  Use same developer AdobeID for both UXP and CEP plugins:  You should always use the same developer ID to submit CEP and UXP plugins. This makes it  easier  to track plugin performance, manage your listings, and respond to user comments. 
+1.  **Use same developer AdobeID for both UXP and CEP plugins:**  You should always use the same developer ID to submit CEP and UXP plugins. This makes it  easier  to track plugin performance, manage your listings, and respond to user comments. 
 
-1.  Proper Description:  Use the description field to explain what your plugin can do, what are its features and  functionality, and what can be achieved using the plugin. It is  very beneficial for end users if you provide a video that captures plugin functionality so that new users get a better understanding of how to use your  plugin. 
+1.  **Proper Description:**  Use the description field to explain what your plugin can do, what are its features and  functionality, and what can be achieved using the plugin. It is  very beneficial for end users if you provide a video that captures plugin functionality so that new users get a better understanding of how to use your  plugin. 
 
-1.  Update Your Plugin(s) Regularly:  Updating  your plugin(s) on a regular basis to make it compatible with the latest version of the supported point product. Updating you  plugin(s) will provide an awesome and seamless experience for the end user which will reflect on your revenue and ratings. 
+1.  **Update Your Plugin(s) Regularly:**  Updating  your plugin(s) on a regular basis to make it compatible with the latest version of the supported point product. Updating you  plugin(s) will provide an awesome and seamless experience for the end user which will reflect on your revenue and ratings. 
 
-1.  Share Test Credentials:  Always share test credentials with the review team via the "Notes to Approver" section. Sharing test  credentials while submitting the listing will help us expedite the review process. 
+1.  **Share Test Credentials:**  Always share test credentials with the review team via the "Notes to Approver" section. Sharing test  credentials while submitting the listing will help us expedite the review process. 
 
-1.  Share a License: Some plugins require users to enter a license key before use. If the same is to be done for your plugin and FastSpring is used to handle your  payments, you  should share 100 license keys with the review team via the "Notes to Approver" section and we will store the license keys on FastSpring. FastSpring will distribute the license key to users who have successfully purchased your  plugin. 
+1.  **Share a License:** Some plugins require users to enter a license key before use. If the same is to be done for your plugin and FastSpring is used to handle your  payments, you  should share 100 license keys with the review team via the "Notes to Approver" section and we will store the license keys on FastSpring. FastSpring will distribute the license key to users who have successfully purchased your  plugin. 
 
         a. Note: Before the current license exhaust, asupport@adobe.com will contact you to provide an additional license and they will restore the license on FastSpring so that the user can obtain the license key after purchase. 
 
         b. It is up to you how many licenses you want to store on FastSpring. In general, we encourage developers to share at least 100 licenses although you are free to share fewer or more license keys if you wish to do so. 
 
 
-1.  Provide Proper Installation Instructions:  Make sure to provide proper installation instructions under the "Where to find" section, like what files users need to install, or where to place the files. If the plugin supports multiple Adobe products and the instructions are not the same for each product, then the developer must provide the installation instruction for each point product individually. (For example, if the installation instructions are different for Photoshop versus InDesign, please include the instructions for both products.) 
+1.  **Provide Proper Installation Instructions:**  Make sure to provide proper installation instructions under the "Where to find" section, like what files users need to install, or where to place the files. If the plugin supports multiple Adobe products and the instructions are not the same for each product, then the developer must provide the installation instruction for each point product individually. (For example, if the installation instructions are different for Photoshop versus InDesign, please include the instructions for both products.) 
 
-1.  Follow the Adobe Brand Guidelines: Before you use any Adobe brand asset, (for example, product icons)  you are required to  read  the  [Adobe Brand Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf)  and adhere to them. Without obtaining  proper authorization from Adobe, you should never use an  asset in your  listing or for any marketing purposes. Use of Adobe assets without prior approval will result in rejection. 
+1.  **Follow the Adobe Brand Guidelines:** Before you use any Adobe brand asset, (for example, product icons)  you are required to  read  the  [Adobe Brand Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf)  and adhere to them. Without obtaining  proper authorization from Adobe, you should never use an  asset in your  listing or for any marketing purposes. Use of Adobe assets without prior approval will result in rejection. 
 
-1.  Provide Support:  You must make sure that users can always reach out to you and inform you  of problems with your plugin. In many cases, we have seen that users give poor reviews and ratings to plugins due to a lack of communication. 
+1.  **Provide Support:**  You must make sure that users can always reach out to you and inform you  of problems with your plugin. In many cases, we have seen that users give poor reviews and ratings to plugins due to a lack of communication. 
 
-1.  Additional Payment: If any kind of additional payment is needed to use your  plugin, then you must share all the information about it with the user, and you must write about it in the plugin description. 
+1.  **Additional Payment:** If any kind of additional payment is needed to use your  plugin, then you must share all the information about it with the user, and you must write about it in the plugin description. 
 
-1.  Companion application: If any kind of additional application is required for your  plugin to work then information about this must be mentioned in the plugin description and you  should specify where the user can download the companion application.
+1.  **Companion application:** If any kind of additional application is required for your  plugin to work then information about this must be mentioned in the plugin description and you  should specify where the user can download the companion application.
 
 
 ## Benefits of Listing in Our Marketplace: 
