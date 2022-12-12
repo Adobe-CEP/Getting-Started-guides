@@ -88,40 +88,40 @@ This document will give you an idea of what we're checking for during the review
 
 8.  ***Plugin functionality and UI (User Interface)*** 
 
-Once the user  installs the plugin, we make sure that the newly added plugin is working seamlessly, and customers can use it  to enhance their productivity. 
+    Once the user  installs the plugin, we make sure that the newly added plugin is working seamlessly, and customers can use it  to enhance their productivity. 
 
-    a.  Functionality: 
+    -  **Functionality** 
 
-        1. The plugin must install without error. 
+    1. The plugin must install without error. 
 
-        2. The plugin should  launch successfully in the maximum supported version of the point product. 
+    2. The plugin should  launch successfully in the maximum supported version of the point product. 
 
-        3. The plugin should  launch successfully in the minimum supported version of the point product. 
+    3. The plugin should  launch successfully in the minimum supported version of the point product. 
 
-        4. Modal dialogs must provide an affordance in the UI for closing the modal (e.g., a cancel/close button). 
+    4. Modal dialogs must provide an affordance in the UI for closing the modal (e.g., a cancel/close button). 
 
-        5. The plugin must never show a completely blank UI. 
+    5. The plugin must never show a completely blank UI. 
 
-        6. The plugin  shouldn't get stuck on any screens with no way to navigate out. 
+    6. The plugin  shouldn't get stuck on any screens with no way to navigate out. 
 
-        7. The plugin must indicate to the user if an internet connection is not available but is required. 
+    7. The plugin must indicate to the user if an internet connection is not available but is required. 
 
-        8. The plugin must work as described by the developer. 
+    8. The plugin must work as described by the developer. 
 
-        9. All the external links that are added to the plugin must open a website when clicked. 
+    9. All the external links that are added to the plugin must open a website when clicked. 
 
 
-    b.  User Interface 
+    -  **User Interface** 
 
-        1. UI elements in the plugin must not overlap or truncate. 
+    1. UI elements in the plugin must not overlap or truncate. 
 
-        2. Plugin content must follow  [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). 
+    2. Plugin content must follow  [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). 
 
-        3. No content should be clipped. 
+    3. No content should be clipped. 
 
-        4. UI content must wrap or adapt as necessary to accommodate the available width of the UI. 
+    4. UI content must wrap or adapt as necessary to accommodate the available width of the UI. 
 
-        5. The plugin UI must scroll when all content is not visible on the screen. 
+    5. The plugin UI must scroll when all content is not visible on the screen. 
 
 
 9.  ***Performance*** 
