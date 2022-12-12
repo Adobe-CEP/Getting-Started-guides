@@ -1,16 +1,12 @@
-Index 
+## Contents
 
--   Submission Checklist 
+1. [Submission Checklist](#Submission-Checklist)
+1. [Top 3 Rejection Reasons](#Top-3-Rejection-Reasons)
+1. [Adobe Branding Guidelines](#Adobe-Branding-Guidelines)
+1. [Benefits & Best Practices](#Benefits-&-Best-Practices)
+1. [FAQ's](#FAQ's)
 
--   Top 3 Rejection Reasons 
-
--   Adobe Branding Guidelines 
-
--   Benefits & Best Practices 
-
--   FAQ's
-
-# Submission Checklist 
+## Submission Checklist 
 
 By reviewing every plugin submission, Adobe aims to help developers get ready for primetime and ensure that users have great experiences with the plugins they install. 
 
@@ -136,11 +132,6 @@ b.  User Interface 
 
 -   Developers can mention details of license keys in the "Notes to approver" section. 
 
--   Monetization Policy: 
-
--   This project is still in progress, once the project is completed, I will add its details here 
-
--   Link: [https://adobe](https://adobe/)-my.sharepoint.com/:w:/p/yjugran/Ecdqp0MaUz9IpZefzi7H0BgB5v-QxbuRDQ_t5yidIx4K2A?email=aabrol%40adobe.com&e=lfTQp9 
 
 #  Top 3 Rejection Reasons 
 
@@ -164,6 +155,7 @@ During the review process, we check plugins with the aim to make sure users have
 
 1.  If the review  team  cannot  find the files mentioned in the "Where to find it" section of your  listing, your plugin will be rejected. Please supply the path where users would find this plugin from within the Adobe product. 
 
+
 #   Adobe Branding Guidelines: 
 
 There is a predefined set of guidelines that are published by Adobe periodically for the use of Adobe assets and product icons. It is expected that developers strictly adhere to these  guidelines.  
@@ -174,9 +166,10 @@ Adobe does  not allow any change into  product icons.  Developers are allowed to
 
 With due diligence, we expect you to thoroughly read the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf)  and follow the guidelines  exactly. Failure to do so will result in rejection during the review process. 
 
-Link: <https://partners.adobe.com/exchangeprogram/creativecloud/marketing/dev-brand-guide.html> 
+**Link**: <https://partners.adobe.com/exchangeprogram/creativecloud/marketing/dev-brand-guide.html> 
 
-Note: Make sure that you are logged in on the Exchange Developer Portal, otherwise, you will not be able to access the link. 
+**Note**: Make sure that you are logged in on the Exchange Developer Portal, otherwise, you will not be able to access the link. 
+
 
 #   Benefits & Best Practices 
 
@@ -236,17 +229,17 @@ Note: Make sure that you are logged in on the Exchange Developer Portal, otherwi
 
 Answer: You can ask the Review Team to create a coupon code (or codes) on your behalf. You will need to share the following details with Review Team: 
 
-Extension name (or listing name) 
+1. Extension name (or listing name) 
 
-Coupon validity period: You may restrict your discount to a certain date range or request a perpetual coupon. 
+2. Coupon validity period: You may restrict your discount to a certain date range or request a perpetual coupon. 
 
-Percent off: Specify the discount you want to give your user(s). 
+3. Percent off: Specify the discount you want to give your user(s). 
 
-Coupon code and code format: Coupon codes are supported in two formats: single coupon code, and multiple random codes. 
+4. Coupon code and code format: Coupon codes are supported in two formats: single coupon code, and multiple random codes. 
 
-For a single coupon code, please choose a unique coupon code that will be stored on FastSpring. Every time a user enters your coupon code on the payment page, a discount will be applied to the cart value. (For example, “MYCOUPON-FREE".) 
+5. For a single coupon code, please choose a unique coupon code that will be stored on FastSpring. Every time a user enters your coupon code on the payment page, a discount will be applied to the cart value. (For example, “MYCOUPON-FREE".) 
 
-Multiple Random Codes: If you want, for example, 100 coupon codes, the Review Team will generate the codes. Please supply a five-character prefix that will be added at the beginning of each coupon code. 
+6. Multiple Random Codes: If you want, for example, 100 coupon codes, the Review Team will generate the codes. Please supply a five-character prefix that will be added at the beginning of each coupon code. 
 
  
 
@@ -259,53 +252,53 @@ Answer: You may submit a patch when you update functionality for an existing lis
 
 Below are the fields that you may edit when submitting patches:  
 
-Upload File (Note: For a non-ZXP upload, the file type of the patch needs to be of the same file type as the parent upload file.)  
+1. Upload File (Note: For a non-ZXP upload, the file type of the patch needs to be of the same file type as the parent upload file.)  
 
-Version Number (Note: This applies only to ZIP based extensions. CEP based extensions have version numbers that are automatically generated from the manifest file and cannot be entered manually.)  
+2. Version Number (Note: This applies only to ZIP based extensions. CEP based extensions have version numbers that are automatically generated from the manifest file and cannot be entered manually.)  
 
-EULA (End User License Agreements) 
+3. EULA (End User License Agreements) 
 
-Where to Find It 
+4. Where to Find It 
 
-Installation Instructions for Enterprise Users or Creative Cloud Teams users 
+5. Installation Instructions for Enterprise Users or Creative Cloud Teams users 
 
-Release Notes 
+6. Release Notes 
 
-Note to the approver 
+7. Note to the approver 
 
   
 
-How to submit a patch:  
+***How to submit a patch:*** 
 
-Login to the Exchange Developer Portal.  
+1. Login to the Exchange Developer Portal.  
 
-Go to the Dashboard.  
+2. Go to the Dashboard.  
 
-Select the name of your extension or listing (this applies only to listings that have already been published).  
+3. Select the name of your extension or listing (this applies only to listings that have already been published).  
 
-Click on the “More” dropdown button (upper right) and choose “Create New Patch”.  
+4. Click on the “More” dropdown button (upper right) and choose “Create New Patch”.  
 
-Now click on the Patch Details Tab. 
+5. Now click on the Patch Details Tab. 
 
-For ZIP-based extensions, you may change the version number. ZXP-based extensions acquire version numbers automatically from the manifest file and cannot be updated manually.  
+6. For ZIP-based extensions, you may change the version number. ZXP-based extensions acquire version numbers automatically from the manifest file and cannot be updated manually.  
 
- If you don’t want the patch to be published immediately upon approval, uncheck “Publish this patch immediately upon approval”. In this case, the patch will appear in the “Not Published” section of Dashboard once approved, and you will need to publish it manually for it to appear on the Creative Cloud Exchange Marketplace.  
+7. If you don’t want the patch to be published immediately upon approval, uncheck “Publish this patch immediately upon approval”. In this case, the patch will appear in the “Not Published” section of Dashboard once approved, and you will need to publish it manually for it to appear on the Creative Cloud Exchange Marketplace.  
 
-Scroll down and click submit. 
+8. Scroll down and click submit. 
 
-The Exchange Portal will show a message that changes requested are submitted successfully and you will receive an email from noreply@salesforce.com and ccintegrationsreview@adobe.com confirming your submission.  
+9. The Exchange Portal will show a message that changes requested are submitted successfully and you will receive an email from noreply@salesforce.com and ccintegrationsreview@adobe.com confirming your submission.  
 
    
 
-How to submit a patch for a rejected submission:   
+***How to submit a patch for a rejected submission:***   
 
-If your last patch submission was rejected, you will need to click on the “Not Published” section and open the last rejected version.  
+1. If your last patch submission was rejected, you will need to click on the “Not Published” section and open the last rejected version.  
 
-Click on the “Edit” button and select the “Patch Details” tab.  
+2. Click on the “Edit” button and select the “Patch Details” tab.  
 
-Now replace the previously uploaded file with the new one. 
+3. Now replace the previously uploaded file with the new one. 
 
-For a patch upload, the file type needs to match the parent file type. For example, during the first-time submission, if you uploaded a ZXP file, then during the patch submission, you need to upload another ZXP file. 
+4. For a patch upload, the file type needs to match the parent file type. For example, during the first-time submission, if you uploaded a ZXP file, then during the patch submission, you need to upload another ZXP file. 
 
  
 
@@ -317,59 +310,59 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
 Answer: If you want to change the description, images, link or any of the information listed here, follow the instructions below:  
 
-Purchase Method  
+1. Purchase Method  
 
-Primary Tags  
+2. Primary Tags  
 
-Secondary Tags  
+3. Secondary Tags  
 
-Custom Tags  
+4. Custom Tags  
 
-Language Supported  
+5. Language Supported  
 
-Summary  
+6. Summary  
 
-Detailed Description  
+7. Detailed Description  
 
-Listing Icon  
+8. Listing Icon  
 
-Featured Image  
+9. Featured Image  
 
-Preview Images and Videos  
+10. Preview Images and Videos  
 
-Release Notes  
+11. Release Notes  
 
-Documents  
+12. Documents  
 
-How to Sell  
+13. How to Sell  
 
-EULA  
+14. EULA  
 
-Where To Find It  
+15. Where To Find It  
 
-CCT/Enterprise user  
+16. CCT/Enterprise user  
 
-Note to approver  
+17. Note to approver  
 
   
 
-Steps for submitting a Metadata Change Request:  
+***Steps for submitting a Metadata Change Request:***  
 
-Login to ￼the Exchange Developer Portal and go to the Dashboard.  
+1. Login to￼the Exchange Developer Portal and go to the Dashboard.   
 
-Select the listing you want to change in the ‘Published’ tab to edit it.  
+2. Select the listing you want to change in the ‘Published’ tab to edit it.  
 
-Select Edit. 
+3. Select Edit. 
 
-Make edits to any of the four Tabs (Details, Images, Upload & Docs, Notes & EULA). 
+4. Make edits to any of the four Tabs (Details, Images, Upload & Docs, Notes & EULA). 
 
-Scroll down and click “Save & Next” (or back to switch between tabs).  
+5. Scroll down and click “Save & Next” (or back to switch between tabs).  
 
-Once you’ve made your changes, click on the ‘Save’ button and preview the listing.  
+6. Once you’ve made your changes, click on the ‘Save’ button and preview the listing.  
 
-If all the changes are correct, click on the ‘Submit’ button.  
+7. If all the changes are correct, click on the ‘Submit’ button.  
 
-The Exchange Portal will show a message that your changes were submitted successfully. You will receive a submission email from ccintegrationsreview@adobe.com and noreply@salesforce.com. 
+8. The Exchange Portal will show a message that your changes were submitted successfully. You will receive a submission email from ccintegrationsreview@adobe.com and noreply@salesforce.com. 
 
  
 
@@ -389,21 +382,19 @@ DS_Store or _MACOSX were detected and rejected in upload due to security reasons
 
 Answer: When uploading a ZXP file, you may encounter the .DS_Store or a macOSX error above. The macOS operating system adds hidden files to directories. 
 
-How to Delete a DS_Store File for a Specific Folder 
+***How to Delete a DS_Store File for a Specific Folder***
 
  
 
-Note: If you’re not signed in as an administrator, you may be asked to enter your name and password to access the Terminal app and use the commands needed to delete DS_Store files. 
+**Note:** If you’re not signed in as an administrator, you may be asked to enter your name and password to access the Terminal app and use the commands needed to delete DS_Store files. 
 
-From the desktop, select Go > Utilities > Terminal. 
+1. From the desktop, select Go > Utilities > Terminal. 
 
-Locate the folder containing the DS_Store file and navigate to that directory in the Terminal. For example, if your folder is on the desktop, use the cd desktop command and press Enter. 
+2. Locate the folder containing the DS_Store file and navigate to that directory in the Terminal. For example, if your folder is on the desktop, use the cd desktop command and press Enter. 
 
-Type find . –name '.DS_Store' –type f –delete to delete all of the .DS_Store files in the current directory and press Enter. 
+3. Type find . –name '.DS_Store' –type f –delete to delete all of the .DS_Store files in the current directory and press Enter. 
 
- 
-
-Select OK. The .DS_Store files in the folder you selected will be deleted. 
+4. Select OK. The .DS_Store files in the folder you selected will be deleted. 
 
  
 
@@ -411,19 +402,19 @@ Select OK. The .DS_Store files in the folder you selected will be deleted.
 
 Answer: You may provide access to collaborators so that they may update or change your listing.  
 
-Login to the Exchange Developer Portal. 
+1. Login to the Exchange Developer Portal. 
 
-On the top right side click the “Edit Profile” button. 
+2. On the top right side click the “Edit Profile” button. 
 
-Now click on Add/Edit Users and click on “Invite contact”. 
+3. Now click on Add/Edit Users and click on “Invite contact”. 
 
-Fill in your contact’s details (FirstName, LastName, Email) and click on “Invite”. 
+4. Fill in your contact’s details (FirstName, LastName, Email) and click on “Invite”. 
 
-An invitation will be sent to the requested user. 
+5. An invitation will be sent to the requested user. 
 
-Your collaborator must complete the AdobeID registration through the email link. 
+6. Your collaborator must complete the AdobeID registration through the email link. 
 
-Once the registration is complete, the collaborator has to create an account on Exchange Developer Portal, and after this step, the collaborator will be able to update the listing. 
+7. Once the registration is complete, the collaborator has to create an account on Exchange Developer Portal, and after this step, the collaborator will be able to update the listing. 
 
  
 
@@ -438,32 +429,32 @@ In some cases where developers can no longer support Creative Cloud apps, they m
 
 Answer: Kindly clear the cache and cookies (at least the adobe.com cookies) before logging into the Exchange Developer Portal. If the issue persists, then please follow these steps: 
 
-Clear the browser cache and cookies. 
+1. Clear the browser cache and cookies. 
 
-Log out from the Exchange Portal and log in again.  
+2. Log out from the Exchange Portal and log in again.  
 
-Use the steps below to collect the browser network and console logs as you try to publish your listing. 
+3. Use the steps below to collect the browser network and console logs as you try to publish your listing. 
 
-How to capture browser network and console logs: 
+  a. How to capture browser network and console logs: 
 
-Open the Chrome browser and reproduce the error.  
+    i. Open the Chrome browser and reproduce the error.  
 
-Open the Chrome Developer Tools by typing Cmd+Option+I on Mac or F12 on Windows.  
+        1. Open the Chrome Developer Tools by typing Cmd+Option+I on Mac or F12 on Windows.  
 
-Please keep the Developer Tools open to see the error. 
+        2. Please keep the Developer Tools open to see the error. 
 
-Select the Network tab. In the Name column and click on the Name for which you are getting server errors.  
+    ii. Select the Network tab. In the Name column and click on the Name for which you are getting server errors.  
 
-Share all the details that appear in the Headers tab (Request URL, Response Header, Request Headers etc.)  
+       1. Share all the details that appear in the Headers tab (Request URL, Response Header, Request Headers etc.)  
 
-Next, select the Console tab and share the logs if you see any errors there.  
+    iii. Next, select the Console tab and share the logs if you see any errors there.  
 
-Create a HAR file by following the steps in this article: https://support.zendesk.com/hc/en-us/articles/204410413-Generating-a-HAR-file-for-troubleshooting 
+       1. Create a HAR file by following the steps in this article: https://support.zendesk.com/hc/en-us/articles/204410413-Generating-a-HAR-file-for-troubleshooting 
 
-Kindly share both the network logs and the HAR file through Google Drive or Dropbox. 
+    iv. Kindly share both the network logs and the HAR file through Google Drive or Dropbox. 
 
-If possible, record a video and share it as well, via link or in the same Google Drive or Dropbox folder. 
+ b. If possible, record a video and share it as well, via link or in the same Google Drive or Dropbox folder. 
 
-Share the logs described above with us (share the logs in the HAR file along with screenshot of network/console logs with ccintrev@adobe.com. 
+4. Share the logs described above with us (share the logs in the HAR file along with screenshot of network/console logs with ccintrev@adobe.com. 
 
 Providing logs (and optionally video) will help the Adobe Engineering team in fixing the problem expeditiously. 
