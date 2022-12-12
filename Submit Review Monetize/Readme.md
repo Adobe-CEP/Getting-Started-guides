@@ -202,9 +202,9 @@ With due diligence, we expect you to thoroughly read the [Adobe Branding Guideli
 
 1.  **Share a License:** Some plugins require users to enter a license key before use. If the same is to be done for your plugin and FastSpring is used to handle your  payments, you  should share 100 license keys with the review team via the "Notes to Approver" section and we will store the license keys on FastSpring. FastSpring will distribute the license key to users who have successfully purchased your  plugin. 
 
-        a. Note: Before the current license exhaust, asupport@adobe.com will contact you to provide an additional license and they will restore the license on FastSpring so that the user can obtain the license key after purchase. 
+    - Note: Before the current license exhaust, asupport@adobe.com will contact you to provide an additional license and they will restore the license on FastSpring so that the user can obtain the license key after purchase. 
 
-        b. It is up to you how many licenses you want to store on FastSpring. In general, we encourage developers to share at least 100 licenses although you are free to share fewer or more license keys if you wish to do so. 
+    - It is up to you how many licenses you want to store on FastSpring. In general, we encourage developers to share at least 100 licenses although you are free to share fewer or more license keys if you wish to do so. 
 
 
 1.  **Provide Proper Installation Instructions:**  Make sure to provide proper installation instructions under the "Where to find" section, like what files users need to install, or where to place the files. If the plugin supports multiple Adobe products and the instructions are not the same for each product, then the developer must provide the installation instruction for each point product individually. (For example, if the installation instructions are different for Photoshop versus InDesign, please include the instructions for both products.) 
