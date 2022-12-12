@@ -269,7 +269,7 @@ The Review Team will contact you once the coupon creation process is complete. Y
 
 *Answer:* You may submit a patch when you update functionality for an existing listing. Updating functionality might include new features or bug fixes.  
 
-**Below are the fields that you may edit when submitting patches:**  
+*Below are the fields that you may edit when submitting patches:*  
 
   1. Upload File (Note: For a non-ZXP upload, the file type of the patch needs to be of the same file type as the parent upload file.)  
 
@@ -287,7 +287,7 @@ The Review Team will contact you once the coupon creation process is complete. Y
 
   
 
-***How to submit a patch:*** 
+*How to submit a patch:*
 
   1. Login to the [Exchange Developer Portal.](https://partners.adobe.com/exchangeprogram/creativecloud)  
 
@@ -309,7 +309,7 @@ The Review Team will contact you once the coupon creation process is complete. Y
 
    
 
-***How to submit a patch for a rejected submission:***   
+*How to submit a patch for a rejected submission:*
 
   1. If your last patch submission was rejected, you will need to click on the “Not Published” section and open the last rejected version.  
 
@@ -365,7 +365,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
   
 
-***Steps for submitting a Metadata Change Request:***  
+*Steps for submitting a Metadata Change Request:*  
 
   1. Login to the [Exchange Developer Portal](https://partners.adobe.com/exchangeprogram/creativecloud) and go to the [Dashboard.](https://partners.adobe.com/exchangeprogram/creativecloud/appslist.html)   
 
@@ -416,9 +416,6 @@ If you face an issue while creating metadata or patches, contact the Review Team
   4. Select OK. The .DS_Store files in the folder you selected will be deleted. 
 
  
-
-
-
 
 **Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal?**
 
