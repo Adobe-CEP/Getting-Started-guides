@@ -1,146 +1,164 @@
-## Contents
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-1. [Submission Checklist](#Submission-Checklist)
-1. [Top 3 Rejection Reasons](#Top-3-Rejection-Reasons)
-1. [Adobe Branding Guidelines](#Adobe-Branding-Guidelines)
-1. [Benefits & Best Practices](#Benefits-&-Best-Practices)
-1. [FAQ's](#FAQs)
+- [Submission Checklist ](#submission-checklist)
+  - [Plugin Description](#plugin-description)
+  - [Icons, screenshots and videos](#icons-screenshots-and-videos)
+  - [Adobe Branding Guidelines](#adobe-branding-guidelines)
+  - [Inappropriate Content](#inappropriate-content)
+  - [External Services ](#external-services)
+  - [Installation Instructions](#installation-instructions)
+  - [ZXP installation](#zxp-installation)
+  - [Plugin functionality and UI (User Interface)](#plugin-functionality-and-ui-user-interface)
+    - [Functionality](#functionality)
+    - [User Interface](#user-interface)
+  - [Performance](#performance)
+  - [License Distribution](#license-distribution)
+- [Top 3 Rejection Reasons ](#top-3-rejection-reasons)
+  - [*Non-compliance with Adobe Branding Guidelines.* ](#non-compliance-with-adobe-branding-guidelines)
+  - [*Plugin does not function as described by the developer.* ](#plugin-does-not-function-as-described-by-the-developer)
+  - [*Insufficient installation instructions.* ](#insufficient-installation-instructions)
+- [Adobe Branding Guidelines](#adobe-branding-guidelines-1)
+- [Benefits & Best Practices ](#benefits--best-practices)
+  - [Best Practices](#best-practices)
+  - [Benefits of Listing in Our Marketplace ](#benefits-of-listing-in-our-marketplace)
+- [FAQs](#faqs)
+  - [How can I generate coupon code(s)?](#how-can-i-generate-coupon-codes)
+  - [How can I submit a patch?](#how-can-i-submit-a-patch)
+    - [How to submit a patch](#how-to-submit-a-patch)
+    - [How to submit a patch for a rejected submission:](#how-to-submit-a-patch-for-a-rejected-submission)
+  - [How can I edit my metadata?](#how-can-i-edit-my-metadata)
+    - [Steps for submitting a Metadata Change Request:](#steps-for-submitting-a-metadata-change-request)
+  - [Can I reply to a review left by a user?](#can-i-reply-to-a-review-left-by-a-user)
+  - [How can I change the bundled ID for a CEP extension?](#how-can-i-change-the-bundled-id-for-a-cep-extension)
+  - [How can I fix the following .DS_Store or macOSX error?](#how-can-i-fix-the-following-ds_store-or-macosx-error)
+    - [How to Delete a DS_Store File for a Specific Folder](#how-to-delete-a-ds_store-file-for-a-specific-folder)
+  - [How can I add a collaborator, colleague, or teammate to the Exchange Portal?](#how-can-i-add-a-collaborator-colleague-or-teammate-to-the-exchange-portal)
+  - [How can I drop support for a Creative Cloud app while submitting a patch?](#how-can-i-drop-support-for-a-creative-cloud-app-while-submitting-a-patch)
+  - [How can I fix a server error encountered on the Exchange portal?](#how-can-i-fix-a-server-error-encountered-on-the-exchange-portal)
 
-## Submission Checklist 
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# Submission Checklist 
 
 By reviewing every plugin submission, Adobe aims to help developers get ready for primetime and ensure that users have great experiences with the plugins they install. 
 
 This document will give you an idea of what we're checking for during the review process. While lengthy, working through the points below will help you make sure you've accounted for all the requirements and avoid having to fix things and resubmit before getting published. 
 
 
-1.  ***Plugin Description*** 
+## Plugin Description
+<ul>
+ <li> A plugin name can only include "Adobe Photoshop" if it fits the pattern "\${Plugin Name} for Photoshop". Refer to the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf) for further information. For example: </li>
+<li>   OK: "Rectanglator", or "Rectanglator for Adobe Photoshop" </li>    
+   <li>   Not OK: "PS Rectanglator", or "Rectanglator PS". "Rectanglator PS" would be rejected based on the plugin name. </li>
+   <li>   The plugin description must be both relevant and self*explanatory. 
+  <li>   Regardless of supported languages, an English description must be provided. </li>
+  <li>   All listing content, including author name, email address, and website must comply with [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide-062218.pdf).</li>
+    <li>   Any plugin website must provide an email address or contact form so that the users can contact the plugin developer easily.  (We will check your provided website to confirm this information is present.) </li>
+<li>   The listing should not link to the websites that are still under development (i.e., "under construction", "coming soon", etc.). </li></ul>
 
-    -   A plugin name can only include "Adobe Photoshop" if it fits the pattern "\${Plugin Name} for Photoshop". Refer to the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf) for further information. For example: 
+## Icons, screenshots and videos
+-   Plugin icons must not contain Adobe product assets or icons. (Please note that many submissions are rejected because they contain Adobe product icons.) 
+-   Plugin icons must be clear and free of distortion. 
+-   Plugin icons should be clearly visible when the Creative Cloud desktop app is set to dark mode. 
+-   Screenshots in the listing must not contain Adobe product assets or icons without prior permission from Adobe Branding team (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
+-   The videos in the listing must be relevant to the plugin/publisher. They should not contain any Adobe assets or icons  without getting permission from the Adobe  Branding team  (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
 
-    -   OK: "Rectanglator", or "Rectanglator for Adobe Photoshop" 
 
-    -   Not OK: "PS Rectanglator", or "Rectanglator PS". "Rectanglator PS" would be rejected based on the plugin name. 
+## Adobe Branding Guidelines
 
-    -   The plugin description must be both relevant and self-explanatory. 
+-   Make sure to review and adhere to the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf) (login required).
+-   Avoid using publisher names, domain names, email addresses, and other such property names that are confusingly similar to existing Adobe brand, product, or service names.  Eg: <adobexd@gmail.com>, <AdobePS@gmail.com> or XYZforAdobe.com 
+-   Using Adobe assets and icons in your plugin or your plugin marketing material requires explicit permission from Adobe. Note that getting permission to use Adobe branding assets can add to the time it takes to get your plugin reviewed, approved and published.
 
-    -   Regardless of supported languages, an English description must be provided. 
+## Inappropriate Content
 
-    -   All listing content, including author name, email address, and website must comply with [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide-062218.pdf) . 
+-   The plugin and associated marketing surfaces must not include any intense violence, blood, gore, sexual content, nudity, or strong language. 
 
-    -   Any plugin website must provide an email address or contact form so that the users can contact the plugin developer easily.  (We will check your provided website to confirm this information is present.) 
+-   The plugin must not promote or conduct phishing, spamming, hacking, password trafficking, or spyware, nor contain malware, trojans, or viruses. 
 
-    -   The listing should not link to the websites that are still under development (i.e., "under construction", "coming soon", etc.). 
 
+## External Services 
 
-2.  ***Icons, screenshots and videos*** 
+-   If your plugin requires paid credentials, when you submit your plugin to Adobe, you must provide test credentials for login, license key, API Key, or anything else that would be required to fully review your plugin. 
 
-    -   Plugin icons must not contain Adobe product assets or icons. (Please note that many submissions are rejected because they contain Adobe product icons.) 
+-   All plugin functionalities must be accessible, either openly or through the credentials that you provide to Adobe, for Adobe's reviewers. 
 
-    -   Plugin icons must be clear and free of distortion. 
 
-    -   Plugin icons should be clearly visible when the Creative Cloud desktop app is set to dark mode. 
+## Installation Instructions
 
-    -   Screenshots in the listing must not contain Adobe product assets or icons without prior permission from Adobe Branding team (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
+-   If a  plugin requires additional steps before it can be used with the Adobe products, the steps need to be present in the "Where to find it" section. For example: After acquiring the plugin from the Creative Cloud desktop application, the user needs to perform more steps like moving or placing some files at desired location and  such instructions must be clearly mentioned in the "Where to find it" section. 
 
-    -   The videos in the listing must be relevant to the plugin/publisher. They should not contain any Adobe assets or icons  without getting permission from the Adobe  Branding team  (CCDeveloperMarketing@adobe.com or brand@adobe.com). 
+-   Installation instructions should be present for all the supported point products. 
 
+-   Instructions should be clear and precise so that end users can locate the  plugin for each supported point product. 
 
-3.  ***Adobe Branding Guidelines*** 
 
-    -   Make sure to review and adhere to the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). 
+## ZXP installation
 
-    -   Avoid using publisher names, domain names, email addresses, and other such property names that are confusingly similar to existing Adobe brand, product, or service names.  Eg: <adobexd@gmail.com>, <AdobePS@gmmail.com> or XYZforAdobe.com 
+-   The ZXP must install  successfully. 
 
-    -   Using Adobe assets and icons in your plugin or your plugin marketing material requires explicit permission from Adobe (login required). Note that getting permission to use Adobe branding assets can add to the time it takes to get your plugin reviewed, approved and published.
+-   After installation, the plugin  should be visible at the desired place as mentioned in "Where to find it" section. 
 
+-   After opening the ZIP, if the resulting file is an EXE and/or DMG, ensure that the file plugin matches the supported platform(s) noted in the listing information (for example "Windows only."). 
 
-4.  ***Inappropriate Content*** 
 
-    -   The plugin and associated marketing surfaces must not include any intense violence, blood, gore, sexual content, nudity, or strong language. 
+## Plugin functionality and UI (User Interface)
 
-    -   The plugin must not promote or conduct phishing, spamming, hacking, password trafficking, or spyware, nor contain malware, trojans, or viruses. 
+Once the user  installs the plugin, we make sure that the newly added plugin is working seamlessly, and customers can use it  to enhance their productivity. 
 
+### Functionality
 
-5.  ***External Services*** 
+1. The plugin must install without error. 
 
-    -   If your plugin requires paid credentials, when you submit your plugin to Adobe, you must provide test credentials for login, license key, API Key, or anything else that would be required to fully review your plugin. 
+2. The plugin should  launch successfully in the maximum supported version of the point product. 
 
-    -   All plugin functionalities must be accessible, either openly or through the credentials that you provide to Adobe, for Adobe's reviewers. 
+3. The plugin should  launch successfully in the minimum supported version of the point product. 
 
+4. Modal dialogs must provide an affordance in the UI for closing the modal (e.g., a cancel/close button). 
 
-6.  ***Installation Instructions*** 
+5. The plugin must never show a completely blank UI. 
 
-    -   If a  plugin requires additional steps before it can be used with the Adobe products, the steps need to be present in the "Where to find it" section. For example: After acquiring the plugin from the Creative Cloud desktop application, the user needs to perform more steps like moving or placing some files at desired location and  such instructions must be clearly mentioned in the "Where to find it" section. 
+6. The plugin  shouldn't get stuck on any screens with no way to navigate out. 
 
-    -   Installation instructions should be present for all the supported point products. 
+7. The plugin must indicate to the user if an internet connection is not available but is required. 
 
-    -   Instructions should be clear and precise so that end users can locate the  plugin for each supported point product. 
+8. The plugin must work as described by the developer. 
 
+9. All the external links that are added to the plugin must open a website when clicked. 
 
-7.  ***Product: ZXP installation*** 
 
-    -   The ZXP must install  successfully. 
+  ### User Interface
 
-    -   After installation, the plugin  should be visible at the desired place as mentioned in "Where to find it" section. 
+1. UI elements in the plugin must not overlap or truncate. 
 
-    -   After opening the ZIP, if the resulting file is an EXE and/or DMG, ensure that the file plugin matches the supported platform(s) noted in the listing information (for example "Windows only."). 
+2. Plugin content must follow  [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). 
 
+3. No content should be clipped. 
 
-8.  ***Plugin functionality and UI (User Interface)*** 
+4. UI content must wrap or adapt as necessary to accommodate the available width of the UI. 
 
-    Once the user  installs the plugin, we make sure that the newly added plugin is working seamlessly, and customers can use it  to enhance their productivity. 
+5. The plugin UI must scroll when all content is not visible on the screen. 
 
-    -  **Functionality** 
 
-    1. The plugin must install without error. 
+## Performance
 
-    2. The plugin should  launch successfully in the maximum supported version of the point product. 
+-   The plugin must not degrade the performance of Adobe products. 
 
-    3. The plugin should  launch successfully in the minimum supported version of the point product. 
+-   The plugin must load in a timely manner. 
 
-    4. Modal dialogs must provide an affordance in the UI for closing the modal (e.g., a cancel/close button). 
+-   The plugin must not cause abnormal resource usage (e.g., CPU, RAM, storage). 
 
-    5. The plugin must never show a completely blank UI. 
+-   The plugin must not cause crashes, system errors, or any major failures. 
 
-    6. The plugin  shouldn't get stuck on any screens with no way to navigate out. 
+## License Distribution
 
-    7. The plugin must indicate to the user if an internet connection is not available but is required. 
+- Share the license code with review team if the end users need to enter them in the plugin so that the plugin can be activated. 
 
-    8. The plugin must work as described by the developer. 
+- The team will store the license keys on FastSpring and when the end user buys the plugin from Adobe Marketplace, FastSpring will distribute the license key to the user. 
 
-    9. All the external links that are added to the plugin must open a website when clicked. 
-
-
-    -  **User Interface** 
-
-    1. UI elements in the plugin must not overlap or truncate. 
-
-    2. Plugin content must follow  [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). 
-
-    3. No content should be clipped. 
-
-    4. UI content must wrap or adapt as necessary to accommodate the available width of the UI. 
-
-    5. The plugin UI must scroll when all content is not visible on the screen. 
-
-
-9.  ***Performance*** 
-
-    -   The plugin must not degrade the performance of Adobe products. 
-
-    -   The plugin must load in a timely manner. 
-
-    -   The plugin must not cause abnormal resource usage (e.g., CPU, RAM, storage). 
-
-    -   The plugin must not cause crashes, system errors, or any major failures. 
-
-10.  ***License distribution*** 
-
-        - Share the license code with review team if the end users need to enter them in the plugin so that the plugin can be activated. 
-
-        - The team will store the license keys on FastSpring and when the end user buys the plugin from Adobe Marketplace, FastSpring will distribute the license key to the user. 
-
-        - Developers can mention details of license keys in the "Notes to approver" section. 
+- Developers can mention details of license keys in the "Notes to approver" section. 
 
 
 #  Top 3 Rejection Reasons 
@@ -151,29 +169,29 @@ During the review process, we check plugins with the aim to make sure users have
 During the review process, we check plugins with the aim to make sure users have positive experiences with the plugins they install. Sometimes developers' plugins are rejected during the process, particularly when submitting a plugin for the first time. When that happens, we request certain changes be made before they are re-submitted for review.
 
 
-1.  *Non-compliance with Adobe Branding Guidelines.* 
+##  *Non-compliance with Adobe Branding Guidelines.* 
 
-    -  Developers often use Adobe brand assets without getting prior permission, (for example, Adobe's "A" icon).  This violates the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). It is advised that before you start using the Adobe assets, please get permission from the Adobe Branding Team by contacting them at <brand@adobe.com>. Once the permissions are granted you can start using Adobe  assets on your  website and in  your  screenshots.
-
-
-1.  *Plugin does not function as described by the developer.* 
-
-    - At the time of testing, the review team validates all of  the functionality of your plugin. Please make sure before submission that your plugin is functioning as  advertised, and all the features are working properly. 
-
-    - Silent failures: If the plugin user attempts an unsupported function, the plugin must not fail silently. Plugins must display a dialog that this action/functionality is not supported so that users understand it and avoid repeating the same action. 
-
-    - Your plugin is compatible with all of  the Adobe products, product versions, and operating systems you listed in the "Product Compatibility Information" section of your listing.
+Developers often use Adobe brand assets without getting prior permission, (for example, Adobe's "A" icon).  This violates the [Adobe Branding Guidelines](https://partners.adobe.com/content/dam/tep_assets/public/public_1/documents/Adobe-Creative-Cloud-Developer-Brand-Guide.pdf). It is advised that before you start using the Adobe assets, please get permission from the Adobe Branding Team by contacting them at <brand@adobe.com>. Once the permissions are granted you can start using Adobe  assets on your  website and in  your  screenshots.
 
 
-1.  *Insufficient installation instructions.* 
+##  *Plugin does not function as described by the developer.* 
 
-    - Sometimes the installation instructions provided with the submission are not descriptive enough to help a user find the plugin and install it for each of the Adobe applications this product supports. Please note each version of an Adobe application your product supports should have a unique set of instructions listed in the "Where to find it" section of the listing. 
+- At the time of testing, the review team validates all of  the functionality of your plugin. Please make sure before submission that your plugin is functioning as  advertised, and all the features are working properly. 
 
-    - If the review  team  cannot  find the files mentioned in the "Where to find it" section of your  listing, your plugin will be rejected. Please supply the path where users would find this plugin from within the Adobe product. 
+- Silent failures: If the plugin user attempts an unsupported function, the plugin must not fail silently. Plugins must display a dialog that this action/functionality is not supported so that users understand it and avoid repeating the same action. 
+
+- Your plugin is compatible with all of  the Adobe products, product versions, and operating systems you listed in the "Product Compatibility Information" section of your listing.
+
+
+##  *Insufficient installation instructions.* 
+
+- Sometimes the installation instructions provided with the submission are not descriptive enough to help a user find the plugin and install it for each of the Adobe applications this product supports. Please note each version of an Adobe application your product supports should have a unique set of instructions listed in the "Where to find it" section of the listing. 
+
+- If the review  team  cannot  find the files mentioned in the "Where to find it" section of your  listing, your plugin will be rejected. Please supply the path where users would find this plugin from within the Adobe product. 
 
 
 
-#   Adobe Branding Guidelines: 
+#   Adobe Branding Guidelines
 
 There is a predefined set of guidelines that are published by Adobe periodically for the use of Adobe assets and product icons. It is expected that developers strictly adhere to these  guidelines.  
 
@@ -190,7 +208,7 @@ With due diligence, we expect you to thoroughly read the [Adobe Branding Guideli
 
 #   Benefits & Best Practices 
 
-## Best Practices:  
+## Best Practices
 
 1.  **Use same developer AdobeID for both UXP and CEP plugins:**  You should always use the same developer ID to submit CEP and UXP plugins. This makes it  easier  to track plugin performance, manage your listings, and respond to user comments. 
 
@@ -218,7 +236,7 @@ With due diligence, we expect you to thoroughly read the [Adobe Branding Guideli
 1.  **Companion application:** If any kind of additional application is required for your  plugin to work then information about this must be mentioned in the plugin description and you  should specify where the user can download the companion application.
 
 
-## Benefits of Listing in Our Marketplace: 
+## Benefits of Listing in Our Marketplace 
 
 1.  Millions of Creative Cloud users will have direct access to  your plugin(s) through the Creative Cloud desktop app or
     the Adobe Exchange webpage. 
@@ -242,30 +260,27 @@ With due diligence, we expect you to thoroughly read the [Adobe Branding Guideli
 1.  Developers receive a free  Creative Cloud subscription.  (For a free seat please contact us at <ccintrev@adobe.com>).
 
 
-#   FAQ's
+#   FAQs
 
-**Question 1: How can I generate coupon code(s)?**
+## How can I generate coupon code(s)?
 
 *Answer:* You can ask the Review Team to create a coupon code (or codes) on your behalf. You will need to share the following details with Review Team: 
 
-  1. Extension name (or listing name) 
+1. Extension name (or listing name) 
 
-  2. Coupon validity period: You may restrict your discount to a certain date range or request a perpetual coupon. 
+2. Coupon validity period: You may restrict your discount to a certain date range or request a perpetual coupon. 
 
-  3. Percent off: Specify the discount you want to give your user(s). 
+3. Percent off: Specify the discount you want to give your user(s). 
 
-  4. Coupon code and code format: Coupon codes are supported in two formats: single coupon code, and multiple random codes. 
-
-   - For a single coupon code, please choose a unique coupon code that will be stored on FastSpring. Every time a user enters your coupon code on the payment page, a discount will be applied to the cart value. (For example, “MYCOUPON-FREE".) 
+4. Coupon code and code format: Coupon codes are supported in two formats: single coupon code, and multiple random codes. 
+    - For a single coupon code, please choose a unique coupon code that will be stored on FastSpring. Every time a user enters your coupon code on the payment page, a discount will be applied to the cart value. (For example, “MYCOUPON-FREE".) 
 
    - Multiple Random Codes: If you want, for example, 100 coupon codes, the Review Team will generate the codes. Please supply a five-character prefix that will be added at the beginning of each coupon code. 
 
-
-
 The Review Team will contact you once the coupon creation process is complete. You may then distribute your coupon code(s) to your customers and instruct them to enter the code during the checkout process. 
 
- 
-**Question 2: How can I submit a patch?**
+
+## How can I submit a patch?
 
 *Answer:* You may submit a patch when you update functionality for an existing listing. Updating functionality might include new features or bug fixes.  
 
@@ -287,7 +302,7 @@ The Review Team will contact you once the coupon creation process is complete. Y
 
   
 
-*How to submit a patch:*
+### How to submit a patch
 
   1. Login to the [Exchange Developer Portal.](https://partners.adobe.com/exchangeprogram/creativecloud)  
 
@@ -309,7 +324,7 @@ The Review Team will contact you once the coupon creation process is complete. Y
 
    
 
-*How to submit a patch for a rejected submission:*
+### How to submit a patch for a rejected submission:
 
   1. If your last patch submission was rejected, you will need to click on the “Not Published” section and open the last rejected version.  
 
@@ -325,47 +340,30 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
  
 
-**Question 3: How can I edit my metadata?** 
+## How can I edit my metadata?
 
 *Answer:* If you want to change the description, images, link or any of the information listed here, follow the instructions below:  
 
   1. Purchase Method  
-
   2. Primary Tags  
-
   3. Secondary Tags  
-
   4. Custom Tags  
-
   5. Language Supported  
-
   6. Summary  
-
   7. Detailed Description  
-
   8. Listing Icon  
-
   9. Featured Image  
-
   10. Preview Images and Videos  
-
   11. Release Notes  
-
-  12. Documents  
-
+  12. Documents
   13. How to Sell  
-
   14. EULA  
-
   15. Where To Find It  
-
   16. CCT/Enterprise user  
+  17. Note to approver 
+ 
 
-  17. Note to approver  
-
-  
-
-*Steps for submitting a Metadata Change Request:*  
+### Steps for submitting a Metadata Change Request:
 
   1. Login to the [Exchange Developer Portal](https://partners.adobe.com/exchangeprogram/creativecloud) and go to the [Dashboard.](https://partners.adobe.com/exchangeprogram/creativecloud/appslist.html)   
 
@@ -385,25 +383,23 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
  
 
-**Question 4: Can I reply to a review left by a user?**
+## Can I reply to a review left by a user?
 
 *Answer:* Yes, you may reply to comments directly from the [Exchange Portal](https://exchange.adobe.com/apps/browse/cc) or using the Creative Cloud Desktop App. 
 
 
-**Question 5: How can I change the bundled ID for a CEP extension?**
+## How can I change the bundled ID for a CEP extension?
 
 *Answer:* The bundled ID is a unique identifier. Once an extension is published you can’t change the bundled ID. If you want to use a new bundled ID, you must create a new listing. 
 
  
-**Question 6: How can I fix the following .DS_Store or macOSX error?**
+## How can I fix the following .DS_Store or macOSX error?
 
  - DS_Store or _MACOSX were detected and rejected in upload due to security reasons. Please upload a new package without these files. Please contact ccintrev@adobe.com with questions. 
 
 *Answer:* When uploading a ZXP file, you may encounter the .DS_Store or a macOSX error above. The macOS operating system adds hidden files to directories. 
 
-***How to Delete a DS_Store File for a Specific Folder***
-
- 
+### How to Delete a DS_Store File for a Specific Folder
 
 **Note:** If you’re not signed in as an administrator, you may be asked to enter your name and password to access the Terminal app and use the commands needed to delete DS_Store files. 
 
@@ -417,7 +413,7 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
  
 
-**Question 7: How can I add a collaborator, colleague, or teammate to the Exchange Portal?**
+## How can I add a collaborator, colleague, or teammate to the Exchange Portal?
 
 *Answer:* You may provide access to collaborators so that they may update or change your listing.  
 
@@ -437,14 +433,14 @@ If you face an issue while creating metadata or patches, contact the Review Team
 
 
 
-**Question 8: How can I drop support for a Creative Cloud app while submitting a patch?**
+## How can I drop support for a Creative Cloud app while submitting a patch?
 
 *Answer:* It is not possible to drop support for Creative Cloud apps (e.g., your listing is compatible with Photoshop, Illustrator, and InDesign, but you wish to remove Photoshop support). The listing must support all point products that are supported by the first published version you submitted. 
 
 In some cases where developers can no longer support Creative Cloud apps, they must submit a new listing and withdraw the old listing once the new listing is approved. 
 
 
-**Question 9: How can I fix a server error encountered on the Exchange portal?**
+## How can I fix a server error encountered on the Exchange portal?
 
 *Answer:* Kindly clear the cache and cookies (at least the adobe.com cookies) before logging into the Exchange Developer Portal. If the issue persists, then please follow these steps: 
 
@@ -452,28 +448,25 @@ In some cases where developers can no longer support Creative Cloud apps, they m
 
 2. Log out from the Exchange Portal and log in again.  
 
-3. Use the steps below to collect the browser network and console logs as you try to publish your listing. 
+3. Use the steps below to collect the browser network and console logs as you try to publish your listing. <ol type="a">
+<li> <b> How to capture browser network and console logs:</b> </li>
+<ol type="i">
+<li>Open the Chrome browser and reproduce the error.  </li>
+<ol>
+    <li> Open the Chrome Developer Tools by typing Cmd+Option+I on Mac or F12 on Windows.  </li>
+     <li> Please keep the Developer Tools open to see the error. </li>
+</ol>
+    <li> Select the Network tab. In the Name column and click on the Name for which you are getting server errors.</li>
+<ol><li> Share all the details that appear in the Headers tab (Request URL, Response Header, Request Headers etc.)  </li>
+</ol>
+    <li> Next, select the Console tab and share the logs if you see any errors there.</li>
+<ol>
+       <li> Create a HAR file by following the steps in this article: <a href="https://support.zendesk.com/hc/en-us/articles/204410413-Generating-a-HAR-file-for-troubleshooting">https://support.zendesk.com/hc/en-us/articles/204410413-Generating-a-HAR-file-for-troubleshooting</a></li>
+</ol>
+    <li> Kindly share both the network logs and the HAR file through Google Drive or Dropbox. </li>
 
-  a. How to capture browser network and console logs: 
+<li> If possible, record a video and share it as well, via link or in the same Google Drive or Dropbox folder. </li>
+</ol>
+</ol>
 
-    i. Open the Chrome browser and reproduce the error.  
-
-        1. Open the Chrome Developer Tools by typing Cmd+Option+I on Mac or F12 on Windows.  
-
-        2. Please keep the Developer Tools open to see the error. 
-
-    ii. Select the Network tab. In the Name column and click on the Name for which you are getting server errors.  
-
-       1. Share all the details that appear in the Headers tab (Request URL, Response Header, Request Headers etc.)  
-
-    iii. Next, select the Console tab and share the logs if you see any errors there.  
-
-       1. Create a HAR file by following the steps in this article: https://support.zendesk.com/hc/en-us/articles/204410413-Generating-a-HAR-file-for-troubleshooting 
-
-    iv. Kindly share both the network logs and the HAR file through Google Drive or Dropbox. 
-
- b. If possible, record a video and share it as well, via link or in the same Google Drive or Dropbox folder. 
-
-4. Share the logs described above with us (share the logs in the HAR file along with screenshot of network/console logs with ccintrev@adobe.com. 
-
-Providing logs (and optionally video) will help the Adobe Engineering team in fixing the problem expeditiously. 
+5. Share the logs described above with us (share the logs in the HAR file along with screenshot of network/console logs with ccintrev@adobe.com. Providing logs (and optionally video) will help the Adobe Engineering team in fixing the problem expeditiously. 
