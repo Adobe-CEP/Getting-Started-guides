@@ -470,3 +470,32 @@ In some cases where developers can no longer support Creative Cloud apps, they m
 </ol>
 
 5. Share the logs described above with us (share the logs in the HAR file along with screenshot of network/console logs with ccintrev@adobe.com. Providing logs (and optionally video) will help the Adobe Engineering team in fixing the problem expeditiously. 
+
+
+## How can I troubleshoot the following errors on the Exchange portal?
+
+
+_- Plugin manifest has an invalid host app min version_ 
+</br>
+_- Ensure that the Adobe product minimum version is in valid x.y format._
+</br>
+_- Ensure that the Adobe product maximum version is in valid x.y format._
+
+
+Please note that as of December, 2022, the Exchange portal no longer accepts "99.9" as the maximum version number in extension manifests. Previously, you could submit ZXP packages to the exchange with the manifest specifying a maximum product version of 99.9. For example, if your extension supports Illustrator version 25 and up, you may have included the following line in your manifest file:
+
+```
+<HostList>
+    <Host Name="ILST" Version="[25.0,99.9]"/>
+</HostList>
+  ```
+
+If you want to indicate no maximum version, only include the minimum version in your manifest, for example:
+
+```
+<HostList>
+    <Host Name="ILST" Version="25.0"/>
+</HostList>
+```
+
+Additional [manifest documentation is available here](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_11.x/Documentation/CEP%2011.1%20HTML%20Extension%20Cookbook.md#extension-manifest). Also please review this [chart of product version numbers](https://github.com/Adobe-CEP/CEP-Resources/blob/master/CEP_11.x/Documentation/CEP%2011.1%20HTML%20Extension%20Cookbook.md#applications-integrated-with-cep).
