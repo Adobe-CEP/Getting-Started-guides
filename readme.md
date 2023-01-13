@@ -17,17 +17,19 @@ When you're finished, be sure to check out the [Next Steps section](#next-steps)
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contents
 
-1. [Technology Used](#technology-used)
-1. [Prerequisites](#prerequisites)
-1. [Development Steps](#development-steps)
-    1. [1. Decide the folder structure](#1-decide-the-folder-structure)
-    1. [2. Configure Your Extension in `manifest.xml`](#2-configure-your-extension-in-manifestxml)
-    1. [3. Download `CSInterface.js`](#3-download-csinterfacejs)
-    1. [4. Write Your Front-end Code](#4-write-your-front-end-code)
-    1. [5. Write Your ExtendScript Code](#5-write-your-extendscript-code)
-    1. [6. Launch your extension in the host app](#6-launch-your-extension-in-the-host-app)
-1. [Next Steps](#next-steps)
-1. [Other Resources](#other-resources)
+- [Technology Used](#technology-used)
+- [Prerequisites](#prerequisites)
+- [Development Steps](#development-steps)
+  - [1. Decide the folder structure](#1-decide-the-folder-structure)
+  - [2. Configure Your Extension in `manifest.xml`](#2-configure-your-extension-in-manifestxml)
+  - [3. Download `CSInterface.js`](#3-download-csinterfacejs)
+  - [4. Write Your Front-end Code](#4-write-your-front-end-code)
+    - [Create HTML Markup](#create-html-markup)
+    - [Write Your JavaScript Code](#write-your-javascript-code)
+  - [5. Write Your ExtendScript Code](#5-write-your-extendscript-code)
+  - [6. Launch your extension in the host app](#6-launch-your-extension-in-the-host-app)
+- [Next Steps](#next-steps)
+- [Other Resources](#other-resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

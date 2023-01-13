@@ -37,6 +37,7 @@
   - [How can I add a collaborator, colleague, or teammate to the Exchange Portal?](#how-can-i-add-a-collaborator-colleague-or-teammate-to-the-exchange-portal)
   - [How can I drop support for a Creative Cloud app while submitting a patch?](#how-can-i-drop-support-for-a-creative-cloud-app-while-submitting-a-patch)
   - [How can I fix a server error encountered on the Exchange portal?](#how-can-i-fix-a-server-error-encountered-on-the-exchange-portal)
+  - [How can I troubleshoot the following errors on the Exchange portal?](#how-can-i-troubleshoot-the-following-errors-on-the-exchange-portal)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
