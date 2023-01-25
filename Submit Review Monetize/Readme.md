@@ -482,7 +482,25 @@ _- Ensure that the Adobe product minimum version is in valid x.y format._
 </br>
 _- Ensure that the Adobe product maximum version is in valid x.y format._
 
+###UXP Manifest Notes
+Due to an issue with the Exchange portal, the `host.minVersion` and `host.maxVersion` in your UXP plugin manifest must be specified in a.b format. We will soon support the a.b.c format (later in 2023, the date is unconfirmed at this time). For example, if your `manifest.json` contains:
 
+```
+"host": {
+        "app": "PS",
+        "minVersion": "22.5.7"
+    }, 
+```
+Before submitting to the Marketplace, please edit your `manifest.json` to an a.b. minVersion format:
+
+```
+"host": {
+        "app": "PS",
+        "minVersion": "22.5"
+    }, 
+```
+
+###CEP Manifest Notes:
 Please note that as of December, 2022, the Exchange portal no longer accepts "99.9" as the maximum version number in extension manifests. Previously, you could submit ZXP packages to the exchange with the manifest specifying a maximum product version of 99.9. For example, if your extension supports Illustrator version 25 and up, you may have included the following line in your manifest file:
 
 ```
