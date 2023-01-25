@@ -500,7 +500,7 @@ Before submitting to the Marketplace, please edit your `manifest.json` to an a.b
     }, 
 ```
 
-### CEP Manifest Notes:
+### CEP Manifest Notes
 Please note that as of December, 2022, the Exchange portal no longer accepts "99.9" as the maximum version number in extension manifests. Previously, you could submit ZXP packages to the exchange with the manifest specifying a maximum product version of 99.9. For example, if your extension supports Illustrator version 25 and up, you may have included the following line in your manifest file:
 
 ```
