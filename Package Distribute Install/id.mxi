@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macromedia-extension 
+	id="EXTENSION-ID"
+	name="EXTENSION-NAME"
+	requires-restart="true"
+	version="1.0.0">
+ 
+	<author name="NAME"/>
+ 
+	<description>
+		<![CDATA[PRODUCT-DESCRIPTION]]>
+	</description>
+ 
+	 <ui-access>
+		<![CDATA[LOCATION-INSTRUCTION]]>
+	</ui-access>
+ 
+	<license-agreement>
+		<![CDATA[LICENSE-AGREEMENT]]>
+	</license-agreement>
+ 
+	<products>
+		<product familyname="Photoshop" version="14"/>
+	</products>
+ 
+	<files>
+		<file source="PANEL/html.zxp"
+			  destination=""
+			  file-type="CSXS"
+			  products="Photoshop"
+			  minVersion="14.0" />
+		<file source="PSD/"
+			  destination="$Downloads"
+			  file-type="ordinary"
+			  products="Photoshop"
+			  minVersion="14.0" />
+	</files>
+</macromedia-extension>
